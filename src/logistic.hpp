@@ -24,7 +24,7 @@ class Logistic : public Flow {
         Logistic& operator=(const Logistic& copy);
 
         // Método que executa a equação (herdado da classe Flow)
-        virtual double execute();
+        virtual double equation();
 };
 
 #endif // Logistic_HPP

@@ -24,7 +24,7 @@ Logistic &Logistic::operator=(const Logistic &copy)
 }
 
 // Sua equação de taxa exponencial
-double Logistic::execute()
+double Logistic::equation()
 {
     if (getSource() != nullptr)
     {

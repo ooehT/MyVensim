@@ -16,7 +16,7 @@ class Flow {
         Flow(const Flow &f);
         Flow &operator=(const Flow &f); 
         virtual ~Flow();
-        virtual double execute() = 0;
+        virtual double equation() = 0;
         void setSource(System* source);
         System* getSource() const;
         void setTarget(System* target);

@@ -22,7 +22,7 @@ Exponential& Exponential::operator=(const Exponential& copy) {
 }
 
 // Sua equação de taxa exponencial
-double Exponential::execute() {
+double Exponential::equation() {
     if (getSource() != nullptr) {
         return getSource()->getValue() * 0.01;
     }

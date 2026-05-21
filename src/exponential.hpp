@@ -24,7 +24,7 @@ class Exponential : public Flow {
         Exponential& operator=(const Exponential& copy);
 
         // Método que executa a equação (herdado da classe Flow)
-        virtual double execute();
+        virtual double equation();
 };
 
 #endif // EXPONENTIAL_HPP

@@ -8,23 +8,23 @@ Model::~Model() {}
 void Model::execute(double start, double end, double increment)
 {
     vector<double> values;
-    System *input;
-    System *output;
+    System *source;
+    System *target;
     int j = 0;
 
     for (double time = start; time < end; time += increment)
     {
         for (vector<Flow *>::iterator it = flows.begin(); it != flows.end(); ++it)
         {
-            values.push_back((*it)->execute());
+            values.push_back((*it)->equation());
         }
 
         for (vector<Flow *>::iterator it = flows.begin(); it != flows.end(); ++it)
         {
-            input = (*it)->getSource();
-            input->setValue(input->getValue() - values[j]);
-            output = (*it)->getTarget();
-            output->setValue(output->getValue() + values[j]);
+            source = (*it)->getSource();
+            source->setValue(source->getValue() - values[j]);
+            target = (*it)->getTarget();
+            target->setValue(target->getValue() + values[j]);
             j++;
         }
     }
