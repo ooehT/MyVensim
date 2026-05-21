@@ -90,6 +90,7 @@ Model &Model::operator=(Model &copy)
         return (*this);
     sys.clear();
     flows.clear();
+    
     System *saux;
     for (vector<System *>::iterator it = copy.getSystems().begin(); it != copy.getSystems().end(); ++it)
     {

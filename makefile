@@ -1,9 +1,9 @@
 all:
-	g++ -I src -I test src/*.cpp test/*.cpp -o programa
-
+	mkdir -p bin
+	g++ -I src -I test src/*.cpp test/*.cpp -o bin/programa
 
 run:
-	./programa
+	./bin/programa
 
 clean:
-	rm -f programa
+	rm -f bin/programa

@@ -33,7 +33,7 @@ void logisticalFuncionalTest(){
 
     assert(fabs(s1->getValue() - 88.2167) <= 0.0001);
     assert(fabs(s2->getValue() - 21.7833) <= 0.0001);
-    assert(fabs(logistico->execute() - 0.150046) < 0.0001);
+    assert(fabs(logistico->execute() - 0.150046) <= 0.0001);
 }
 
 void complexFuncionalTest(){
