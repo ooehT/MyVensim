@@ -2,7 +2,7 @@
 #define FLOW_HPP
 
 #include <string>
-#include "system.hpp"
+#include "System.hpp"
 
 class Flow {
     protected:
