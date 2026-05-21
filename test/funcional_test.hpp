@@ -4,7 +4,7 @@
 #include "model.hpp"
 #include "System.hpp"
 #include "exponential.hpp"
-#include "logistic.hpp" // Certifique-se de que o nome deste arquivo está correto no seu projeto
+#include "logistic.hpp" 
 
 // Declaração das funções de testes funcionais
 void exponentialFuncionalTest();
