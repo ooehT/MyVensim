@@ -1,8 +1,8 @@
-#ifndef FUNCTIONAL_TEST_HPP
-#define FUNCTIONAL_TEST_HPP
+#ifndef FUNCIONAL_TEST_HPP
+#define FUNCIONAL_TEST_HPP
 
 #include "model.hpp"
-#include "system.hpp"
+#include "System.hpp"
 #include "exponential.hpp"
 #include "logistic.hpp" // Certifique-se de que o nome deste arquivo está correto no seu projeto
 

@@ -12,7 +12,7 @@ class Exponential : public Flow {
         Exponential();
 
         // Construtor com parâmetros (específico da sua regra de negócio)
-        Exponential(string name, System *input, System *output);
+        Exponential(string name, System *source, System *target);
 
         // 2. Destrutor (virtual para garantir a correta destruição na herança)
         virtual ~Exponential();

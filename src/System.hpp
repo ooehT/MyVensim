@@ -11,7 +11,7 @@ class System {
         string name;
 
     public:
-        System &operator=(System&);
+        System &operator=(const System&);
         System(const System& sys);
         System();
         System(string name, double value);

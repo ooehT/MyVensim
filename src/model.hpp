@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <string>
-#include "system.hpp"
+#include "System.hpp"
 #include "flow.hpp"
 
 using namespace std;
@@ -14,14 +14,11 @@ class Model {
         vector<System*> sys;
         string name;
         
-    private:
-        Model &operator=(Model&);
-        Model(const Model &copy);
-        
     public:
         Model();
         virtual ~Model();
-        
+        Model &operator=(Model&);
+        Model(const Model &copy);
         void execute(double start, double end, double increment);
         
         void add(System* s);

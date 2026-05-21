@@ -1,5 +1,5 @@
 #include <iostream>
-#include "system.hpp"
+#include "System.hpp"
 
 System::System() {
     this->name = "Default system";

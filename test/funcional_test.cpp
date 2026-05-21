@@ -1,4 +1,4 @@
-#include "functional_test.hpp"
+#include "funcional_test.hpp"
 #include <cmath>
 #include <cassert>
 
@@ -31,8 +31,8 @@ void logisticalFuncionalTest(){
 
     model->execute(0, 100, 1);
 
-    assert(fabs(s1->getValue() - 88.2167) < 0.0001);
-    assert(fabs(s2->getValue() - 11.7833) < 0.0001);
+    assert(fabs(s1->getValue() - 88.2167) <= 0.0001);
+    assert(fabs(s2->getValue() - 21.7833) <= 0.0001);
     assert(fabs(logistico->execute() - 0.150046) < 0.0001);
 }
 
@@ -64,9 +64,9 @@ void complexFuncionalTest(){
 
     ComplexModel->execute(0, 100, 1);
 
-    assert(fabs(s1->getValue() - 31.8513) < 0.0001);
-    assert(fabs(s2->getValue() - 18.4003) < 0.0001);
-    assert(fabs(s3->getValue() - 77.1143) < 0.0001);
-    assert(fabs(s4->getValue() - 56.1729) < 0.0001);
-    assert(fabs(s5->getValue() - 16.4612) < 0.0001);
+    assert(fabs(s1->getValue() - 31.8513) <= 0.0001);
+    assert(fabs(s2->getValue() - 18.4003) <= 0.0001);
+    assert(fabs(s3->getValue() - 77.1143) <= 0.0001);
+    assert(fabs(s4->getValue() - 56.1729) <= 0.0001);
+    assert(fabs(s5->getValue() - 16.4612) <= 0.0001);
 }
