@@ -1,0 +1,37 @@
+\doxysection{flow.\+hpp}
+\hypertarget{flow_8hpp_source}{}\label{flow_8hpp_source}\index{src/flow.hpp@{src/flow.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLOW\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLOW\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}System.hpp"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }Flow\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ source;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ target;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ Flow();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ Flow(\textcolor{keywordtype}{string}\ name,\ \doxymbox{\hyperlink{class_system}{System}}*\ source,\ \doxymbox{\hyperlink{class_system}{System}}*\ target);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ Flow(\textcolor{keyword}{const}\ Flow\ \&f);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ Flow\ \&operator=(\textcolor{keyword}{const}\ Flow\ \&f);\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Flow();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ equation()\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setSource(\doxymbox{\hyperlink{class_system}{System}}*\ source);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ getSource()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setTarget(\doxymbox{\hyperlink{class_system}{System}}*\ target);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ getTarget()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ getName()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&value);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeSource();}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeTarget();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

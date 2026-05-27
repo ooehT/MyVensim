@@ -1,0 +1,93 @@
+\doxysection{Flow Class Reference}
+\hypertarget{class_flow}{}\label{class_flow}\index{Flow@{Flow}}
+
+
+Inheritance diagram for Flow:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_flow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_flow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_flow_ad3276465420fca89dfce1a3818465562}\label{class_flow_ad3276465420fca89dfce1a3818465562} 
+{\bfseries Flow} (string name, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\item 
+\Hypertarget{class_flow_af559e47422fbdeeff9b65a0756632cf9}\label{class_flow_af559e47422fbdeeff9b65a0756632cf9} 
+{\bfseries Flow} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&f)
+\item 
+\Hypertarget{class_flow_ac5fae2ad1c3bf3c518240fe85bc2d4b2}\label{class_flow_ac5fae2ad1c3bf3c518240fe85bc2d4b2} 
+\doxymbox{\hyperlink{class_flow}{Flow}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&f)
+\item 
+virtual double \doxymbox{\hyperlink{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}} ()=0
+\item 
+\Hypertarget{class_flow_a250fc53158862fc0db77b323a33e48a3}\label{class_flow_a250fc53158862fc0db77b323a33e48a3} 
+void {\bfseries set\+Source} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source)
+\item 
+\Hypertarget{class_flow_a1f3858f90d141807377c2640fb5dd0fc}\label{class_flow_a1f3858f90d141807377c2640fb5dd0fc} 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Source} () const
+\item 
+\Hypertarget{class_flow_ab69903880174e5bcdc0d815b5de7b3e0}\label{class_flow_ab69903880174e5bcdc0d815b5de7b3e0} 
+void {\bfseries set\+Target} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\item 
+\Hypertarget{class_flow_aff8a0f8ca8dc50d37c92ab7556e172b5}\label{class_flow_aff8a0f8ca8dc50d37c92ab7556e172b5} 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Target} () const
+\item 
+\Hypertarget{class_flow_a62bbc54ff95eeb0795511519edf32077}\label{class_flow_a62bbc54ff95eeb0795511519edf32077} 
+string {\bfseries get\+Name} () const
+\item 
+\Hypertarget{class_flow_a60277f8a609ad446fafcc7b7cab828bb}\label{class_flow_a60277f8a609ad446fafcc7b7cab828bb} 
+void {\bfseries set\+Name} (const string \&value)
+\item 
+\Hypertarget{class_flow_afa44322a8e8901bcd4e1d93a726e5ece}\label{class_flow_afa44322a8e8901bcd4e1d93a726e5ece} 
+void {\bfseries remove\+Source} ()
+\item 
+\Hypertarget{class_flow_a2fa57a27502f45801a35bfa5f3258d23}\label{class_flow_a2fa57a27502f45801a35bfa5f3258d23} 
+void {\bfseries remove\+Target} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_flow_a8801d2ed91a9d96003d4bc8024451551}\label{class_flow_a8801d2ed91a9d96003d4bc8024451551} 
+string {\bfseries name}
+\item 
+\Hypertarget{class_flow_a963ca162995d112f0f30322e2bb9de63}\label{class_flow_a963ca162995d112f0f30322e2bb9de63} 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries source}
+\item 
+\Hypertarget{class_flow_a87be88d9bae4e927b29205faabeaf387}\label{class_flow_a87be88d9bae4e927b29205faabeaf387} 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\end{DoxyCompactItemize}
+
+
+\label{class_flow_doc-func-members}
+\Hypertarget{class_flow_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2}\index{Flow@{Flow}!equation@{equation}}
+\index{equation@{equation}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily \label{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2} 
+virtual double Flow::\+equation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \doxymbox{\hyperlink{class_logistic_a2e209962a1bd0f0eb767c45e7146f83d}{Logistic}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+flow.\+hpp\item 
+src/\+flow.\+cpp\end{DoxyCompactItemize}

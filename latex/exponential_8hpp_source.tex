@@ -1,0 +1,36 @@
+\doxysection{exponential.\+hpp}
+\hypertarget{exponential_8hpp_source}{}\label{exponential_8hpp_source}\index{src/exponential.hpp@{src/exponential.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EXPONENTIAL\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EXPONENTIAL\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}flow.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }Exponential\ :\ \textcolor{keyword}{public}\ Flow\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 1.\ Construtor\ Padrão}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ Exponential();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Construtor\ com\ parâmetros\ (específico\ da\ sua\ regra\ de\ negócio)}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ Exponential(\textcolor{keywordtype}{string}\ name,\ \doxymbox{\hyperlink{class_system}{System}}\ *source,\ \doxymbox{\hyperlink{class_system}{System}}\ *target);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 2.\ Destrutor\ (virtual\ para\ garantir\ a\ correta\ destruição\ na\ herança)}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Exponential();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 3.\ Construtor\ de\ Cópia}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ Exponential(\textcolor{keyword}{const}\ Exponential\&\ copy);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 4.\ Operador\ de\ Atribuição}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Exponential\&\ operator=(\textcolor{keyword}{const}\ Exponential\&\ copy);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ que\ executa\ a\ equação\ (herdado\ da\ classe\ Flow)}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ equation();}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EXPONENTIAL\_HPP}}
+
+\end{DoxyCode}

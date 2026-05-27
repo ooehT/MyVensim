@@ -1,0 +1,173 @@
+\doxysection{Logistic Class Reference}
+\hypertarget{class_logistic}{}\label{class_logistic}\index{Logistic@{Logistic}}
+
+
+Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo.  
+
+
+
+
+{\ttfamily \+\#include $<$logistic.\+hpp$>$}
+
+
+
+Inheritance diagram for Logistic:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_logistic__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logistic:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_logistic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_logistic_ae137bd4c8e3d59f2860b89b4e8a5f43c}\label{class_logistic_ae137bd4c8e3d59f2860b89b4e8a5f43c} 
+{\bfseries Logistic} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \doxylink{class_logistic}{Logistic}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_logistic_a263e8aacb43b07818e5267ebcc5804b0}{Logistic}} (string name, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
+\Hypertarget{class_logistic_a749e39ff99fbd5a042fcd98dc5d75601}\label{class_logistic_a749e39ff99fbd5a042fcd98dc5d75601} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Logistic} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_logistic_aacf68849fd0ffe5fda907c8e3d7d45db}{Logistic}} (const \doxymbox{\hyperlink{class_logistic}{Logistic}} \&copy)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_logistic}{Logistic}} \& \doxymbox{\hyperlink{class_logistic_a0db84d8cceb003df0a448e1249dc9f2e}{operator=}} (const \doxymbox{\hyperlink{class_logistic}{Logistic}} \&copy)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição sobrecarregado. \end{DoxyCompactList}\item 
+virtual double \doxymbox{\hyperlink{class_logistic_a2e209962a1bd0f0eb767c45e7146f83d}{equation}} ()
+\begin{DoxyCompactList}\small\item\em Calcula a taxa de variação usando a equação logística. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Flow} (string name, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source, \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\item 
+{\bfseries Flow} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&f)
+\item 
+\doxymbox{\hyperlink{class_flow}{Flow}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_flow}{Flow}} \&f)
+\item 
+void {\bfseries set\+Source} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}source)
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Source} () const
+\item 
+void {\bfseries set\+Target} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}target)
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Target} () const
+\item 
+string {\bfseries get\+Name} () const
+\item 
+void {\bfseries set\+Name} (const string \&value)
+\item 
+void {\bfseries remove\+Source} ()
+\item 
+void {\bfseries remove\+Target} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries name}
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries source}
+\item 
+\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo. 
+
+A classe \doxylink{class_logistic}{Logistic} herda de \doxylink{class_flow}{Flow} e implementa a equação matemática correspondente ao crescimento logístico em sistemas dinâmicos. 
+
+\label{class_logistic_doc-constructors}
+\Hypertarget{class_logistic_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_logistic_a263e8aacb43b07818e5267ebcc5804b0}\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_logistic_a263e8aacb43b07818e5267ebcc5804b0} 
+Logistic::\+\+Logistic (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{source}{, }\item[{\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})}
+
+
+
+Construtor parametrizado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Nome do fluxo. \\
+\hline
+{\em source} & Ponteiro para o sistema de origem (input). \\
+\hline
+{\em target} & Ponteiro para o sistema de destino (output). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_logistic_aacf68849fd0ffe5fda907c8e3d7d45db}\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_logistic_aacf68849fd0ffe5fda907c8e3d7d45db} 
+Logistic::\+\+Logistic (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_logistic}{Logistic}} \&}]{copy}{}\end{DoxyParamCaption})}
+
+
+
+Construtor de cópia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Objeto do tipo \doxylink{class_logistic}{Logistic} que será copiado. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_logistic_doc-func-members}
+\Hypertarget{class_logistic_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_logistic_a2e209962a1bd0f0eb767c45e7146f83d}\index{Logistic@{Logistic}!equation@{equation}}
+\index{equation@{equation}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{equation()}{equation()}}
+{\footnotesize\ttfamily \label{class_logistic_a2e209962a1bd0f0eb767c45e7146f83d} 
+double Logistic::\+equation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calcula a taxa de variação usando a equação logística. 
+
+\begin{DoxyReturn}{Returns}
+O resultado do cálculo da taxa (double).
+\end{DoxyReturn}
+Baseia-\/se no valor atual do sistema alvo e em uma constante limitante. 
+
+Implements \doxymbox{\hyperlink{class_flow}{Flow}}.
+
+\Hypertarget{class_logistic_a0db84d8cceb003df0a448e1249dc9f2e}\index{Logistic@{Logistic}!operator=@{operator=}}
+\index{operator=@{operator=}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_logistic_a0db84d8cceb003df0a448e1249dc9f2e} 
+\doxymbox{\hyperlink{class_logistic}{Logistic}} \& Logistic::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_logistic}{Logistic}} \&}]{copy}{}\end{DoxyParamCaption})}
+
+
+
+Operador de atribuição sobrecarregado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & Objeto do tipo \doxylink{class_logistic}{Logistic} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referência para o objeto atual atualizado. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{logistic_8hpp}{logistic.\+hpp}}\item 
+src/\+logistic.\+cpp\end{DoxyCompactItemize}

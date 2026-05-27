@@ -1,0 +1,69 @@
+\doxysection{test/\+funcional\+\_\+test.hpp File Reference}
+\hypertarget{funcional__test_8hpp}{}\label{funcional__test_8hpp}\index{test/funcional\_test.hpp@{test/funcional\_test.hpp}}
+
+
+Arquivo contendo as assinaturas dos testes funcionais da simulação.  
+
+
+{\ttfamily \+\#include "{}model.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}System.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}exponential.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}logistic.\+hpp"{}}\newline
+Include dependency graph for funcional\+\_\+test.\+hpp:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__test_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{funcional__test_8hpp_a2c448ffaffdff4b03c825a01dffa6f27}{exponential\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Executa o teste funcional para fluxos exponenciais simples. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{funcional__test_8hpp_a60914db64bde71b56d69320797266c29}{logistical\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Executa o teste funcional para dinâmica de fluxos logísticos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{funcional__test_8hpp_a943dfe0c597a01c9760c140715fed527}{complex\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Executa um teste funcional complexo unindo múltiplos sistemas interconectados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Arquivo contendo as assinaturas dos testes funcionais da simulação. 
+
+
+
+\label{funcional__test_8hpp_doc-func-members}
+\Hypertarget{funcional__test_8hpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{funcional__test_8hpp_a943dfe0c597a01c9760c140715fed527}\index{funcional\_test.hpp@{funcional\_test.hpp}!complexFuncionalTest@{complexFuncionalTest}}
+\index{complexFuncionalTest@{complexFuncionalTest}!funcional\_test.hpp@{funcional\_test.hpp}}
+\doxysubsubsection{\texorpdfstring{complexFuncionalTest()}{complexFuncionalTest()}}
+{\footnotesize\ttfamily \label{funcional__test_8hpp_a943dfe0c597a01c9760c140715fed527} 
+void complex\+Funcional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executa um teste funcional complexo unindo múltiplos sistemas interconectados. 
+
+Cria uma malha de 5 sistemas e 6 fluxos exponenciais simultâneos para validar o comportamento concorrente das equações do modelo. \Hypertarget{funcional__test_8hpp_a2c448ffaffdff4b03c825a01dffa6f27}\index{funcional\_test.hpp@{funcional\_test.hpp}!exponentialFuncionalTest@{exponentialFuncionalTest}}
+\index{exponentialFuncionalTest@{exponentialFuncionalTest}!funcional\_test.hpp@{funcional\_test.hpp}}
+\doxysubsubsection{\texorpdfstring{exponentialFuncionalTest()}{exponentialFuncionalTest()}}
+{\footnotesize\ttfamily \label{funcional__test_8hpp_a2c448ffaffdff4b03c825a01dffa6f27} 
+void exponential\+Funcional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executa o teste funcional para fluxos exponenciais simples. 
+
+Cria um modelo contendo dois sistemas (s1 com 100, s2 com 0) ligados por um fluxo exponencial e valida se as equações de decaimento condizem com as asserções matemáticas. \Hypertarget{funcional__test_8hpp_a60914db64bde71b56d69320797266c29}\index{funcional\_test.hpp@{funcional\_test.hpp}!logisticalFuncionalTest@{logisticalFuncionalTest}}
+\index{logisticalFuncionalTest@{logisticalFuncionalTest}!funcional\_test.hpp@{funcional\_test.hpp}}
+\doxysubsubsection{\texorpdfstring{logisticalFuncionalTest()}{logisticalFuncionalTest()}}
+{\footnotesize\ttfamily \label{funcional__test_8hpp_a60914db64bde71b56d69320797266c29} 
+void logistical\+Funcional\+Test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executa o teste funcional para dinâmica de fluxos logísticos. 
+
+Configura um ambiente de teste simulando restrição de crescimento logístico. 

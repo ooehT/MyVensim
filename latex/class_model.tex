@@ -1,0 +1,169 @@
+\doxysection{Model Class Reference}
+\hypertarget{class_model}{}\label{class_model}\index{Model@{Model}}
+
+
+Classe container que gerencia múltiplos sistemas e fluxos, executando o cenário de simulação.  
+
+
+
+
+{\ttfamily \+\#include $<$model.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048} 
+{\bfseries Model} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Model} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual responsável por liberar a estrutura (se aplicável). \end{DoxyCompactList}\item 
+\Hypertarget{class_model_a2ca8bb29dd6200df85277b488113403d}\label{class_model_a2ca8bb29dd6200df85277b488113403d} 
+\doxymbox{\hyperlink{class_model}{Model}} \& {\bfseries operator=} (\doxymbox{\hyperlink{class_model}{Model}} \&)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição para cópia profunda de modelos. \end{DoxyCompactList}\item 
+\Hypertarget{class_model_acfedf88472925094c2cdd06c01236dd8}\label{class_model_acfedf88472925094c2cdd06c01236dd8} 
+{\bfseries Model} (const \doxymbox{\hyperlink{class_model}{Model}} \&copy)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_ab1448dd54d29d147b2695eb7bc768fbd}{execute}} (double start, double end, double increment)
+\begin{DoxyCompactList}\small\item\em Executa a simulação do modelo em um intervalo de tempo determinado. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_a054350312f72e04ef46fe5b14f987735}{add}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}s)
+\begin{DoxyCompactList}\small\item\em Adiciona um novo sistema ao ecossistema do modelo. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_model_a237ff1636694a6e26ff280c8d122540e}{add}} (\doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}f)
+\begin{DoxyCompactList}\small\item\em Adiciona um novo fluxo ao ecossistema do modelo. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_model_a1ef4eeb098d8e3ac58eac97295468674}{remove}} (\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Remove um sistema específico do modelo. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_model_afc1a1073edd5c05c52f6375e95d1c71a}{remove}} (\doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Remove um fluxo específico do modelo. \end{DoxyCompactList}\item 
+\Hypertarget{class_model_a5436cb219f504aad73334523a5a46432}\label{class_model_a5436cb219f504aad73334523a5a46432} 
+vector$<$ \doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Flows} () const
+\begin{DoxyCompactList}\small\item\em Recupera o vetor de fluxos do modelo. \end{DoxyCompactList}\item 
+\Hypertarget{class_model_a0eb16f5a1e4b7405bffaef078b536d49}\label{class_model_a0eb16f5a1e4b7405bffaef078b536d49} 
+vector$<$ \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Systems} () const
+\begin{DoxyCompactList}\small\item\em Recupera o vetor de sistemas do modelo. \end{DoxyCompactList}\item 
+\Hypertarget{class_model_a65e1711255fbab5883708002ef89f773}\label{class_model_a65e1711255fbab5883708002ef89f773} 
+string {\bfseries get\+Name} () const
+\begin{DoxyCompactList}\small\item\em Getter do nome do modelo. \end{DoxyCompactList}\item 
+\Hypertarget{class_model_add74cdef0434cac9d53d46950f1084bf}\label{class_model_add74cdef0434cac9d53d46950f1084bf} 
+void {\bfseries set\+Name} (const string \&value)
+\begin{DoxyCompactList}\small\item\em Setter do nome do modelo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}
+\item 
+vector$<$ \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_a0ad9eca5f7874e06be69db9aa726857a}{sys}}
+\item 
+string \doxymbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe container que gerencia múltiplos sistemas e fluxos, executando o cenário de simulação. 
+
+\label{class_model_doc-func-members}
+\Hypertarget{class_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_a237ff1636694a6e26ff280c8d122540e}\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_model_a237ff1636694a6e26ff280c8d122540e} 
+void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}}]{f}{}\end{DoxyParamCaption})}
+
+
+
+Adiciona um novo fluxo ao ecossistema do modelo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Ponteiro do objeto do tipo \doxylink{class_flow}{Flow}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_a054350312f72e04ef46fe5b14f987735}\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_model_a054350312f72e04ef46fe5b14f987735} 
+void Model::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Adiciona um novo sistema ao ecossistema do modelo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Ponteiro do objeto do tipo \doxylink{class_system}{System}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_ab1448dd54d29d147b2695eb7bc768fbd}\index{Model@{Model}!execute@{execute}}
+\index{execute@{execute}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_model_ab1448dd54d29d147b2695eb7bc768fbd} 
+void Model::\+execute (\begin{DoxyParamCaption}\item[{double}]{start}{, }\item[{double}]{end}{, }\item[{double}]{increment}{}\end{DoxyParamCaption})}
+
+
+
+Executa a simulação do modelo em um intervalo de tempo determinado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Tempo inicial da simulação. \\
+\hline
+{\em end} & Tempo final da simulação. \\
+\hline
+{\em increment} & O passo de tempo executado a cada iteração. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_afc1a1073edd5c05c52f6375e95d1c71a}\index{Model@{Model}!remove@{remove}}
+\index{remove@{remove}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_model_afc1a1073edd5c05c52f6375e95d1c71a} 
+bool Model::\+remove (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow}{}\end{DoxyParamCaption})}
+
+
+
+Remove um fluxo específico do modelo. 
+
+\begin{DoxyReturn}{Returns}
+true se removido com sucesso, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_model_a1ef4eeb098d8e3ac58eac97295468674}\index{Model@{Model}!remove@{remove}}
+\index{remove@{remove}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_model_a1ef4eeb098d8e3ac58eac97295468674} 
+bool Model::\+remove (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}}]{system}{}\end{DoxyParamCaption})}
+
+
+
+Remove um sistema específico do modelo. 
+
+\begin{DoxyReturn}{Returns}
+true se removido com sucesso, false caso contrário. 
+\end{DoxyReturn}
+
+
+\label{class_model_doc-variable-members}
+\Hypertarget{class_model_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}\index{Model@{Model}!flows@{flows}}
+\index{flows@{flows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily \label{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a} 
+vector$<$\doxymbox{\hyperlink{class_flow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model::\+flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vetor contendo os fluxos pertencentes ao modelo. \Hypertarget{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}\index{Model@{Model}!name@{name}}
+\index{name@{name}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_model_a2d9aef6a80a205a03e4e99b5483af9a0} 
+string Model::\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nome identificador do modelo. \Hypertarget{class_model_a0ad9eca5f7874e06be69db9aa726857a}\index{Model@{Model}!sys@{sys}}
+\index{sys@{sys}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{sys}{sys}}
+{\footnotesize\ttfamily \label{class_model_a0ad9eca5f7874e06be69db9aa726857a} 
+vector$<$\doxymbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*}$>$ Model::\+sys\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vetor contendo os sistemas pertencentes ao modelo. 
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{model_8hpp}{model.\+hpp}}\item 
+src/\+model.\+cpp\end{DoxyCompactItemize}
