@@ -28,9 +28,7 @@ class Model {
         Model();
         /** @brief Destrutor virtual responsável por liberar a estrutura (se aplicável). */
         virtual ~Model();
-        /** @brief Operador de atribuição para cópia profunda de modelos. */
-        Model &operator=(Model&);
-        /** @brief Construtor de cópia. */
+        Model &operator=(const Model&);
         Model(const Model &copy);
         
         /**
