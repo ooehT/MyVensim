@@ -32,7 +32,8 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -47,9 +48,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_system_8hpp_source.html"
+"System_8hpp_source.html"
 ];
 
-const SYNCONMSG = 'click to disable panel synchronization';
-const SYNCOFFMSG = 'click to enable panel synchronization';
-const LISTOFALLMEMBERS = 'List of all members';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

@@ -84,45 +84,20 @@ bool Model::remove(Flow *flow)
     return false;
 }
 
-Model &Model::operator=(Model &copy)
+Model& Model::operator=(const Model& copy)
 {
-    if (&copy == this)
-        return (*this);
-    sys.clear();
-    flows.clear();
-    
-    System *saux;
-    for (vector<System *>::iterator it = copy.getSystems().begin(); it != copy.getSystems().end(); ++it)
-    {
-        saux = (*it);
-        this->add(saux);
-    }
+    if (this == &copy)
+        return *this;
 
-    Flow *faux;
-    for (vector<Flow *>::iterator it = copy.getFlows().begin(); it != copy.getFlows().end(); ++it)
-    {
-        faux = (*it);
-        this->add(faux);
-    }
+    name = copy.name;
+    sys = copy.sys;
+    flows = copy.flows;
 
-    return (*this);
+    return *this;
 }
-
-Model::Model(const Model &copy)
+Model::Model(const Model& copy)
 {
-    this->setName(copy.getName());
-
-    System *saux;
-    for (vector<System *>::iterator it = copy.getSystems().begin(); it != copy.getSystems().end(); ++it)
-    {
-        saux = (*it);
-        this->add(saux);
-    }
-
-    Flow *faux;
-    for (vector<Flow *>::iterator it = copy.getFlows().begin(); it != copy.getFlows().end(); ++it)
-    {
-        faux = (*it);
-        this->add(faux);
-    }
+    name = copy.name;
+    sys = copy.sys;
+    flows = copy.flows;
 }

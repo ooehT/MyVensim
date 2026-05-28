@@ -10,27 +10,22 @@
 \DoxyCodeLine{00006\ }
 \DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }Exponential\ :\ \textcolor{keyword}{public}\ Flow\ \{}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 1.\ Construtor\ Padrão}}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ Exponential();}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Construtor\ com\ parâmetros\ (específico\ da\ sua\ regra\ de\ negócio)}}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ Exponential(\textcolor{keywordtype}{string}\ name,\ \doxymbox{\hyperlink{class_system}{System}}\ *source,\ \doxymbox{\hyperlink{class_system}{System}}\ *target);}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 2.\ Destrutor\ (virtual\ para\ garantir\ a\ correta\ destruição\ na\ herança)}}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Exponential();}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 3.\ Construtor\ de\ Cópia}}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ Exponential(\textcolor{keyword}{const}\ Exponential\&\ copy);}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 4.\ Operador\ de\ Atribuição}}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ Exponential\&\ operator=(\textcolor{keyword}{const}\ Exponential\&\ copy);}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Método\ que\ executa\ a\ equação\ (herdado\ da\ classe\ Flow)}}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ equation();}
-\DoxyCodeLine{00028\ \};}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EXPONENTIAL\_HPP}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponential}{Exponential}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classExponential_abc75eaef5b5f89656c4aa406aceb3c27}{Exponential}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classExponential_abc75eaef5b5f89656c4aa406aceb3c27}{Exponential}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \mbox{\hyperlink{classSystem}{System}}\ *\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classExponential_adf997c8c44ac0a3e0d76ba9e32ebb5ec}{\string~Exponential}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classExponential_abc75eaef5b5f89656c4aa406aceb3c27}{Exponential}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classExponential}{Exponential}}\ \&copy);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classExponential}{Exponential}}\ \&\mbox{\hyperlink{classExponential_a20f6d89edeb3b057390f04b1f3d8c5aa}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classExponential}{Exponential}}\ \&copy);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classExponential_a4c032c0f7d3983c9a8bf392eeb6d5517}{equation}}();}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EXPONENTIAL\_HPP}}
 
 \end{DoxyCode}
