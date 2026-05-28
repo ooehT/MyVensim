@@ -17,7 +17,7 @@ class Model {
     public:
         Model();
         virtual ~Model();
-        Model &operator=(Model&);
+        Model &operator=(const Model&);
         Model(const Model &copy);
         void execute(double start, double end, double increment);
         
