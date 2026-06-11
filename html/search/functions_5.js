@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7elogistic_0',['~Logistic',['../classLogistic.html#a749e39ff99fbd5a042fcd98dc5d75601',1,'Logistic']]],
-  ['_7esystem_1',['~System',['../classSystem.html#a2fc0f34023977cab9b628aa9f734d88c',1,'System']]]
+  ['logistic_0',['Logistic',['../classLogistic.html#ae137bd4c8e3d59f2860b89b4e8a5f43c',1,'Logistic::Logistic()'],['../classLogistic.html#a263e8aacb43b07818e5267ebcc5804b0',1,'Logistic::Logistic(string name, System *source, System *target)'],['../classLogistic.html#aacf68849fd0ffe5fda907c8e3d7d45db',1,'Logistic::Logistic(const Logistic &amp;copy)']]],
+  ['logisticalfuncionaltest_1',['logisticalFuncionalTest',['../funcional__test_8cpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_test.cpp'],['../funcional__test_8hpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_test.cpp']]]
 ];

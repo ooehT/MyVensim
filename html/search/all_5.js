@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../classSystem.html#ae18abe3a2be7157cd1f505eaf3e571f2',1,'System']]],
-  ['operator_3d_1',['operator=',['../classLogistic.html#a0db84d8cceb003df0a448e1249dc9f2e',1,'Logistic']]]
+  ['logistic_0',['Logistic',['../classLogistic.html',1,'Logistic'],['../classLogistic.html#ae137bd4c8e3d59f2860b89b4e8a5f43c',1,'Logistic::Logistic()'],['../classLogistic.html#a263e8aacb43b07818e5267ebcc5804b0',1,'Logistic::Logistic(string name, System *source, System *target)'],['../classLogistic.html#aacf68849fd0ffe5fda907c8e3d7d45db',1,'Logistic::Logistic(const Logistic &amp;copy)']]],
+  ['logistic_2ecpp_1',['Logistic.cpp',['../Logistic_8cpp.html',1,'']]],
+  ['logistic_2ehpp_2',['Logistic.hpp',['../Logistic_8hpp.html',1,'']]],
+  ['logisticalfuncionaltest_3',['logisticalFuncionalTest',['../funcional__test_8cpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_test.cpp'],['../funcional__test_8hpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_test.cpp']]]
 ];

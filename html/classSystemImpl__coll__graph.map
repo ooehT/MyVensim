@@ -1,5 +1,5 @@
 <map id="SystemImpl" name="SystemImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,105,109"/>
+<area shape="rect" id="Node000001" title="Implementação concreta de um sistema da simulação." alt="" coords="5,81,105,109"/>
 <area shape="rect" id="Node000002" href="$classSystem.html" title="Representa um sistema contendo um valor associado." alt="" coords="20,5,90,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,47,58,81,52,80,53,51"/>
 </map>

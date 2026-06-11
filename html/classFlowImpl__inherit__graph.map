@@ -1,9 +1,9 @@
 <map id="FlowImpl" name="FlowImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="68,81,150,109"/>
-<area shape="rect" id="Node000003" href="$classExponential.html" title=" " alt="" coords="5,157,104,184"/>
+<area shape="rect" id="Node000001" title="Implementação base de um fluxo da simulação." alt="" coords="68,81,150,109"/>
+<area shape="rect" id="Node000003" href="$classExponential.html" title="Representa um fluxo com comportamento exponencial." alt="" coords="5,157,104,184"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="93,120,66,158,62,154,88,122"/>
 <area shape="rect" id="Node000004" href="$classLogistic.html" title="Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo." alt="" coords="128,157,200,184"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,119,157,156,151,156,127,124"/>
-<area shape="rect" id="Node000002" href="$classFlow.html" title=" " alt="" coords="83,5,135,33"/>
+<area shape="rect" id="Node000002" href="$classFlow.html" title="Interface que define um fluxo da simulação." alt="" coords="83,5,135,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,46,112,81,107,80,108,51"/>
 </map>

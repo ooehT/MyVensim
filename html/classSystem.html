@@ -104,27 +104,49 @@ Inheritance diagram for System:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2fc0f34023977cab9b628aa9f734d88c" id="r_a2fc0f34023977cab9b628aa9f734d88c"><td class="memItemLeft" align="right" valign="top"><a id="a2fc0f34023977cab9b628aa9f734d88c" name="a2fc0f34023977cab9b628aa9f734d88c"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~System</b> ()</td></tr>
-<tr class="memdesc:a2fc0f34023977cab9b628aa9f734d88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual da classe. <br /></td></tr>
+<tr class="memitem:a2fc0f34023977cab9b628aa9f734d88c" id="r_a2fc0f34023977cab9b628aa9f734d88c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc0f34023977cab9b628aa9f734d88c">~System</a> ()</td></tr>
+<tr class="memdesc:a2fc0f34023977cab9b628aa9f734d88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual da classe.  <br /></td></tr>
 <tr class="memitem:ab4f23c21832d6bbef462a5a20b296912" id="r_ab4f23c21832d6bbef462a5a20b296912"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4f23c21832d6bbef462a5a20b296912">getName</a> () const =0</td></tr>
-<tr class="memdesc:ab4f23c21832d6bbef462a5a20b296912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o nome do sistema.  <br /></td></tr>
+<tr class="memdesc:ab4f23c21832d6bbef462a5a20b296912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o nome do sistema.  <br /></td></tr>
 <tr class="memitem:ae4f2ee70d2cea415e95ecb6c51a037df" id="r_ae4f2ee70d2cea415e95ecb6c51a037df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4f2ee70d2cea415e95ecb6c51a037df">setName</a> (const string &amp;)=0</td></tr>
-<tr class="memdesc:ae4f2ee70d2cea415e95ecb6c51a037df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o nome do sistema.  <br /></td></tr>
+<tr class="memdesc:ae4f2ee70d2cea415e95ecb6c51a037df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Altera o nome do sistema.  <br /></td></tr>
 <tr class="memitem:a41b673faa6c199eb8e4f204639fab4f2" id="r_a41b673faa6c199eb8e4f204639fab4f2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41b673faa6c199eb8e4f204639fab4f2">getValue</a> () const =0</td></tr>
-<tr class="memdesc:a41b673faa6c199eb8e4f204639fab4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o valor armazenado no sistema.  <br /></td></tr>
+<tr class="memdesc:a41b673faa6c199eb8e4f204639fab4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtém o valor armazenado no sistema.  <br /></td></tr>
 <tr class="memitem:a95e6d4c1ce05b47b5fa743fd2401dd03" id="r_a95e6d4c1ce05b47b5fa743fd2401dd03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e6d4c1ce05b47b5fa743fd2401dd03">setValue</a> (double)=0</td></tr>
-<tr class="memdesc:a95e6d4c1ce05b47b5fa743fd2401dd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define um novo valor para o sistema.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:ae18abe3a2be7157cd1f505eaf3e571f2" id="r_ae18abe3a2be7157cd1f505eaf3e571f2"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae18abe3a2be7157cd1f505eaf3e571f2">operator&lt;&lt;</a> (ostream &amp;out, const <a class="el" href="classSystem.html">System</a> &amp;s)</td></tr>
-<tr class="memdesc:ae18abe3a2be7157cd1f505eaf3e571f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga do operador de saída.  <br /></td></tr>
+<tr class="memdesc:a95e6d4c1ce05b47b5fa743fd2401dd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifica o valor armazenado.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representa um sistema contendo um valor associado. </p>
 <p>A classe <a class="el" href="classSystem.html" title="Representa um sistema contendo um valor associado.">System</a> armazena um nome identificador e um valor numérico utilizado durante a simulação. </p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2fc0f34023977cab9b628aa9f734d88c" name="a2fc0f34023977cab9b628aa9f734d88c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc0f34023977cab9b628aa9f734d88c">&#9670;&#160;</a></span>~System()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual System::~System </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destrutor virtual da classe. </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ab4f23c21832d6bbef462a5a20b296912" name="ab4f23c21832d6bbef462a5a20b296912"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab4f23c21832d6bbef462a5a20b296912">&#9670;&#160;</a></span>getName()</h2>
 
@@ -148,8 +170,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna o nome do sistema. </p>
-<dl class="section return"><dt>Returns</dt><dd>Nome do sistema. </dd></dl>
+<p>Obtém o nome do sistema. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nome identificador do sistema. </dd></dl>
 
 <p>Implemented in <a class="el" href="classSystemImpl.html#a4407f82b905d49335f76c4a18fbfef8d">SystemImpl</a>.</p>
 
@@ -178,7 +200,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retorna o valor armazenado no sistema. </p>
+<p>Obtém o valor armazenado no sistema. </p>
 <dl class="section return"><dt>Returns</dt><dd>Valor atual do sistema. </dd></dl>
 
 <p>Implemented in <a class="el" href="classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f">SystemImpl</a>.</p>
@@ -208,10 +230,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Define o nome do sistema. </p>
+<p>Altera o nome do sistema. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>Novo nome do sistema. </td></tr>
+    <tr><td class="paramname">name</td><td>Novo nome do sistema. </td></tr>
   </table>
   </dd>
 </dl>
@@ -243,7 +265,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Define um novo valor para o sistema. </p>
+<p>Modifica o valor armazenado. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>Novo valor do sistema. </td></tr>
@@ -252,46 +274,6 @@ Friends</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="classSystemImpl.html#ac2a6145e6e12d46076b0d4b1a3b4e290">SystemImpl</a>.</p>
-
-</div>
-</div>
-<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="ae18abe3a2be7157cd1f505eaf3e571f2" name="ae18abe3a2be7157cd1f505eaf3e571f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18abe3a2be7157cd1f505eaf3e571f2">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classSystem.html">System</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sobrecarga do operador de saída. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>Fluxo de saída. </td></tr>
-    <tr><td class="paramname">s</td><td>Sistema a ser exibido. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Referência para o fluxo de saída. </dd></dl>
 
 </div>
 </div>

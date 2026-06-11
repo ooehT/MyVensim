@@ -91,6 +91,11 @@ $(function(){initNavTree('classFlow.html','','classFlow-members'); });
   <div class="headertitle"><div class="title">Flow Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface que define um fluxo da simulação.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Flow_8hpp_source.html">Flow.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Flow:</div>
 <div class="dyncontent">
@@ -99,24 +104,60 @@ Inheritance diagram for Flow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a325d284a50ca3274b126b21f5c39b9af" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual.  <br /></td></tr>
 <tr class="memitem:aa1ad5f820c1f10f9e19c555af8bf69f2" id="r_aa1ad5f820c1f10f9e19c555af8bf69f2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1ad5f820c1f10f9e19c555af8bf69f2">equation</a> ()=0</td></tr>
-<tr class="memitem:a1ca17cd54e042c1c1ccf73597e7f188e" id="r_a1ca17cd54e042c1c1ccf73597e7f188e"><td class="memItemLeft" align="right" valign="top"><a id="a1ca17cd54e042c1c1ccf73597e7f188e" name="a1ca17cd54e042c1c1ccf73597e7f188e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSource</b> (<a class="el" href="classSystem.html">System</a> *)=0</td></tr>
-<tr class="memitem:abf0f3dbb285fe82e5ba6449de06b97c8" id="r_abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memItemLeft" align="right" valign="top"><a id="abf0f3dbb285fe82e5ba6449de06b97c8" name="abf0f3dbb285fe82e5ba6449de06b97c8"></a>
-virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getSource</b> () const =0</td></tr>
-<tr class="memitem:a0a6d9503f9fd5afb978dd07346fa7e0d" id="r_a0a6d9503f9fd5afb978dd07346fa7e0d"><td class="memItemLeft" align="right" valign="top"><a id="a0a6d9503f9fd5afb978dd07346fa7e0d" name="a0a6d9503f9fd5afb978dd07346fa7e0d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setTarget</b> (<a class="el" href="classSystem.html">System</a> *)=0</td></tr>
-<tr class="memitem:afb9b8d93ea0fc81868b8e02dd382a787" id="r_afb9b8d93ea0fc81868b8e02dd382a787"><td class="memItemLeft" align="right" valign="top"><a id="afb9b8d93ea0fc81868b8e02dd382a787" name="afb9b8d93ea0fc81868b8e02dd382a787"></a>
-virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTarget</b> () const =0</td></tr>
-<tr class="memitem:a2d0340d844ab2d275222938234e44169" id="r_a2d0340d844ab2d275222938234e44169"><td class="memItemLeft" align="right" valign="top"><a id="a2d0340d844ab2d275222938234e44169" name="a2d0340d844ab2d275222938234e44169"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const =0</td></tr>
-<tr class="memitem:a8d0a7a0a8f0552418855930ffdebccd1" id="r_a8d0a7a0a8f0552418855930ffdebccd1"><td class="memItemLeft" align="right" valign="top"><a id="a8d0a7a0a8f0552418855930ffdebccd1" name="a8d0a7a0a8f0552418855930ffdebccd1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const std::string &amp;)=0</td></tr>
-<tr class="memitem:af98729b889297c770230d89519fbe4d8" id="r_af98729b889297c770230d89519fbe4d8"><td class="memItemLeft" align="right" valign="top"><a id="af98729b889297c770230d89519fbe4d8" name="af98729b889297c770230d89519fbe4d8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>removeSource</b> ()=0</td></tr>
-<tr class="memitem:ad40a4e0708ff79b1717fa6078e2ff022" id="r_ad40a4e0708ff79b1717fa6078e2ff022"><td class="memItemLeft" align="right" valign="top"><a id="ad40a4e0708ff79b1717fa6078e2ff022" name="ad40a4e0708ff79b1717fa6078e2ff022"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>removeTarget</b> ()=0</td></tr>
+<tr class="memdesc:aa1ad5f820c1f10f9e19c555af8bf69f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a taxa do fluxo.  <br /></td></tr>
+<tr class="memitem:a1ca17cd54e042c1c1ccf73597e7f188e" id="r_a1ca17cd54e042c1c1ccf73597e7f188e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ca17cd54e042c1c1ccf73597e7f188e">setSource</a> (<a class="el" href="classSystem.html">System</a> *)=0</td></tr>
+<tr class="memdesc:a1ca17cd54e042c1c1ccf73597e7f188e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o sistema de origem do fluxo.  <br /></td></tr>
+<tr class="memitem:abf0f3dbb285fe82e5ba6449de06b97c8" id="r_abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a> () const =0</td></tr>
+<tr class="memdesc:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o sistema de origem.  <br /></td></tr>
+<tr class="memitem:a0a6d9503f9fd5afb978dd07346fa7e0d" id="r_a0a6d9503f9fd5afb978dd07346fa7e0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a6d9503f9fd5afb978dd07346fa7e0d">setTarget</a> (<a class="el" href="classSystem.html">System</a> *)=0</td></tr>
+<tr class="memdesc:a0a6d9503f9fd5afb978dd07346fa7e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o sistema de destino do fluxo.  <br /></td></tr>
+<tr class="memitem:afb9b8d93ea0fc81868b8e02dd382a787" id="r_afb9b8d93ea0fc81868b8e02dd382a787"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb9b8d93ea0fc81868b8e02dd382a787">getTarget</a> () const =0</td></tr>
+<tr class="memdesc:afb9b8d93ea0fc81868b8e02dd382a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o sistema de destino.  <br /></td></tr>
+<tr class="memitem:a2d0340d844ab2d275222938234e44169" id="r_a2d0340d844ab2d275222938234e44169"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d0340d844ab2d275222938234e44169">getName</a> () const =0</td></tr>
+<tr class="memdesc:a2d0340d844ab2d275222938234e44169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o nome do fluxo.  <br /></td></tr>
+<tr class="memitem:a8d0a7a0a8f0552418855930ffdebccd1" id="r_a8d0a7a0a8f0552418855930ffdebccd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d0a7a0a8f0552418855930ffdebccd1">setName</a> (const std::string &amp;)=0</td></tr>
+<tr class="memdesc:a8d0a7a0a8f0552418855930ffdebccd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define o nome do fluxo.  <br /></td></tr>
+<tr class="memitem:af98729b889297c770230d89519fbe4d8" id="r_af98729b889297c770230d89519fbe4d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af98729b889297c770230d89519fbe4d8">removeSource</a> ()=0</td></tr>
+<tr class="memdesc:af98729b889297c770230d89519fbe4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a referência ao sistema de origem.  <br /></td></tr>
+<tr class="memitem:ad40a4e0708ff79b1717fa6078e2ff022" id="r_ad40a4e0708ff79b1717fa6078e2ff022"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad40a4e0708ff79b1717fa6078e2ff022">removeTarget</a> ()=0</td></tr>
+<tr class="memdesc:ad40a4e0708ff79b1717fa6078e2ff022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a referência ao sistema de destino.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface que define um fluxo da simulação. </p>
+<p>Um <a class="el" href="classFlow.html" title="Interface que define um fluxo da simulação.">Flow</a> representa uma transferência de valores entre dois sistemas. Possui um sistema de origem, um sistema de destino e uma equação responsável por calcular a taxa de transferência.</p>
+<p>As classes concretas devem implementar o cálculo da equação. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a325d284a50ca3274b126b21f5c39b9af" name="a325d284a50ca3274b126b21f5c39b9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325d284a50ca3274b126b21f5c39b9af">&#9670;&#160;</a></span>~Flow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Flow::~Flow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destrutor virtual. </p>
+<p>Permite a destruição correta de objetos derivados. </p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aa1ad5f820c1f10f9e19c555af8bf69f2" name="aa1ad5f820c1f10f9e19c555af8bf69f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1ad5f820c1f10f9e19c555af8bf69f2">&#9670;&#160;</a></span>equation()</h2>
@@ -141,7 +182,264 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>removeTarget<
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classLogistic.html#a2e209962a1bd0f0eb767c45e7146f83d">Logistic</a>.</p>
+<p>Calcula a taxa do fluxo. </p>
+<p>Método abstrato que representa a regra matemática do fluxo.</p>
+<dl class="section return"><dt>Returns</dt><dd>Valor calculado pela equação do fluxo. </dd></dl>
+
+<p>Implemented in <a class="el" href="classExponential.html#a4c032c0f7d3983c9a8bf392eeb6d5517">Exponential</a>, and <a class="el" href="classLogistic.html#a2e209962a1bd0f0eb767c45e7146f83d">Logistic</a>.</p>
+
+</div>
+</div>
+<a id="a2d0340d844ab2d275222938234e44169" name="a2d0340d844ab2d275222938234e44169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0340d844ab2d275222938234e44169">&#9670;&#160;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Flow::getName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna o nome do fluxo. </p>
+<dl class="section return"><dt>Returns</dt><dd>Nome identificador do fluxo. </dd></dl>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#a634867e0e9acb4febd3753041824c83b">FlowImpl</a>.</p>
+
+</div>
+</div>
+<a id="abf0f3dbb285fe82e5ba6449de06b97c8" name="abf0f3dbb285fe82e5ba6449de06b97c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0f3dbb285fe82e5ba6449de06b97c8">&#9670;&#160;</a></span>getSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classSystem.html">System</a> * Flow::getSource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna o sistema de origem. </p>
+<dl class="section return"><dt>Returns</dt><dd>Ponteiro para o sistema de origem. </dd></dl>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#a54940323059d2c4158f4146080841f32">FlowImpl</a>.</p>
+
+</div>
+</div>
+<a id="afb9b8d93ea0fc81868b8e02dd382a787" name="afb9b8d93ea0fc81868b8e02dd382a787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9b8d93ea0fc81868b8e02dd382a787">&#9670;&#160;</a></span>getTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classSystem.html">System</a> * Flow::getTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retorna o sistema de destino. </p>
+<dl class="section return"><dt>Returns</dt><dd>Ponteiro para o sistema de destino. </dd></dl>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#ab07923bc230308cd949f627a92901bca">FlowImpl</a>.</p>
+
+</div>
+</div>
+<a id="af98729b889297c770230d89519fbe4d8" name="af98729b889297c770230d89519fbe4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98729b889297c770230d89519fbe4d8">&#9670;&#160;</a></span>removeSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Flow::removeSource </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a referência ao sistema de origem. </p>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#a28bab344a837ca749034923390bba603">FlowImpl</a>.</p>
+
+</div>
+</div>
+<a id="ad40a4e0708ff79b1717fa6078e2ff022" name="ad40a4e0708ff79b1717fa6078e2ff022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad40a4e0708ff79b1717fa6078e2ff022">&#9670;&#160;</a></span>removeTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Flow::removeTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a referência ao sistema de destino. </p>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#a05bfb38c22b0a4e8bc5497bee8fd0b8e">FlowImpl</a>.</p>
+
+</div>
+</div>
+<a id="a8d0a7a0a8f0552418855930ffdebccd1" name="a8d0a7a0a8f0552418855930ffdebccd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0a7a0a8f0552418855930ffdebccd1">&#9670;&#160;</a></span>setName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Flow::setName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define o nome do fluxo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Novo nome do fluxo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#a44a470fb086e8bb89e9f334ea5b52942">FlowImpl</a>.</p>
+
+</div>
+</div>
+<a id="a1ca17cd54e042c1c1ccf73597e7f188e" name="a1ca17cd54e042c1c1ccf73597e7f188e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca17cd54e042c1c1ccf73597e7f188e">&#9670;&#160;</a></span>setSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Flow::setSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define o sistema de origem do fluxo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Sistema de origem. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#a840ad5c2fb1230cd58bae7ef892a6198">FlowImpl</a>.</p>
+
+</div>
+</div>
+<a id="a0a6d9503f9fd5afb978dd07346fa7e0d" name="a0a6d9503f9fd5afb978dd07346fa7e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6d9503f9fd5afb978dd07346fa7e0d">&#9670;&#160;</a></span>setTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Flow::setTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define o sistema de destino do fluxo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Sistema de destino. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classFlowImpl.html#a79818e87fcd74b9c7ba11ab1f670acb5">FlowImpl</a>.</p>
 
 </div>
 </div>

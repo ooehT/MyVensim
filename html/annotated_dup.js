@@ -1,11 +1,11 @@
 var annotated_dup =
 [
-    [ "Exponential", "classExponential.html", null ],
-    [ "Flow", "classFlow.html", null ],
-    [ "FlowImpl", "classFlowImpl.html", null ],
+    [ "Exponential", "classExponential.html", "classExponential" ],
+    [ "Flow", "classFlow.html", "classFlow" ],
+    [ "FlowImpl", "classFlowImpl.html", "classFlowImpl" ],
     [ "Logistic", "classLogistic.html", "classLogistic" ],
-    [ "Model", "classModel.html", null ],
-    [ "ModelImpl", "classModelImpl.html", null ],
+    [ "Model", "classModel.html", "classModel" ],
+    [ "ModelImpl", "classModelImpl.html", "classModelImpl" ],
     [ "System", "classSystem.html", "classSystem" ],
     [ "SystemImpl", "classSystemImpl.html", "classSystemImpl" ]
 ];

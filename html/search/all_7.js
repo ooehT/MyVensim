@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['_7elogistic_0',['~Logistic',['../classLogistic.html#a749e39ff99fbd5a042fcd98dc5d75601',1,'Logistic']]],
-  ['_7esystem_1',['~System',['../classSystem.html#a2fc0f34023977cab9b628aa9f734d88c',1,'System']]]
+  ['name_0',['name',['../classFlowImpl.html#afcc3f687245c4a6fa3d26ac386c8221b',1,'FlowImpl']]]
 ];

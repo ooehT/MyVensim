@@ -20,8 +20,8 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classFlowImpl.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="61,-77.5 0,-77.5 0,-56.75 61,-56.75 61,-77.5"/>
+<g id="a_Node000002"><a xlink:href="classFlowImpl.html" target="_top" xlink:title="Implementação base de um fluxo da simulação.">
+<polygon fill="white" stroke="#666666" points="61,-77.5 0,-77.5 0,-56.75 61,-56.75 61,-77.5"/>
 <text xml:space="preserve" text-anchor="middle" x="30.5" y="-64" font-family="Helvetica,sans-Serif" font-size="10.00">FlowImpl</text>
 </a>
 </g>
@@ -38,8 +38,8 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classFlow.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="50.12,-134.25 10.88,-134.25 10.88,-113.5 50.12,-113.5 50.12,-134.25"/>
+<g id="a_Node000003"><a xlink:href="classFlow.html" target="_top" xlink:title="Interface que define um fluxo da simulação.">
+<polygon fill="white" stroke="#666666" points="50.12,-134.25 10.88,-134.25 10.88,-113.5 50.12,-113.5 50.12,-134.25"/>
 <text xml:space="preserve" text-anchor="middle" x="30.5" y="-120.75" font-family="Helvetica,sans-Serif" font-size="10.00">Flow</text>
 </a>
 </g>

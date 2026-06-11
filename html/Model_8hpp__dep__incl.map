@@ -1,0 +1,15 @@
+<map id="src/Model.hpp" name="src/Model.hpp">
+<area shape="rect" id="Node000001" title="Interface abstrata responsável pelo gerenciamento da simulação." alt="" coords="172,5,284,33"/>
+<area shape="rect" id="Node000002" href="$ModelImpl_8hpp.html" title="Implementação concreta da interface Model." alt="" coords="157,81,298,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,46,230,81,225,80,227,51"/>
+<area shape="rect" id="Node000003" href="$Model_8cpp.html" title=" " alt="" coords="5,165,117,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="186,118,89,167,86,162,188,114"/>
+<area shape="rect" id="Node000004" href="$funcional__test_8hpp.html" title="Arquivo contendo as assinaturas dos testes funcionais da simulação." alt="" coords="140,157,315,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="229,122,230,157,225,155,226,127"/>
+<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html" title=" " alt="" coords="338,165,517,193"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="274,112,398,164,393,165,274,118"/>
+<area shape="rect" id="Node000005" href="$funcional__test_8cpp.html" title=" " alt="" coords="40,249,215,294"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="195,211,153,251,150,247,190,213"/>
+<area shape="rect" id="Node000006" href="$funcional_2main_8cpp.html" title=" " alt="" coords="239,258,414,286"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="263,209,315,257,309,257,261,214"/>
+</map>

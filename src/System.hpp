@@ -1,3 +1,7 @@
+/**
+ * @file System.hpp
+ * @brief Interface abstrata que representa um sistema do simulador.
+ */
 #ifndef SYSTEM_HPP
 #define SYSTEM_HPP
 
@@ -19,40 +23,32 @@ public:
     virtual ~System() {}
 
     /**
-     * @brief Retorna o nome do sistema.
+     * @brief Obtém o nome do sistema.
      *
-     * @return Nome do sistema.
+     * @return Nome identificador do sistema.
      */
+
     virtual string getName() const = 0;
     /**
-     * @brief Define o nome do sistema.
+     * @brief Altera o nome do sistema.
      *
-     * @param value Novo nome do sistema.
+     * @param name Novo nome do sistema.
      */
     virtual void setName(const string &) = 0;
 
     /**
-     * @brief Retorna o valor armazenado no sistema.
+     * @brief Obtém o valor armazenado no sistema.
      *
      * @return Valor atual do sistema.
      */
     virtual double getValue() const = 0;
 
     /**
-     * @brief Define um novo valor para o sistema.
+     * @brief Modifica o valor armazenado.
      *
      * @param value Novo valor do sistema.
      */
     virtual void setValue(double) = 0;
-
-    /**
-     * @brief Sobrecarga do operador de saída.
-     *
-     * @param out Fluxo de saída.
-     * @param s Sistema a ser exibido.
-     * @return Referência para o fluxo de saída.
-     */
-    friend ostream &operator<<(ostream &out, const System &s);
 };
 
 #endif

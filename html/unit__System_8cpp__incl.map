@@ -1,0 +1,13 @@
+<map id="test/unit/unit_System.cpp" name="test/unit/unit_System.cpp">
+<area shape="rect" id="Node000001" title="Testes unitários da classe SystemImpl." alt="" coords="101,5,288,33"/>
+<area shape="rect" id="Node000002" href="$unit__System_8hpp.html" title=" " alt="" coords="5,81,136,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,36,107,75,104,71,174,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="160,81,229,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,31,197,66,192,64,193,36"/>
+<area shape="rect" id="Node000004" href="$SystemImpl_8hpp.html" title="Implementação concreta da interface System." alt="" coords="253,81,427,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,31,303,73,298,75,220,36"/>
+<area shape="rect" id="Node000005" href="$System_8hpp.html" title="Interface abstrata que representa um sistema do simulador." alt="" coords="291,157,389,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="341,107,342,142,338,140,338,111"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="311,232,369,260"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="342,183,342,218,338,215,338,187"/>
+</map>
