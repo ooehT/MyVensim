@@ -9,12 +9,13 @@
 int main()
 {
     
-
+    printf("Iniciando testes unitários...\n\n");
     run_unit_test_System();
     run_unit_test_Flow();
     run_unit_test_Model();
     run_unit_test_Exponential();
     run_unit_test_Logistic();
+    printf("\nTestes unitários concluídos.\n");
 
     
 

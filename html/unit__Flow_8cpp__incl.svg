@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="unit__Flow_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="unit__Flow_8hpp.html" target="_top" xlink:title="Declaração dos testes unitários da classe FlowImpl.">
 <polygon fill="white" stroke="#666666" points="83.5,-191 0,-191 0,-170.25 83.5,-170.25 83.5,-191"/>
 <text xml:space="preserve" text-anchor="middle" x="41.75" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">unit_Flow.hpp</text>
 </a>

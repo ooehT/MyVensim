@@ -129,7 +129,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="unit__System_8cpp.html" target="_top" xlink:title="Testes unitários da classe SystemImpl.">
+<g id="a_Node000010"><a xlink:href="unit__System_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="1054.25,-96.62 913.75,-96.62 913.75,-75.88 1054.25,-75.88 1054.25,-96.62"/>
 <text xml:space="preserve" text-anchor="middle" x="984" y="-83.12" font-family="Helvetica,sans-Serif" font-size="10.00">test/unit/unit_System.cpp</text>
 </a>
