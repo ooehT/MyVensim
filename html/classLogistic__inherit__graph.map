@@ -1,5 +1,7 @@
 <map id="Logistic" name="Logistic">
-<area shape="rect" id="Node000001" title="Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo." alt="" coords="5,79,77,104"/>
-<area shape="rect" id="Node000002" href="$classFlow.html" title="Classe abstrata que representa um fluxo entre sistemas." alt="" coords="15,5,68,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,44,44,79,39,79,39,44"/>
+<area shape="rect" id="Node000001" title="Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo." alt="" coords="10,157,82,184"/>
+<area shape="rect" id="Node000002" href="$classFlowImpl.html" title=" " alt="" coords="5,81,87,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,123,49,157,43,156,44,126"/>
+<area shape="rect" id="Node000003" href="$classFlow.html" title=" " alt="" coords="20,5,72,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="47,46,49,81,43,80,45,51"/>
 </map>

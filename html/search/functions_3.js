@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flow_0',['flow',['../classFlow.html#ac9975e144e606242748197798e87dd32',1,'Flow::Flow()'],['../classFlow.html#ad3276465420fca89dfce1a3818465562',1,'Flow::Flow(string name, System *source, System *target)'],['../classFlow.html#af559e47422fbdeeff9b65a0756632cf9',1,'Flow::Flow(const Flow &amp;f)']]]
+  ['operator_3d_0',['operator=',['../classLogistic.html#a0db84d8cceb003df0a448e1249dc9f2e',1,'Logistic']]]
 ];

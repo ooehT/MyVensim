@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['getflows_0',['getFlows',['../classModel.html#a5436cb219f504aad73334523a5a46432',1,'Model']]],
-  ['getname_1',['getname',['../classFlow.html#a62bbc54ff95eeb0795511519edf32077',1,'Flow::getName()'],['../classModel.html#a65e1711255fbab5883708002ef89f773',1,'Model::getName()'],['../classSystem.html#a47ece132a04247cd74aea11537830bd4',1,'System::getName()']]],
-  ['getsource_2',['getSource',['../classFlow.html#a1f3858f90d141807377c2640fb5dd0fc',1,'Flow']]],
-  ['getsystems_3',['getSystems',['../classModel.html#a0eb16f5a1e4b7405bffaef078b536d49',1,'Model']]],
-  ['gettarget_4',['getTarget',['../classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5',1,'Flow']]],
-  ['getvalue_5',['getValue',['../classSystem.html#aa7d17369d1034e7d8643a63f69d1901d',1,'System']]]
+  ['setname_0',['setName',['../classSystem.html#ae4f2ee70d2cea415e95ecb6c51a037df',1,'System::setName()'],['../classSystemImpl.html#a03eafa413f5d17cd7f538b104519f8ec',1,'SystemImpl::setName()']]],
+  ['setvalue_1',['setValue',['../classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03',1,'System::setValue()'],['../classSystemImpl.html#ac2a6145e6e12d46076b0d4b1a3b4e290',1,'SystemImpl::setValue()']]]
 ];

@@ -1,0 +1,156 @@
+\doxysection{Flow\+Impl Class Reference}
+\hypertarget{classFlowImpl}{}\label{classFlowImpl}\index{FlowImpl@{FlowImpl}}
+
+
+Inheritance diagram for Flow\+Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classFlowImpl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classFlowImpl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFlowImpl_a690c02067884f243657bdde0f946469d}\label{classFlowImpl_a690c02067884f243657bdde0f946469d} 
+{\bfseries Flow\+Impl} (std\+::string, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{classFlowImpl_a54c2e6a33786b877a5fc95f73263faff}\label{classFlowImpl_a54c2e6a33786b877a5fc95f73263faff} 
+{\bfseries Flow\+Impl} (const \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}} \&)
+\item 
+\Hypertarget{classFlowImpl_ad6cb15ae94988003fd4cdb71a25922f0}\label{classFlowImpl_ad6cb15ae94988003fd4cdb71a25922f0} 
+\mbox{\hyperlink{classFlowImpl}{Flow\+Impl}} \& {\bfseries operator=} (const \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}} \&)
+\item 
+void \mbox{\hyperlink{classFlowImpl_a840ad5c2fb1230cd58bae7ef892a6198}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_a54940323059d2c4158f4146080841f32}{get\+Source}} () const
+\item 
+void \mbox{\hyperlink{classFlowImpl_a79818e87fcd74b9c7ba11ab1f670acb5}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_ab07923bc230308cd949f627a92901bca}{get\+Target}} () const
+\item 
+std\+::string \mbox{\hyperlink{classFlowImpl_a634867e0e9acb4febd3753041824c83b}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{classFlowImpl_a44a470fb086e8bb89e9f334ea5b52942}{set\+Name}} (const std\+::string \&)
+\item 
+void \mbox{\hyperlink{classFlowImpl_a28bab344a837ca749034923390bba603}{remove\+Source}} ()
+\item 
+void \mbox{\hyperlink{classFlowImpl_a05bfb38c22b0a4e8bc5497bee8fd0b8e}{remove\+Target}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFlowImpl_afcc3f687245c4a6fa3d26ac386c8221b}\label{classFlowImpl_afcc3f687245c4a6fa3d26ac386c8221b} 
+std\+::string {\bfseries name}
+\item 
+\Hypertarget{classFlowImpl_a950987351656a518a1057b64c5f85af8}\label{classFlowImpl_a950987351656a518a1057b64c5f85af8} 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries source}
+\item 
+\Hypertarget{classFlowImpl_af97039b649da65573e5582edbeb287b5}\label{classFlowImpl_af97039b649da65573e5582edbeb287b5} 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} {\bfseries target}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classFlowImpl_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFlowImpl_a634867e0e9acb4febd3753041824c83b}\index{FlowImpl@{FlowImpl}!getName@{getName}}
+\index{getName@{getName}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{classFlowImpl_a634867e0e9acb4febd3753041824c83b} 
+std\+::string Flow\+Impl\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+\Hypertarget{classFlowImpl_a54940323059d2c4158f4146080841f32}\index{FlowImpl@{FlowImpl}!getSource@{getSource}}
+\index{getSource@{getSource}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \label{classFlowImpl_a54940323059d2c4158f4146080841f32} 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+Impl\+::get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+\Hypertarget{classFlowImpl_ab07923bc230308cd949f627a92901bca}\index{FlowImpl@{FlowImpl}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \label{classFlowImpl_ab07923bc230308cd949f627a92901bca} 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+Impl\+::get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+\Hypertarget{classFlowImpl_a28bab344a837ca749034923390bba603}\index{FlowImpl@{FlowImpl}!removeSource@{removeSource}}
+\index{removeSource@{removeSource}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{removeSource()}{removeSource()}}
+{\footnotesize\ttfamily \label{classFlowImpl_a28bab344a837ca749034923390bba603} 
+void Flow\+Impl\+::remove\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+\Hypertarget{classFlowImpl_a05bfb38c22b0a4e8bc5497bee8fd0b8e}\index{FlowImpl@{FlowImpl}!removeTarget@{removeTarget}}
+\index{removeTarget@{removeTarget}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{removeTarget()}{removeTarget()}}
+{\footnotesize\ttfamily \label{classFlowImpl_a05bfb38c22b0a4e8bc5497bee8fd0b8e} 
+void Flow\+Impl\+::remove\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+\Hypertarget{classFlowImpl_a44a470fb086e8bb89e9f334ea5b52942}\index{FlowImpl@{FlowImpl}!setName@{setName}}
+\index{setName@{setName}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{classFlowImpl_a44a470fb086e8bb89e9f334ea5b52942} 
+void Flow\+Impl\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+\Hypertarget{classFlowImpl_a840ad5c2fb1230cd58bae7ef892a6198}\index{FlowImpl@{FlowImpl}!setSource@{setSource}}
+\index{setSource@{setSource}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily \label{classFlowImpl_a840ad5c2fb1230cd58bae7ef892a6198} 
+void Flow\+Impl\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+\Hypertarget{classFlowImpl_a79818e87fcd74b9c7ba11ab1f670acb5}\index{FlowImpl@{FlowImpl}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!FlowImpl@{FlowImpl}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily \label{classFlowImpl_a79818e87fcd74b9c7ba11ab1f670acb5} 
+void Flow\+Impl\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow}{Flow}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Flow\+Impl.\+hpp\item 
+src/Flow\+Impl.\+cpp\end{DoxyCompactItemize}

@@ -1,9 +1,15 @@
 var hierarchy =
 [
     [ "Flow", "classFlow.html", [
-      [ "Exponential", "classExponential.html", null ],
-      [ "Logistic", "classLogistic.html", null ]
+      [ "FlowImpl", "classFlowImpl.html", [
+        [ "Exponential", "classExponential.html", null ],
+        [ "Logistic", "classLogistic.html", null ]
+      ] ]
     ] ],
-    [ "Model", "classModel.html", null ],
-    [ "System", "classSystem.html", null ]
+    [ "Model", "classModel.html", [
+      [ "ModelImpl", "classModelImpl.html", null ]
+    ] ],
+    [ "System", "classSystem.html", [
+      [ "SystemImpl", "classSystemImpl.html", null ]
+    ] ]
 ];

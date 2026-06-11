@@ -1,0 +1,144 @@
+\doxysection{Model\+Impl Class Reference}
+\hypertarget{classModelImpl}{}\label{classModelImpl}\index{ModelImpl@{ModelImpl}}
+
+
+Inheritance diagram for Model\+Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classModelImpl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classModelImpl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classModelImpl_a5744b4ddb60bb51a25a36d2cdc57505a}\label{classModelImpl_a5744b4ddb60bb51a25a36d2cdc57505a} 
+{\bfseries Model\+Impl} (const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&)
+\item 
+\Hypertarget{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de}\label{classModelImpl_a8c3eca6b74ee4fef6c85f33237d7e7de} 
+\mbox{\hyperlink{classModelImpl}{Model\+Impl}} \& {\bfseries operator=} (const \mbox{\hyperlink{classModelImpl}{Model\+Impl}} \&)
+\item 
+void \mbox{\hyperlink{classModelImpl_a398e8fe67a92a151a1dacecc1ad23bf5}{execute}} (double start, double end, double increment)
+\item 
+void \mbox{\hyperlink{classModelImpl_ad2501a3425d1a67cbfffc5bcf2092c06}{add}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}s)
+\item 
+void \mbox{\hyperlink{classModelImpl_a97b8b22061d7107fa18bb8f623a0ffe6}{add}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}f)
+\item 
+bool \mbox{\hyperlink{classModelImpl_a5145a5ed6c8cb204137fc161d94bb9e4}{remove}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}s)
+\item 
+bool \mbox{\hyperlink{classModelImpl_a91ecf96ee8a524711c34a5291e799470}{remove}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}f)
+\item 
+vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModelImpl_a1374b7b3dbae27889aff15c365dee8a6}{get\+Systems}} () const
+\item 
+vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModelImpl_a6e9c8bfcfa9987850cc08f2ba0608a3e}{get\+Flows}} () const
+\item 
+string \mbox{\hyperlink{classModelImpl_a027d6617b69c45b92243c3caca352ba5}{get\+Name}} () const
+\item 
+\Hypertarget{classModelImpl_a2f7c12dfdc36c3e11fae0909eae06c45}\label{classModelImpl_a2f7c12dfdc36c3e11fae0909eae06c45} 
+void {\bfseries set\+Name} (const string \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classModel}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries set\+Name} (const std\+::string \&)=0
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{classModelImpl_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classModelImpl_a97b8b22061d7107fa18bb8f623a0ffe6}\index{ModelImpl@{ModelImpl}!add@{add}}
+\index{add@{add}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classModelImpl_a97b8b22061d7107fa18bb8f623a0ffe6} 
+void Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+\Hypertarget{classModelImpl_ad2501a3425d1a67cbfffc5bcf2092c06}\index{ModelImpl@{ModelImpl}!add@{add}}
+\index{add@{add}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classModelImpl_ad2501a3425d1a67cbfffc5bcf2092c06} 
+void Model\+Impl\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+\Hypertarget{classModelImpl_a398e8fe67a92a151a1dacecc1ad23bf5}\index{ModelImpl@{ModelImpl}!execute@{execute}}
+\index{execute@{execute}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{classModelImpl_a398e8fe67a92a151a1dacecc1ad23bf5} 
+void Model\+Impl\+::execute (\begin{DoxyParamCaption}\item[{double}]{start}{, }\item[{double}]{end}{, }\item[{double}]{increment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+\Hypertarget{classModelImpl_a6e9c8bfcfa9987850cc08f2ba0608a3e}\index{ModelImpl@{ModelImpl}!getFlows@{getFlows}}
+\index{getFlows@{getFlows}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getFlows()}{getFlows()}}
+{\footnotesize\ttfamily \label{classModelImpl_a6e9c8bfcfa9987850cc08f2ba0608a3e} 
+vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ Model\+Impl\+::get\+Flows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+\Hypertarget{classModelImpl_a027d6617b69c45b92243c3caca352ba5}\index{ModelImpl@{ModelImpl}!getName@{getName}}
+\index{getName@{getName}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{classModelImpl_a027d6617b69c45b92243c3caca352ba5} 
+string Model\+Impl\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+\Hypertarget{classModelImpl_a1374b7b3dbae27889aff15c365dee8a6}\index{ModelImpl@{ModelImpl}!getSystems@{getSystems}}
+\index{getSystems@{getSystems}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{getSystems()}{getSystems()}}
+{\footnotesize\ttfamily \label{classModelImpl_a1374b7b3dbae27889aff15c365dee8a6} 
+vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ Model\+Impl\+::get\+Systems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+\Hypertarget{classModelImpl_a91ecf96ee8a524711c34a5291e799470}\index{ModelImpl@{ModelImpl}!remove@{remove}}
+\index{remove@{remove}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classModelImpl_a91ecf96ee8a524711c34a5291e799470} 
+bool Model\+Impl\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+\Hypertarget{classModelImpl_a5145a5ed6c8cb204137fc161d94bb9e4}\index{ModelImpl@{ModelImpl}!remove@{remove}}
+\index{remove@{remove}!ModelImpl@{ModelImpl}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classModelImpl_a5145a5ed6c8cb204137fc161d94bb9e4} 
+bool Model\+Impl\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classModel}{Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Model\+Impl.\+hpp\item 
+src/Model.\+cpp\end{DoxyCompactItemize}

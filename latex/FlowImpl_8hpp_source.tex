@@ -1,0 +1,41 @@
+\doxysection{Flow\+Impl.\+hpp}
+\hypertarget{FlowImpl_8hpp_source}{}\label{FlowImpl_8hpp_source}\index{src/FlowImpl.hpp@{src/FlowImpl.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLOWIMPL\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLOWIMPL\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Flow.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}System.hpp"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }FlowImpl\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00009\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ source;}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ target;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ FlowImpl();}
+\DoxyCodeLine{00015\ \ \ \ \ FlowImpl(std::string,\ \mbox{\hyperlink{classSystem}{System}}*,\ \mbox{\hyperlink{classSystem}{System}}*);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ FlowImpl(\textcolor{keyword}{const}\ FlowImpl\&);}
+\DoxyCodeLine{00018\ \ \ \ \ FlowImpl\&\ operator=(\textcolor{keyword}{const}\ FlowImpl\&);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~FlowImpl();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ setSource(\mbox{\hyperlink{classSystem}{System}}*);}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ getSource()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ setTarget(\mbox{\hyperlink{classSystem}{System}}*);}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ getTarget()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ getName()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ std::string\&);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ removeSource();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ removeTarget();}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

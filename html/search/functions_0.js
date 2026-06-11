@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['add_0',['add',['../classModel.html#a054350312f72e04ef46fe5b14f987735',1,'Model::add(System *s)'],['../classModel.html#a237ff1636694a6e26ff280c8d122540e',1,'Model::add(Flow *f)']]]
+  ['equation_0',['equation',['../classLogistic.html#a2e209962a1bd0f0eb767c45e7146f83d',1,'Logistic']]]
 ];

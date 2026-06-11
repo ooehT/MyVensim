@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_0',['name',['../classFlow.html#a8801d2ed91a9d96003d4bc8024451551',1,'Flow::name'],['../classModel.html#a2d9aef6a80a205a03e4e99b5483af9a0',1,'Model::name'],['../classSystem.html#a29fe2868c0d56fdebc67f1bef5d5cca3',1,'System::name']]]
+  ['_7elogistic_0',['~Logistic',['../classLogistic.html#a749e39ff99fbd5a042fcd98dc5d75601',1,'Logistic']]],
+  ['_7esystem_1',['~System',['../classSystem.html#a2fc0f34023977cab9b628aa9f734d88c',1,'System']]]
 ];
