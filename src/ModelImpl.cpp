@@ -9,7 +9,7 @@ ModelImpl::~ModelImpl() {}
 
 void ModelImpl::execute(double start, double end, double increment)
 {
-    vector<double> values;
+    std::vector<double> values;
     System *source;
     System *target;
     int j = 0;
@@ -19,14 +19,14 @@ void ModelImpl::execute(double start, double end, double increment)
         values.clear();
         j = 0;
 
-        for (vector<Flow *>::iterator it = flows.begin();
+        for (std::vector<Flow *>::iterator it = flows.begin();
              it != flows.end();
              ++it)
         {
             values.push_back((*it)->equation());
         }
 
-        for (vector<Flow *>::iterator it = flows.begin();
+        for (std::vector<Flow *>::iterator it = flows.begin();
              it != flows.end();
              ++it)
         {
@@ -44,22 +44,13 @@ void ModelImpl::execute(double start, double end, double increment)
     }
 }
 
-vector<Flow *> ModelImpl::getFlows() const
-{
-    return flows;
-}
 
-vector<System *> ModelImpl::getSystems() const
-{
-    return systems;
-}
-
-string ModelImpl::getName() const
+std::string ModelImpl::getName() const
 {
     return name;
 }
 
-void ModelImpl::setName(const string &value)
+void ModelImpl::setName(const std::string &value)
 {
     name = value;
 }
@@ -78,8 +69,8 @@ bool ModelImpl::remove(System *system)
 {
     if (system != nullptr)
     {
-        vector<System *>::iterator itSystem;
-        itSystem = find(systems.begin(), systems.end(), system);
+        std::vector<System *>::iterator itSystem;
+        itSystem = std::find(systems.begin(), systems.end(), system);
 
         if (itSystem != systems.end())
         {
@@ -95,8 +86,8 @@ bool ModelImpl::remove(Flow *flow)
 {
     if (flow != nullptr)
     {
-        vector<Flow *>::iterator itFlow;
-        itFlow = find(flows.begin(), flows.end(), flow);
+        std::vector<Flow *>::iterator itFlow;
+        itFlow = std::find(flows.begin(), flows.end(), flow);
 
         if (itFlow != flows.end())
         {

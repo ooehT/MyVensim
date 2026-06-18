@@ -12,15 +12,15 @@ SystemImpl::SystemImpl(string name, double value)
     this->value = value;
 }
 
-SystemImpl::SystemImpl(const SystemImpl& sys)
+SystemImpl::SystemImpl(const SystemImpl &sys)
 {
     name = sys.name;
     value = sys.value;
 }
 
-SystemImpl& SystemImpl::operator=(const SystemImpl& sys)
+SystemImpl &SystemImpl::operator=(const SystemImpl &sys)
 {
-    if(this == &sys)
+    if (this == &sys)
         return *this;
 
     name = sys.name;
@@ -29,16 +29,13 @@ SystemImpl& SystemImpl::operator=(const SystemImpl& sys)
     return *this;
 }
 
-SystemImpl::~SystemImpl()
-{
-}
+SystemImpl::~SystemImpl(){}
 
-string SystemImpl::getName() const
-{
+string SystemImpl::getName() const{
     return name;
 }
 
-void SystemImpl::setName(const string& value)
+void SystemImpl::setName(const string &value)
 {
     name = value;
 }

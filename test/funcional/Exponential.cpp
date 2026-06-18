@@ -4,7 +4,7 @@
 Exponential::Exponential() : FlowImpl() {}
 
 // Construtor Parametrizado
-Exponential::Exponential(string name, System *input, System *output) 
+Exponential::Exponential(const std::string &name, System *input, System *output) 
     : FlowImpl(name, input, output) {}
 
 // Destrutor

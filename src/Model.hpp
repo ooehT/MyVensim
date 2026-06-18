@@ -6,11 +6,10 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
-#include <vector>
 #include <string>
 
-class System;
-class Flow;
+#include "System.hpp"
+#include "Flow.hpp"
 /**
  * @class Model
  * @brief Interface que define um modelo de simulação.
@@ -76,19 +75,6 @@ public:
      *
      * @return Vetor contendo os sistemas cadastrados.
      */
-    virtual std::vector<System *> getSystems() const = 0;
-    /**
-     * @brief Obtém os fluxos pertencentes ao modelo.
-     *
-     * @return Vetor contendo os fluxos cadastrados.
-     */
-    virtual std::vector<Flow *> getFlows() const = 0;
-    /**
-     * @brief Retorna o nome do modelo.
-     *
-     * @return Nome identificador do modelo.
-     */
-
     virtual std::string getName() const = 0;
     /**
      * @brief Define o nome do modelo.

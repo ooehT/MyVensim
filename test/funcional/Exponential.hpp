@@ -5,11 +5,8 @@
 #ifndef EXPONENTIAL_HPP
 #define EXPONENTIAL_HPP
 
-#include "FlowImpl.hpp"
-#include "System.hpp"
+#include "../../src/FlowImpl.hpp"
 #include <string>
-
-using namespace std;
 
 /**
  * @class Exponential
@@ -41,7 +38,7 @@ public:
      * @param source Sistema de origem.
      * @param target Sistema de destino.
      */
-    Exponential(string name, System *source, System *target);
+    Exponential(const std::string &name, System *source, System *target);
 
     /**
      * @brief Construtor de cópia.
@@ -60,16 +57,15 @@ public:
     /**
      * @brief Destrutor.
      */
-    virtual ~Exponential();
-    /**
-     * @brief Calcula a taxa exponencial do fluxo.
-     *
-     * Utiliza o valor atual do sistema de origem
-     * para calcular a transferência.
-     *
-     * @return Valor calculado da taxa do fluxo.
-     */
-    virtual double equation();
+    virtual ~Exponential();/**
+                                    * @brief Calcula a taxa exponencial do fluxo.
+                                    *
+                                    * Utiliza o valor atual do sistema de origem
+                                    * para calcular a transferência.
+                                    *
+                                    * @return Valor calculado da taxa do fluxo.
+                                    */
+    virtual double equation() override;
 };
 
 #endif

@@ -8,8 +8,8 @@
 
 #include "../../src/ModelImpl.hpp"
 #include "../../src/SystemImpl.hpp"
-#include "../../src/Exponential.hpp"
-#include "../../src/Logistic.hpp"
+#include "Exponential.hpp"
+#include "Logistic.hpp"
 
 /**
  * @brief Executa o teste funcional para fluxos exponenciais simples.

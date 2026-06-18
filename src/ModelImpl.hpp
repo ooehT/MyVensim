@@ -6,13 +6,12 @@
 #define MODELIMPL_HPP
 
 #include "Model.hpp"
-#include "System.hpp"
-#include "Flow.hpp"
+
 
 #include <vector>
-#include <string>
 
-using namespace std;
+
+#include <string>
 /**
  * @class ModelImpl
  * @brief Implementação concreta de um modelo de simulação.
@@ -28,16 +27,16 @@ private:
     /**
      * @brief Lista de fluxos pertencentes ao modelo.
      */
-    vector<Flow *> flows;
+    std::vector<Flow *> flows;
     /**
      * @brief Lista de sistemas pertencentes ao modelo.
      */
-    vector<System *> systems;
+    std::vector<System *> systems;
     /**
      * @brief Nome identificador do modelo.
      */
 
-    string name;
+    std::string name;
 
 public:
     /**
@@ -103,30 +102,18 @@ public:
      * @return true se removido.
      */
     bool remove(Flow *f);
-    /**
-     * @brief Retorna os sistemas do modelo.
-     *
-     * @return Vetor de sistemas.
-     */
-    vector<System *> getSystems() const;
-    /**
-     * @brief Retorna os fluxos do modelo.
-     *
-     * @return Vetor de fluxos.
-     */
-    vector<Flow *> getFlows() const;
-    /**
-     * @brief Retorna o nome do modelo.
-     *
-     * @return Nome do modelo.
-     */
-    string getName() const;
+        /**
+        * @brief Obtém o nome do modelo.
+        *
+        * @return Nome do modelo.
+        */
+    std::string getName() const;
     /**
      * @brief Define o nome do modelo.
      *
      * @param name Novo nome.
      */
-    void setName(const string &);
+    void setName(const std::string &);
 };
 
 #endif

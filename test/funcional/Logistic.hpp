@@ -6,10 +6,9 @@
 #ifndef Logistic_HPP
 #define Logistic_HPP
 
-#include "FlowImpl.hpp"
-#include "System.hpp"
-
+#include "../../src/FlowImpl.hpp"
 #include <string>
+
 
 using namespace std;
 
