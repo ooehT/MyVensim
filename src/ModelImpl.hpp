@@ -7,9 +7,7 @@
 
 #include "Model.hpp"
 
-
 #include <vector>
-
 
 #include <string>
 /**
@@ -102,11 +100,11 @@ public:
      * @return true se removido.
      */
     bool remove(Flow *f);
-        /**
-        * @brief Obtém o nome do modelo.
-        *
-        * @return Nome do modelo.
-        */
+    /**
+     * @brief Obtém o nome do modelo.
+     *
+     * @return Nome do modelo.
+     */
     std::string getName() const;
     /**
      * @brief Define o nome do modelo.
@@ -114,6 +112,12 @@ public:
      * @param name Novo nome.
      */
     void setName(const std::string &);
+
+    std::vector<System *>::iterator beginSystems();
+    std::vector<System *>::iterator endSystems();
+
+    std::vector<Flow *>::iterator beginFlows();
+    std::vector<Flow *>::iterator endFlows();
 };
 
 #endif

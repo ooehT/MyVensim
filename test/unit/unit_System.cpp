@@ -44,6 +44,26 @@ void unit_System_setValue()
     assert(s.getValue() == 200);
 }
 
+void unit_System_copyConstructor()
+{
+    SystemImpl s1("s1", 100);
+
+    SystemImpl s2(s1);
+
+    assert(s2.getName() == "s1");
+    assert(s2.getValue() == 100);
+}
+void unit_System_assignmentOperator()
+{
+    SystemImpl s1("s1", 100);
+    SystemImpl s2("s2", 200);
+
+    s2 = s1;
+
+    assert(s2.getName() == "s1");
+    assert(s2.getValue() == 100);
+}
+
 void run_unit_test_System()
 {
     unit_System_constructor();
@@ -51,4 +71,6 @@ void run_unit_test_System()
     unit_System_setName();
     unit_System_getValue();
     unit_System_setValue();
+    unit_System_copyConstructor();
+    unit_System_assignmentOperator();
 }

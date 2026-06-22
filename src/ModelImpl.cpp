@@ -117,3 +117,22 @@ ModelImpl &ModelImpl::operator=(const ModelImpl &copy)
 
     return *this;
 }
+std::vector<System*>::iterator ModelImpl::beginSystems()
+{
+    return systems.begin();
+}
+
+std::vector<System*>::iterator ModelImpl::endSystems()
+{
+    return systems.end();
+}
+
+std::vector<Flow*>::iterator ModelImpl::beginFlows()
+{
+    return flows.begin();
+}
+
+std::vector<Flow*>::iterator ModelImpl::endFlows()
+{
+    return flows.end();
+}

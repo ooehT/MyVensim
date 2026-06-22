@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-#include "../../src/Exponential.hpp"
+#include "../funcional/Exponential.hpp"
 #include "../../src/SystemImpl.hpp"
 
 void unit_Exponential_equation()

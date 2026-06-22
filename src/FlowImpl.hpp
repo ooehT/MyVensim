@@ -112,6 +112,12 @@ public:
      * Define o ponteiro de destino como nulo.
      */
     void removeTarget();
+    /**
+     * @brief Executa o fluxo.
+     *
+     * @return Valor resultante da execução.
+     */
+    virtual double equation() = 0;
 };
 
 #endif

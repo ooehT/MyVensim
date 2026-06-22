@@ -46,6 +46,10 @@ void unit_System_getValue();
  */
 void unit_System_setValue();
 
+void unit_System_copyConstructor();
+
+void unit_System_assignmentOperator();
+
 /**
  * @brief Executa todos os testes unitários da classe SystemImpl.
  *
