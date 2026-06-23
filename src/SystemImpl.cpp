@@ -1,25 +1,23 @@
 #include "SystemImpl.hpp"
 
-SystemImpl::SystemImpl()
-{
+SystemBody::SystemBody() {
     name = "";
-    value = 0;
+    value = 0.0;
 }
 
-SystemImpl::SystemImpl(string name, double value)
-{
+SystemBody::SystemBody(std::string name, double value) {
     this->name = name;
     this->value = value;
 }
 
-SystemImpl::SystemImpl(const SystemImpl &sys)
-{
+SystemBody::SystemBody(const SystemBody& sys) {
     name = sys.name;
     value = sys.value;
 }
 
-SystemImpl &SystemImpl::operator=(const SystemImpl &sys)
-{
+SystemBody::~SystemBody() {}
+
+SystemBody& SystemBody::operator=(const SystemBody& sys) {
     if (this == &sys)
         return *this;
 
@@ -29,23 +27,65 @@ SystemImpl &SystemImpl::operator=(const SystemImpl &sys)
     return *this;
 }
 
-SystemImpl::~SystemImpl(){}
-
-string SystemImpl::getName() const{
+std::string SystemBody::getName() const {
     return name;
 }
 
-void SystemImpl::setName(const string &value)
-{
+void SystemBody::setName(const std::string& value) {
     name = value;
 }
 
-double SystemImpl::getValue() const
-{
+double SystemBody::getValue() const {
     return value;
 }
 
-void SystemImpl::setValue(double value)
-{
+void SystemBody::setValue(double value) {
     this->value = value;
+}
+
+SystemHandle::SystemHandle() {
+    pImpl_->setName("");
+    pImpl_->setValue(0.0);
+}
+
+SystemHandle::SystemHandle(std::string name, double value) {
+    pImpl_->setName(name);
+    pImpl_->setValue(value);
+}
+
+SystemHandle::SystemHandle(const SystemHandle& sys) {
+    if (sys.pImpl_) {
+        pImpl_ = new SystemBody(*(sys.pImpl_));
+    } else {
+        pImpl_ = new SystemBody();
+    }
+}
+
+SystemHandle::~SystemHandle() {}
+
+SystemHandle& SystemHandle::operator=(const SystemHandle& sys) {
+    if (this == &sys)
+        return *this;
+
+    if (sys.pImpl_) {
+        *pImpl_ = *(sys.pImpl_);
+    }
+
+    return *this;
+}
+
+std::string SystemHandle::getName() const {
+    return pImpl_->getName();
+}
+
+void SystemHandle::setName(const std::string& value) {
+    pImpl_->setName(value);
+}
+
+double SystemHandle::getValue() const {
+    return pImpl_->getValue();
+}
+
+void SystemHandle::setValue(double value) {
+    pImpl_->setValue(value);
 }

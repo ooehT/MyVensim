@@ -1,113 +1,36 @@
-#include "ModelImpl.hpp"
-#include <algorithm>
+#include "Modelimpl.hpp"
+#include "SystemImpl.hpp"
+#include "Flow.hpp"
 
-using namespace std;
+std::vector<Model*> ModelBody::models;
 
-ModelImpl::ModelImpl() {}
-
-ModelImpl::~ModelImpl() {}
-
-void ModelImpl::execute(double start, double end, double increment)
-{
-    std::vector<double> values;
-    System *source;
-    System *target;
-    int j = 0;
-
-    for (double time = start; time < end; time += increment)
-    {
-        values.clear();
-        j = 0;
-
-        for (std::vector<Flow *>::iterator it = flows.begin();
-             it != flows.end();
-             ++it)
-        {
-            values.push_back((*it)->equation());
-        }
-
-        for (std::vector<Flow *>::iterator it = flows.begin();
-             it != flows.end();
-             ++it)
-        {
-            source = (*it)->getSource();
-            target = (*it)->getTarget();
-
-            if (source != nullptr)
-                source->setValue(source->getValue() - values[j]);
-
-            if (target != nullptr)
-                target->setValue(target->getValue() + values[j]);
-
-            j++;
-        }
-    }
+ModelBody::ModelBody() {
+    name = "";
 }
 
-
-std::string ModelImpl::getName() const
-{
-    return name;
+ModelBody::ModelBody(std::string name) {
+    this->name = name;
 }
 
-void ModelImpl::setName(const std::string &value)
-{
-    name = value;
-}
-
-void ModelImpl::add(System *system)
-{
-    systems.push_back(system);
-}
-
-void ModelImpl::add(Flow *flow)
-{
-    flows.push_back(flow);
-}
-
-bool ModelImpl::remove(System *system)
-{
-    if (system != nullptr)
-    {
-        std::vector<System *>::iterator itSystem;
-        itSystem = std::find(systems.begin(), systems.end(), system);
-
-        if (itSystem != systems.end())
-        {
-            systems.erase(itSystem);
-            return true;
-        }
-    }
-
-    return false;
-}
-
-bool ModelImpl::remove(Flow *flow)
-{
-    if (flow != nullptr)
-    {
-        std::vector<Flow *>::iterator itFlow;
-        itFlow = std::find(flows.begin(), flows.end(), flow);
-
-        if (itFlow != flows.end())
-        {
-            flows.erase(itFlow);
-            return true;
-        }
-    }
-
-    return false;
-}
-
-ModelImpl::ModelImpl(const ModelImpl &copy)
-{
+ModelBody::ModelBody(const ModelBody& copy) {
     name = copy.name;
     systems = copy.systems;
     flows = copy.flows;
 }
 
-ModelImpl &ModelImpl::operator=(const ModelImpl &copy)
-{
+ModelBody::~ModelBody() {
+    for (System* s : systems) {
+        delete s;
+    }
+    systems.clear();
+
+    for (Flow* f : flows) {
+        delete f;
+    }
+    flows.clear();
+}
+
+ModelBody& ModelBody::operator=(const ModelBody& copy) {
     if (this == &copy)
         return *this;
 
@@ -117,22 +40,151 @@ ModelImpl &ModelImpl::operator=(const ModelImpl &copy)
 
     return *this;
 }
-std::vector<System*>::iterator ModelImpl::beginSystems()
-{
+
+void ModelBody::execute(double start, double end, double increment) {
+    for (double t = start; t < end; t += increment) {
+        std::vector<double> results;
+        for (Flow* f : flows) {
+            results.push_back(f->equation());
+        }
+
+        size_t i = 0;
+        for (Flow* f : flows) {
+            System* source = f->getSource();
+            System* target = f->getTarget();
+
+            if (source != nullptr) {
+                source->setValue(source->getValue() - results[i]);
+            }
+            if (target != nullptr) {
+                target->setValue(target->getValue() + results[i]);
+            }
+            i++;
+        }
+    }
+}
+
+void ModelBody::add(System* s) {
+    systems.push_back(s);
+}
+
+void ModelBody::add(Flow* f) {
+    flows.push_back(f);
+}
+
+bool ModelBody::remove(System* s) {
+    for (auto it = systems.begin(); it != systems.end(); ++it) {
+        if (*it == s) {
+            systems.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
+
+bool ModelBody::remove(Flow* f) {
+    for (auto it = flows.begin(); it != flows.end(); ++it) {
+        if (*it == f) {
+            flows.erase(it);
+            return true;
+        }
+    }
+    return false;
+}
+
+    std::string ModelBody::getName() const {
+    return name;
+}
+
+void ModelBody::setName(const std::string& name) {
+    this->name = name;
+}
+
+std::vector<System*>::iterator ModelBody::beginSystems() {
     return systems.begin();
 }
 
-std::vector<System*>::iterator ModelImpl::endSystems()
-{
+std::vector<System*>::iterator ModelBody::endSystems() {
     return systems.end();
 }
 
-std::vector<Flow*>::iterator ModelImpl::beginFlows()
-{
+std::vector<Flow*>::iterator ModelBody::beginFlows() {
     return flows.begin();
 }
 
-std::vector<Flow*>::iterator ModelImpl::endFlows()
-{
+std::vector<Flow*>::iterator ModelBody::endFlows() {
     return flows.end();
+}
+
+ModelHandle::ModelHandle() {
+    pImpl_->setName("");
+}
+
+ModelHandle::ModelHandle(std::string name) {
+    pImpl_->setName(name);
+}
+
+ModelHandle::ModelHandle(const ModelHandle& copy) {
+    if (copy.pImpl_) {
+        pImpl_ = new ModelBody(*(copy.pImpl_));
+    } else {
+        pImpl_ = new ModelBody();
+    }
+}
+
+ModelHandle::~ModelHandle() {}
+
+ModelHandle& ModelHandle::operator=(const ModelHandle& copy) {
+    if (this == &copy)
+        return *this;
+
+    if (copy.pImpl_) {
+        *pImpl_ = *(copy.pImpl_);
+    }
+
+    return *this;
+}
+
+void ModelHandle::execute(double start, double end, double increment) {
+    pImpl_->execute(start, end, increment);
+}
+
+void ModelHandle::add(System* s) {
+    pImpl_->add(s);
+}
+
+void ModelHandle::add(Flow* f) {
+    pImpl_->add(f);
+}
+
+bool ModelHandle::remove(System* s) {
+    return pImpl_->remove(s);
+}
+
+bool ModelHandle::remove(Flow* f) {
+    return pImpl_->remove(f);
+}
+
+std::string ModelHandle::getName() const {
+    return pImpl_->getName();
+}
+
+void ModelHandle::setName(const std::string& name) {
+    pImpl_->setName(name);
+}
+
+std::vector<System*>::iterator ModelHandle::beginSystems() {
+    return pImpl_->beginSystems();
+}
+
+std::vector<System*>::iterator ModelHandle::endSystems() {
+    return pImpl_->endSystems();
+}
+
+std::vector<Flow*>::iterator ModelHandle::beginFlows() {
+    return pImpl_->beginFlows();
+}
+
+std::vector<Flow*>::iterator ModelHandle::endFlows() {
+    return pImpl_->endFlows();
 }

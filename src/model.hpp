@@ -1,92 +1,96 @@
-/**
- * @file Model.hpp
- * @brief Interface abstrata responsável pelo gerenciamento da simulação.
- */
-
-#ifndef MODEL_HPP
-#define MODEL_HPP
+#ifndef MODELIMPL_H
+#define MODELIMPL_H
 
 #include <string>
+#include <vector>
 
-#include "System.hpp"
-#include "Flow.hpp"
-/**
- * @class Model
- * @brief Interface que define um modelo de simulação.
- *
- * A classe Model representa a estrutura responsável por armazenar
- * sistemas e fluxos, além de controlar a execução da simulação.
- *
- * É uma interface abstrata que deve ser implementada por classes concretas.
- */
+// Forward Declarations (Substituem os includes pesados)
+class System;
+class Flow;
 
-class Model
-{
+class Body {
 public:
-    /**
-     * @brief Destrutor virtual.
-     *
-     * Permite a destruição correta de objetos derivados.
-     */
-    virtual ~Model() {}
-    /**
-     * @brief Executa a simulação do modelo.
-     *
-     * Percorre o intervalo de tempo informado aplicando
-     * os fluxos existentes entre os sistemas.
-     *
-     * @param start Tempo inicial da simulação.
-     * @param end Tempo final da simulação.
-     * @param increment Intervalo entre cada passo da simulação.
-     */
-    virtual void execute(double start,
-                         double end,
-                         double increment) = 0;
-    /**
-     * @brief Adiciona um sistema ao modelo.
-     *
-     * @param system Sistema que será adicionado.
-     */
-    virtual void add(System *s) = 0;
-    /**
-     * @brief Adiciona um fluxo ao modelo.
-     *
-     * @param flow Fluxo que será adicionado.
-     */
-    virtual void add(Flow *f) = 0;
-    /**
-     * @brief Remove um sistema do modelo.
-     *
-     * @param system Sistema que será removido.
-     *
-     * @return true caso o sistema seja removido.
-     */
-    virtual bool remove(System *s) = 0;
-    /**
-     * @brief Remove um fluxo do modelo.
-     *
-     * @param flow Fluxo que será removido.
-     *
-     * @return true caso o fluxo seja removido.
-     */
-    virtual bool remove(Flow *f) = 0;
-    /**
-     * @brief Obtém os sistemas pertencentes ao modelo.
-     *
-     * @return Vetor contendo os sistemas cadastrados.
-     */
-    virtual std::string getName() const = 0;
-    /**
-     * @brief Define o nome do modelo.
-     *
-     * @param name Novo nome do modelo.
-     */
-    virtual void setName(const std::string &) = 0;
-    virtual std::vector<System*>::iterator beginSystems() = 0;
-virtual std::vector<System*>::iterator endSystems() = 0;
+    virtual ~Body() {}
+};
 
-virtual std::vector<Flow*>::iterator beginFlows() = 0;
-virtual std::vector<Flow*>::iterator endFlows() = 0;
+template <typename T>
+class Handle {
+protected:
+    T* pImpl_;
+public:
+    Handle() : pImpl_(new T()) {}
+    virtual ~Handle() { delete pImpl_; }
+};
+
+class Model {
+public:
+    virtual ~Model() {}
+    virtual void execute(double start, double end, double increment) = 0;
+    virtual void add(System* s) = 0;
+    virtual void add(Flow* f) = 0;
+    virtual bool remove(System* s) = 0;
+    virtual bool remove(Flow* f) = 0;
+    virtual std::string getName() const = 0;
+    virtual void setName(const std::string& name) = 0;
+    virtual std::vector<System*>::iterator beginSystems() = 0;
+    virtual std::vector<System*>::iterator endSystems() = 0;
+    virtual std::vector<Flow*>::iterator beginFlows() = 0;
+    virtual std::vector<Flow*>::iterator endFlows() = 0;
+};
+
+class ModelBody : public Body {
+    friend class UnitModel;
+    friend class ModelHandle;
+
+private:
+    std::string name;
+    std::vector<System*> systems;
+    std::vector<Flow*> flows;
+    static std::vector<Model*> models;
+
+public:
+    ModelBody();
+    ModelBody(std::string name);
+    ModelBody(const ModelBody& copy);
+    virtual ~ModelBody();
+    ModelBody& operator=(const ModelBody& copy);
+
+    void execute(double start, double end, double increment);
+    void add(System* s);
+    void add(Flow* f);
+    bool remove(System* s);
+    bool remove(Flow* f);
+    std::string getName() const;
+    void setName(const std::string& name);
+
+    std::vector<System*>::iterator beginSystems();
+    std::vector<System*>::iterator endSystems();
+    std::vector<Flow*>::iterator beginFlows();
+    std::vector<Flow*>::iterator endFlows();
+};
+
+class ModelHandle : public Model, public Handle<ModelBody> {
+    friend class UnitModel;
+
+public:
+    ModelHandle();
+    ModelHandle(std::string name);
+    ModelHandle(const ModelHandle& copy);
+    virtual ~ModelHandle();
+    ModelHandle& operator=(const ModelHandle& copy);
+
+    void execute(double start, double end, double increment) override;
+    void add(System* s) override;
+    void add(Flow* f) override;
+    bool remove(System* s) override;
+    bool remove(Flow* f) override;
+    std::string getName() const override;
+    void setName(const std::string& name) override;
+
+    std::vector<System*>::iterator beginSystems() override;
+    std::vector<System*>::iterator endSystems() override;
+    std::vector<Flow*>::iterator beginFlows() override;
+    std::vector<Flow*>::iterator endFlows() override;
 };
 
 #endif

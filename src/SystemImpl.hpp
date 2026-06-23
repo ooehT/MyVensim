@@ -1,91 +1,68 @@
-/**
- * @file SystemImpl.hpp
- * @brief Implementação concreta da interface System.
- */
-#ifndef SYSTEMIMPL_HPP
-#define SYSTEMIMPL_HPP
+#ifndef SYSTEMIMPL_H
+#define SYSTEMIMPL_H
 
-#include "System.hpp"
-/**
- * @class SystemImpl
- * @brief Implementação concreta de um sistema da simulação.
- *
- * Armazena internamente o nome e o valor do sistema.
- * Implementa todos os métodos definidos pela interface System.
- */
+#include <string>
 
-class SystemImpl : public System
-{
+class Body {
+public:
+    virtual ~Body() {}
+};
+
+template <typename T>
+class Handle {
+protected:
+    T* pImpl_;
+public:
+    Handle() : pImpl_(new T()) {}
+    virtual ~Handle() { delete pImpl_; }
+};
+
+class System {
+public:
+    virtual ~System() {}
+    virtual std::string getName() const = 0;
+    virtual void setName(const std::string& name) = 0;
+    virtual double getValue() const = 0;
+    virtual void setValue(double value) = 0;
+};
+
+class SystemBody : public Body {
+    friend class UnitSystem;
+    friend class UnitModel;
+    friend class SystemHandle;
+
 private:
-    /**
-     * @brief Valor atual armazenado pelo sistema.
-     */
+    std::string name;
     double value;
-    /**
-     * @brief Nome identificador do sistema.
-     */
-    string name;
 
 public:
-    /**
-     * @brief Construtor padrão.
-     * Inicializa um sistema com nome e valor padrão.
-     */
-    SystemImpl();
-    /**
-     * @brief Construtor parametrizado.
-     *
-     * @param name Nome do sistema.
-     * @param value Valor inicial.
-     */
+    SystemBody();
+    SystemBody(std::string name, double value);
+    SystemBody(const SystemBody& sys);
+    virtual ~SystemBody();
+    SystemBody& operator=(const SystemBody& sys);
 
-    SystemImpl(string name, double value);
-
-    /**
-     * @brief Construtor de cópia.
-     *
-     * Cria um novo sistema copiando os dados
-     * de outro objeto SystemImpl.
-     *
-     * @param copy Sistema que será copiado.
-     */
-    SystemImpl(const SystemImpl &);
-    /**
-     * @brief Operador de atribuição.
-     *
-     * Copia os valores de outro sistema para este objeto.
-     *
-     * @param copy Sistema que será atribuído.
-     * @return Referência para o próprio objeto.
-     */
-    SystemImpl &operator=(const SystemImpl &);
-    /**
-     * @brief Destrutor.
-     */
-    virtual ~SystemImpl();
-
-    /**
-     * @brief Retorna o nome do sistema.
-     */
-    string getName() const;
-    /**
-     * @brief Define o nome do sistema.
-     *
-     * @param name Novo nome do sistema.
-     */
-    void setName(const string &);
-    /**
-     * @brief Retorna o valor atual do sistema.
-     *
-     * @return Valor armazenado.
-     */
+    std::string getName() const;
+    void setName(const std::string& value);
     double getValue() const;
-    /**
-     * @brief Define o valor do sistema.
-     *
-     * @param value Novo valor armazenado.
-     */
-    void setValue(double);
+    void setValue(double value);
+};
+
+class SystemHandle : public System, public Handle<SystemBody> {
+    friend class UnitSystem;
+    friend class UnitModel;
+
+public:
+    SystemHandle();
+    SystemHandle(std::string name, double value = 0.0);
+    SystemHandle(const SystemHandle& sys);
+    virtual ~SystemHandle();
+    SystemHandle& operator=(const SystemHandle& sys);
+
+    std::string getName() const override;
+    void setName(const std::string& value) override;
+    double getValue() const override;
+    void setValue(double value) override;
 };
 
 #endif

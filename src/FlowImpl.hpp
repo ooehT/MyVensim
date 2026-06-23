@@ -1,123 +1,86 @@
-/**
- * @file FlowImpl.hpp
- * @brief Implementação concreta da interface Flow.
- */
-#ifndef FLOWIMPL_HPP
-#define FLOWIMPL_HPP
+#ifndef FLOWIMPL_H
+#define FLOWIMPL_H
 
-#include "Flow.hpp"
-/**
- * @class FlowImpl
- * @brief Implementação base de um fluxo da simulação.
- *
- * Armazena as informações comuns a todos os fluxos:
- * nome, sistema de origem e sistema de destino.
- *
- * As classes derivadas são responsáveis por implementar
- * a equação específica do fluxo.
- */
-class FlowImpl : public Flow
-{
+#include <string>
+
+class System;
+
+class Body {
+public:
+    virtual ~Body() {}
+};
+
+template <typename T>
+class Handle {
 protected:
-    /**
-     * @brief Nome identificador do fluxo.
-     */
+    T* pImpl_;
+public:
+    Handle() : pImpl_(new T()) {}
+    virtual ~Handle() { delete pImpl_; }
+};
+
+class Flow {
+public:
+    virtual ~Flow() {}
+    virtual std::string getName() const = 0;
+    virtual void setName(const std::string& name) = 0;
+    virtual System* getSource() const = 0;
+    virtual void setSource(System* source) = 0;
+    virtual System* getTarget() const = 0;
+    virtual void setTarget(System* target) = 0;
+    virtual void removeSource() = 0;
+    virtual void removeTarget() = 0;
+    virtual double equation() = 0;
+};
+
+class FlowBody : public Body {
+    friend class UnitFlow;
+    friend class UnitModel;
+    friend class FlowHandle;
+
+private:
     std::string name;
-    /**
-     * @brief Sistema de origem do fluxo.
-     */
-    System *source;
-    /**
-     * @brief Sistema de destino do fluxo.
-     */
-    System *target;
+    System* source;
+    System* target;
 
 public:
-    /**
-     * @brief Construtor padrão.
-     */
-    FlowImpl();
-    /**
-     * @brief Construtor parametrizado.
-     *
-     * @param name Nome do fluxo.
-     * @param source Sistema de origem.
-     * @param target Sistema de destino.
-     */
-    FlowImpl(std::string, System *, System *);
-    /**
-     * @brief Construtor de cópia.
-     *
-     * @param copy Fluxo que será copiado.
-     */
-    FlowImpl(const FlowImpl &copy);
-    /**
-     * @brief Operador de atribuição.
-     *
-     * @param copy Fluxo que será atribuído.
-     *
-     * @return Referência para o próprio objeto.
-     */
-    FlowImpl &operator=(const FlowImpl &);
-    /**
-     * @brief Destrutor.
-     */
+    FlowBody();
+    FlowBody(std::string name, System* source, System* target);
+    FlowBody(const FlowBody& copy);
+    virtual ~FlowBody();
+    FlowBody& operator=(const FlowBody& copy);
 
-    virtual ~FlowImpl();
-    /**
-     * @brief Define o sistema de origem.
-     *
-     * @param source Novo sistema de origem.
-     */
-    void setSource(System *);
-    /**
-     * @brief Retorna o sistema de origem.
-     *
-     * @return Sistema de origem.
-     */
-    System *getSource() const;
-    /**
-     * @brief Define o sistema de destino.
-     *
-     * @param target Novo sistema de destino.
-     */
-    void setTarget(System *);
-    /**
-     * @brief Retorna o sistema de destino.
-     *
-     * @return Sistema de destino.
-     */
-    System *getTarget() const;
-    /**
-     * @brief Retorna o nome do fluxo.
-     *
-     * @return Nome identificador.
-     */
+    void setSource(System* source);
+    System* getSource() const;
+    void setTarget(System* target);
+    System* getTarget() const;
     std::string getName() const;
-    /**
-     * @brief Define o nome do fluxo.
-     *
-     * @param name Novo nome.
-     */
-    void setName(const std::string &);
-    /**
-     * @brief Remove o sistema de origem.
-     *
-     * Define o ponteiro de origem como nulo.
-     */
+    void setName(const std::string& name);
     void removeSource();
-    /**
-     * @brief Remove o sistema de destino.
-     *
-     * Define o ponteiro de destino como nulo.
-     */
     void removeTarget();
-    /**
-     * @brief Executa o fluxo.
-     *
-     * @return Valor resultante da execução.
-     */
-    virtual double equation() = 0;
+    virtual double equation();
+};
+
+class FlowHandle : public Flow, public Handle<FlowBody> {
+    friend class UnitFlow;
+    friend class UnitModel;
+
+public:
+    FlowHandle();
+    FlowHandle(std::string name, System* source = nullptr, System* target = nullptr);
+    FlowHandle(const FlowHandle& copy);
+    virtual ~FlowHandle();
+    FlowHandle& operator=(const FlowHandle& copy);
+
+    std::string getName() const override;
+    void setName(const std::string& name) override;
+    System* getSource() const override;
+    void setSource(System* source) override;
+    System* getTarget() const override;
+    void setTarget(System* target) override;
+    void removeSource() override;
+    void removeTarget() override;
+    double equation() override;
 };
 
 #endif

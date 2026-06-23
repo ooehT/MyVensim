@@ -1,80 +1,133 @@
 #include "FlowImpl.hpp"
 
-FlowImpl::FlowImpl()
-{
+FlowBody::FlowBody() {
     name = "";
     source = nullptr;
     target = nullptr;
 }
 
-FlowImpl::FlowImpl(std::string name,
-                   System* source,
-                   System* target)
-{
+FlowBody::FlowBody(std::string name, System* source, System* target) {
     this->name = name;
     this->source = source;
     this->target = target;
 }
 
-FlowImpl::FlowImpl(const FlowImpl& f)
-{
-    name = f.name;
-    source = f.source;
-    target = f.target;
+FlowBody::FlowBody(const FlowBody& copy) {
+    name = copy.name;
+    source = copy.source;
+    target = copy.target;
 }
 
-FlowImpl& FlowImpl::operator=(const FlowImpl& f)
-{
-    if(this == &f)
+FlowBody::~FlowBody() {}
+
+FlowBody& FlowBody::operator=(const FlowBody& copy) {
+    if (this == &copy)
         return *this;
 
-    name = f.name;
-    source = f.source;
-    target = f.target;
+    name = copy.name;
+    source = copy.source;
+    target = copy.target;
 
     return *this;
 }
 
-FlowImpl::~FlowImpl()
-{
-}
-
-void FlowImpl::setSource(System* source)
-{
+void FlowBody::setSource(System* source) {
     this->source = source;
 }
 
-System* FlowImpl::getSource() const
-{
+System* FlowBody::getSource() const {
     return source;
 }
 
-void FlowImpl::setTarget(System* target)
-{
+void FlowBody::setTarget(System* target) {
     this->target = target;
 }
 
-System* FlowImpl::getTarget() const
-{
+System* FlowBody::getTarget() const {
     return target;
 }
 
-std::string FlowImpl::getName() const
-{
+std::string FlowBody::getName() const {
     return name;
 }
 
-void FlowImpl::setName(const std::string& value)
-{
+void FlowBody::setName(const std::string& value) {
     name = value;
 }
 
-void FlowImpl::removeSource()
-{
+void FlowBody::removeSource() {
     source = nullptr;
 }
 
-void FlowImpl::removeTarget()
-{
+void FlowBody::removeTarget() {
     target = nullptr;
+}
+
+FlowHandle::FlowHandle() {
+    pImpl_->setName("");
+    pImpl_->setSource(nullptr);
+    pImpl_->setTarget(nullptr);
+}
+
+FlowHandle::FlowHandle(std::string name, System* source, System* target) {
+    pImpl_->setName(name);
+    pImpl_->setSource(source);
+    pImpl_->setTarget(target);
+}
+
+FlowHandle::FlowHandle(const FlowHandle& copy) {
+    if (copy.pImpl_) {
+        pImpl_ = new FlowBody(*(copy.pImpl_));
+    } else {
+        pImpl_ = new FlowBody();
+    }
+}
+
+FlowHandle::~FlowHandle() {}
+
+FlowHandle& FlowHandle::operator=(const FlowHandle& copy) {
+    if (this == &copy)
+        return *this;
+
+    if (copy.pImpl_) {
+        *pImpl_ = *(copy.pImpl_);
+    }
+
+    return *this;
+}
+
+std::string FlowHandle::getName() const {
+    return pImpl_->getName();
+}
+
+void FlowHandle::setName(const std::string& name) {
+    pImpl_->setName(name);
+}
+
+System* FlowHandle::getSource() const {
+    return pImpl_->getSource();
+}
+
+void FlowHandle::setSource(System* source) {
+    pImpl_->setSource(source);
+}
+
+System* FlowHandle::getTarget() const {
+    return pImpl_->getTarget();
+}
+
+void FlowHandle::setTarget(System* target) {
+    pImpl_->setTarget(target);
+}
+
+void FlowHandle::removeSource() {
+    pImpl_->removeSource();
+}
+
+void FlowHandle::removeTarget() {
+    pImpl_->removeTarget();
+}
+
+double FlowBody::equation() {
+    return 0.0;
 }
