@@ -1,18 +1,20 @@
-all: funcional unit
+all: lib tests
 
-funcional:
+lib:
 	mkdir -p bin
-	g++ test/funcional/*.cpp src/*.cpp -o bin/funcional_tests
+	g++ -Wall -Wextra -std=c++11 -fPIC -shared src/*.cpp -I./src -o bin/libmodel.so
 
-unit:
-	mkdir -p bin
-	g++ test/unit/*.cpp src/*.cpp -o bin/unit_tests
+tests:
+	g++ -Wall -Wextra -std=c++11 test/funcional/*.cpp -I./src -L./bin -lmodel -o bin/funcional_tests
+	g++ -Wall -Wextra -std=c++11 test/unit/*.cpp -I./src -L./bin -lmodel -o bin/unit_tests
 
-run_funcional:
-	./bin/funcional_tests
+runFunctional:
+	LD_LIBRARY_PATH=./bin ./bin/funcional_tests
 
-run_unit:
-	./bin/unit_tests
+runUnit:
+	LD_LIBRARY_PATH=./bin ./bin/unit_tests
+
+run: runFunctional runUnit
 
 clean:
-	rm -rf bin/*
+	rm -rf bin/

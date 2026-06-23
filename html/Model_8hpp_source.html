@@ -91,52 +91,126 @@ $(function(){initNavTree('Model_8hpp_source.html','',''); });
   <div class="headertitle"><div class="title">Model.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="Model_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MODEL_HPP</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define MODEL_HPP</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="classSystem.html">System</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_class" href="classFlow.html">Flow</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classModel.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classModel.html">Model</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">   31</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a>() {}</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classModel.html#a1c2eb43d23c379ebd4b4881a4fc2911b">   42</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#a1c2eb43d23c379ebd4b4881a4fc2911b">execute</a>(<span class="keywordtype">double</span> start,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                         <span class="keywordtype">double</span> end,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                         <span class="keywordtype">double</span> increment) = 0;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classModel.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">   50</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">add</a>(<a class="code hl_class" href="classSystem.html">System</a> *s) = 0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classModel.html#ad248b54040ab38124af621cbc4c7c2e6">   56</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#ad248b54040ab38124af621cbc4c7c2e6">add</a>(<a class="code hl_class" href="classFlow.html">Flow</a> *f) = 0;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classModel.html#aab07c39ea01c4296097674893858f12f">   64</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classModel.html#aab07c39ea01c4296097674893858f12f">remove</a>(<a class="code hl_class" href="classSystem.html">System</a> *s) = 0;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classModel.html#a8568b21dec4f8781179a64b44826e029">   72</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classModel.html#a8568b21dec4f8781179a64b44826e029">remove</a>(<a class="code hl_class" href="classFlow.html">Flow</a> *f) = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classModel.html#a17e89ca8d15af46d074423a47d3c6802">   78</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="classModel.html#a17e89ca8d15af46d074423a47d3c6802">getName</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classModel.html#a17a6fba98202c82b3bce12bfb7540513">   84</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#a17a6fba98202c82b3bce12bfb7540513">setName</a>(<span class="keyword">const</span> std::string &amp;) = 0;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classModel.html#ab9326f396cf9e3087bdedabb707e34fd">   85</a></span>    <span class="keyword">virtual</span> std::vector&lt;System *&gt;::iterator <a class="code hl_function" href="classModel.html#ab9326f396cf9e3087bdedabb707e34fd">beginSystems</a>() = 0;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classModel.html#a241dd719ebc31f3c66ecbc1e76185809">   86</a></span>    <span class="keyword">virtual</span> std::vector&lt;System *&gt;::iterator <a class="code hl_function" href="classModel.html#a241dd719ebc31f3c66ecbc1e76185809">endSystems</a>() = 0;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classModel.html#afc751c5fe8476eccf0e50fdb0db5d19f">   88</a></span>    <span class="keyword">virtual</span> std::vector&lt;Flow *&gt;::iterator <a class="code hl_function" href="classModel.html#afc751c5fe8476eccf0e50fdb0db5d19f">beginFlows</a>() = 0;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classModel.html#a60756bd2d10f18e66bd2828a6f131c16">   89</a></span>    <span class="keyword">virtual</span> std::vector&lt;Flow *&gt;::iterator <a class="code hl_function" href="classModel.html#a60756bd2d10f18e66bd2828a6f131c16">endFlows</a>() = 0;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+<a href="Model_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MODEL_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MODEL_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classSystem.html">System</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span><a class="code hl_class" href="classFlow.html">Flow</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classModel.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classModel.html">Model</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">   13</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a>() {}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     * Factory de modelos</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">static</span> <a class="code hl_class" href="classModel.html">Model</a> *<a class="code hl_function" href="classModel.html#a51a7b3b82e35760309ff35991cc35f7e">createModel</a>(std::string name);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classModel.html#aceca7cbc17c9a465845b4173ff670570">deleteModel</a>(std::string name);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     * Execução</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classModel.html#a1c2eb43d23c379ebd4b4881a4fc2911b">   23</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#a1c2eb43d23c379ebd4b4881a4fc2911b">execute</a>(<span class="keywordtype">double</span> start,<span class="keywordtype">double</span> end, <span class="keywordtype">double</span> increment) = 0;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">     * Factory de fluxos</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T_FLOW_IMPL&gt;</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classModel.html#ac9bcfd3fc0b11c33a5a9c6aa46eaf503">   29</a></span>    <a class="code hl_class" href="classFlow.html">Flow</a> *<a class="code hl_function" href="classModel.html#ac9bcfd3fc0b11c33a5a9c6aa46eaf503">createFlow</a>(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        std::string name,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_class" href="classSystem.html">System</a> *source = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="classSystem.html">System</a> *target = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="classFlow.html">Flow</a> *flow = <span class="keyword">new</span> T_FLOW_IMPL(</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            name,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            source,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            target);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_function" href="classModel.html#ac1e19f5fcc4ced9defbfe2847a26ff33">add</a>(flow);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> flow;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * Factory de sistemas</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classModel.html#afb83fc80a9aa5fb9ade329a726d65277">   47</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classSystem.html">System</a> *<a class="code hl_function" href="classModel.html#afb83fc80a9aa5fb9ade329a726d65277">createSystem</a>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        std::string name,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">double</span> value) = 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">     * Remoções</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classModel.html#a4e5a7924d97d37f44cdd30b7896d044c">   54</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classModel.html#a4e5a7924d97d37f44cdd30b7896d044c">deleteFlow</a>(</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_class" href="classFlow.html">Flow</a> *) = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classModel.html#a6a86b070aee6a70716810ca1aa5e6d3b">   57</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classModel.html#a6a86b070aee6a70716810ca1aa5e6d3b">deleteSystem</a>(</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_class" href="classSystem.html">System</a> *) = 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * Nome do modelo</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classModel.html#a17e89ca8d15af46d074423a47d3c6802">   63</a></span>    <span class="keyword">virtual</span> std::string <a class="code hl_function" href="classModel.html#a17e89ca8d15af46d074423a47d3c6802">getName</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classModel.html#ad9e8e4d0a942396c74932a8c57b03b57">   65</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#ad9e8e4d0a942396c74932a8c57b03b57">setName</a>(</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">const</span> std::string &amp;name) = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">     * Iteradores de sistemas</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">virtual</span> std::vector&lt;System *&gt;::iterator</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classModel.html#ab9326f396cf9e3087bdedabb707e34fd">   72</a></span>    <a class="code hl_function" href="classModel.html#ab9326f396cf9e3087bdedabb707e34fd">beginSystems</a>() = 0;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">virtual</span> std::vector&lt;System *&gt;::iterator</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classModel.html#a241dd719ebc31f3c66ecbc1e76185809">   75</a></span>    <a class="code hl_function" href="classModel.html#a241dd719ebc31f3c66ecbc1e76185809">endSystems</a>() = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">     * Iteradores de fluxos</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">virtual</span> std::vector&lt;Flow *&gt;::iterator</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classModel.html#afc751c5fe8476eccf0e50fdb0db5d19f">   81</a></span>    <a class="code hl_function" href="classModel.html#afc751c5fe8476eccf0e50fdb0db5d19f">beginFlows</a>() = 0;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">virtual</span> std::vector&lt;Flow *&gt;::iterator</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classModel.html#a60756bd2d10f18e66bd2828a6f131c16">   84</a></span>    <a class="code hl_function" href="classModel.html#a60756bd2d10f18e66bd2828a6f131c16">endFlows</a>() = 0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">     * Registro interno</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classModel.html#ac1e19f5fcc4ced9defbfe2847a26ff33">   90</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#ac1e19f5fcc4ced9defbfe2847a26ff33">add</a>(<a class="code hl_class" href="classFlow.html">Flow</a> *) = 0;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classModel.html#a70362afdd9db6268b4adaedfeddb2935">   92</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classModel.html#a70362afdd9db6268b4adaedfeddb2935">add</a>(<a class="code hl_class" href="classSystem.html">System</a>*) = 0;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classModel.html#afb81d2077780e342b8fd3654cabc4c19">   95</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classModel.html#afb81d2077780e342b8fd3654cabc4c19">ModelImpl</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassFlow_html"><div class="ttname"><a href="classFlow.html">Flow</a></div><div class="ttdoc">Interface que define um fluxo da simulação.</div><div class="ttdef"><b>Definition</b> Flow.hpp:22</div></div>
-<div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdoc">Interface que define um modelo de simulação.</div><div class="ttdef"><b>Definition</b> Model.hpp:24</div></div>
-<div class="ttc" id="aclassModel_html_a17a6fba98202c82b3bce12bfb7540513"><div class="ttname"><a href="classModel.html#a17a6fba98202c82b3bce12bfb7540513">Model::setName</a></div><div class="ttdeci">virtual void setName(const std::string &amp;)=0</div><div class="ttdoc">Define o nome do modelo.</div></div>
-<div class="ttc" id="aclassModel_html_a17e89ca8d15af46d074423a47d3c6802"><div class="ttname"><a href="classModel.html#a17e89ca8d15af46d074423a47d3c6802">Model::getName</a></div><div class="ttdeci">virtual std::string getName() const =0</div><div class="ttdoc">Obtém os sistemas pertencentes ao modelo.</div></div>
-<div class="ttc" id="aclassModel_html_a1c2eb43d23c379ebd4b4881a4fc2911b"><div class="ttname"><a href="classModel.html#a1c2eb43d23c379ebd4b4881a4fc2911b">Model::execute</a></div><div class="ttdeci">virtual void execute(double start, double end, double increment)=0</div><div class="ttdoc">Executa a simulação do modelo.</div></div>
-<div class="ttc" id="aclassModel_html_a1c57f13b17e1fd598fa7ebe1fa55a7df"><div class="ttname"><a href="classModel.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">Model::add</a></div><div class="ttdeci">virtual void add(System *s)=0</div><div class="ttdoc">Adiciona um sistema ao modelo.</div></div>
+<div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition</b> Model.hpp:11</div></div>
+<div class="ttc" id="aclassModel_html_a17e89ca8d15af46d074423a47d3c6802"><div class="ttname"><a href="classModel.html#a17e89ca8d15af46d074423a47d3c6802">Model::getName</a></div><div class="ttdeci">virtual std::string getName() const =0</div></div>
+<div class="ttc" id="aclassModel_html_a1c2eb43d23c379ebd4b4881a4fc2911b"><div class="ttname"><a href="classModel.html#a1c2eb43d23c379ebd4b4881a4fc2911b">Model::execute</a></div><div class="ttdeci">virtual void execute(double start, double end, double increment)=0</div></div>
 <div class="ttc" id="aclassModel_html_a241dd719ebc31f3c66ecbc1e76185809"><div class="ttname"><a href="classModel.html#a241dd719ebc31f3c66ecbc1e76185809">Model::endSystems</a></div><div class="ttdeci">virtual std::vector&lt; System * &gt;::iterator endSystems()=0</div></div>
+<div class="ttc" id="aclassModel_html_a4e5a7924d97d37f44cdd30b7896d044c"><div class="ttname"><a href="classModel.html#a4e5a7924d97d37f44cdd30b7896d044c">Model::deleteFlow</a></div><div class="ttdeci">virtual bool deleteFlow(Flow *)=0</div></div>
+<div class="ttc" id="aclassModel_html_a51a7b3b82e35760309ff35991cc35f7e"><div class="ttname"><a href="classModel.html#a51a7b3b82e35760309ff35991cc35f7e">Model::createModel</a></div><div class="ttdeci">static Model * createModel(std::string name)</div><div class="ttdef"><b>Definition</b> ModelImpl.cpp:12</div></div>
 <div class="ttc" id="aclassModel_html_a60756bd2d10f18e66bd2828a6f131c16"><div class="ttname"><a href="classModel.html#a60756bd2d10f18e66bd2828a6f131c16">Model::endFlows</a></div><div class="ttdeci">virtual std::vector&lt; Flow * &gt;::iterator endFlows()=0</div></div>
-<div class="ttc" id="aclassModel_html_a8568b21dec4f8781179a64b44826e029"><div class="ttname"><a href="classModel.html#a8568b21dec4f8781179a64b44826e029">Model::remove</a></div><div class="ttdeci">virtual bool remove(Flow *f)=0</div><div class="ttdoc">Remove um fluxo do modelo.</div></div>
-<div class="ttc" id="aclassModel_html_aab07c39ea01c4296097674893858f12f"><div class="ttname"><a href="classModel.html#aab07c39ea01c4296097674893858f12f">Model::remove</a></div><div class="ttdeci">virtual bool remove(System *s)=0</div><div class="ttdoc">Remove um sistema do modelo.</div></div>
+<div class="ttc" id="aclassModel_html_a6a86b070aee6a70716810ca1aa5e6d3b"><div class="ttname"><a href="classModel.html#a6a86b070aee6a70716810ca1aa5e6d3b">Model::deleteSystem</a></div><div class="ttdeci">virtual bool deleteSystem(System *)=0</div></div>
+<div class="ttc" id="aclassModel_html_a70362afdd9db6268b4adaedfeddb2935"><div class="ttname"><a href="classModel.html#a70362afdd9db6268b4adaedfeddb2935">Model::add</a></div><div class="ttdeci">virtual void add(System *)=0</div></div>
 <div class="ttc" id="aclassModel_html_ab9326f396cf9e3087bdedabb707e34fd"><div class="ttname"><a href="classModel.html#ab9326f396cf9e3087bdedabb707e34fd">Model::beginSystems</a></div><div class="ttdeci">virtual std::vector&lt; System * &gt;::iterator beginSystems()=0</div></div>
-<div class="ttc" id="aclassModel_html_ad248b54040ab38124af621cbc4c7c2e6"><div class="ttname"><a href="classModel.html#ad248b54040ab38124af621cbc4c7c2e6">Model::add</a></div><div class="ttdeci">virtual void add(Flow *f)=0</div><div class="ttdoc">Adiciona um fluxo ao modelo.</div></div>
-<div class="ttc" id="aclassModel_html_af032d8433c87a0a3a431faf6563a1f03"><div class="ttname"><a href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">Model::~Model</a></div><div class="ttdeci">virtual ~Model()</div><div class="ttdoc">Destrutor virtual.</div><div class="ttdef"><b>Definition</b> Model.hpp:31</div></div>
+<div class="ttc" id="aclassModel_html_ac1e19f5fcc4ced9defbfe2847a26ff33"><div class="ttname"><a href="classModel.html#ac1e19f5fcc4ced9defbfe2847a26ff33">Model::add</a></div><div class="ttdeci">virtual void add(Flow *)=0</div></div>
+<div class="ttc" id="aclassModel_html_ac9bcfd3fc0b11c33a5a9c6aa46eaf503"><div class="ttname"><a href="classModel.html#ac9bcfd3fc0b11c33a5a9c6aa46eaf503">Model::createFlow</a></div><div class="ttdeci">Flow * createFlow(std::string name, System *source=nullptr, System *target=nullptr)</div><div class="ttdef"><b>Definition</b> Model.hpp:29</div></div>
+<div class="ttc" id="aclassModel_html_aceca7cbc17c9a465845b4173ff670570"><div class="ttname"><a href="classModel.html#aceca7cbc17c9a465845b4173ff670570">Model::deleteModel</a></div><div class="ttdeci">static bool deleteModel(std::string name)</div><div class="ttdef"><b>Definition</b> ModelImpl.cpp:42</div></div>
+<div class="ttc" id="aclassModel_html_ad9e8e4d0a942396c74932a8c57b03b57"><div class="ttname"><a href="classModel.html#ad9e8e4d0a942396c74932a8c57b03b57">Model::setName</a></div><div class="ttdeci">virtual void setName(const std::string &amp;name)=0</div></div>
+<div class="ttc" id="aclassModel_html_af032d8433c87a0a3a431faf6563a1f03"><div class="ttname"><a href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">Model::~Model</a></div><div class="ttdeci">virtual ~Model()</div><div class="ttdef"><b>Definition</b> Model.hpp:13</div></div>
+<div class="ttc" id="aclassModel_html_afb81d2077780e342b8fd3654cabc4c19"><div class="ttname"><a href="classModel.html#afb81d2077780e342b8fd3654cabc4c19">Model::ModelImpl</a></div><div class="ttdeci">friend class ModelImpl</div><div class="ttdef"><b>Definition</b> Model.hpp:95</div></div>
+<div class="ttc" id="aclassModel_html_afb83fc80a9aa5fb9ade329a726d65277"><div class="ttname"><a href="classModel.html#afb83fc80a9aa5fb9ade329a726d65277">Model::createSystem</a></div><div class="ttdeci">virtual System * createSystem(std::string name, double value)=0</div></div>
 <div class="ttc" id="aclassModel_html_afc751c5fe8476eccf0e50fdb0db5d19f"><div class="ttname"><a href="classModel.html#afc751c5fe8476eccf0e50fdb0db5d19f">Model::beginFlows</a></div><div class="ttdeci">virtual std::vector&lt; Flow * &gt;::iterator beginFlows()=0</div></div>
 <div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Representa um sistema contendo um valor associado.</div><div class="ttdef"><b>Definition</b> System.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->

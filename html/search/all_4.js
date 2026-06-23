@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['flow_0',['Flow',['../classFlow.html',1,'']]],
-  ['flow_2ehpp_1',['Flow.hpp',['../Flow_8hpp.html',1,'']]],
-  ['flowimpl_2',['FlowImpl',['../classFlowImpl.html',1,'FlowImpl'],['../classFlowImpl.html#aa835ccb3c368c683aa95d660175a298b',1,'FlowImpl::FlowImpl()'],['../classFlowImpl.html#a690c02067884f243657bdde0f946469d',1,'FlowImpl::FlowImpl(std::string, System *, System *)'],['../classFlowImpl.html#a1b12d24d557462ca69c1ada700eee087',1,'FlowImpl::FlowImpl(const FlowImpl &amp;copy)']]],
-  ['flowimpl_2ecpp_3',['FlowImpl.cpp',['../FlowImpl_8cpp.html',1,'']]],
-  ['flowimpl_2ehpp_4',['FlowImpl.hpp',['../FlowImpl_8hpp.html',1,'']]],
-  ['flows_5',['flows',['../classModelImpl.html#a8e3dec4a99bfc45397fdd3da92d3fff0',1,'ModelImpl']]],
-  ['flowtest_6',['FlowTest',['../classFlowTest.html',1,'FlowTest'],['../classFlowTest.html#a4883847a4fb99890633a21dad18636d6',1,'FlowTest::FlowTest()'],['../classFlowTest.html#ab223d0dcef21dac320ebb64130f576a1',1,'FlowTest::FlowTest(std::string name, System *source, System *target)'],['../classFlowTest.html#a773dd51c05c18de57fa26f411124077e',1,'FlowTest::FlowTest(const FlowTest &amp;other)']]],
-  ['flowtestm_7',['FlowTestM',['../classFlowTestM.html',1,'FlowTestM'],['../classFlowTestM.html#ad0c1bb59cc6e34a336e0d66054bfdd38',1,'FlowTestM::FlowTestM()'],['../classFlowTestM.html#a43fa24c42340cbc8421a9ea6aaa43819',1,'FlowTestM::FlowTestM(std::string name, System *source, System *target)']]],
-  ['funcional_5ftest_2ecpp_8',['funcional_test.cpp',['../funcional__test_8cpp.html',1,'']]],
-  ['funcional_5ftest_2ehpp_9',['funcional_test.hpp',['../funcional__test_8hpp.html',1,'']]]
+  ['endflows_0',['endFlows',['../classModel.html#a60756bd2d10f18e66bd2828a6f131c16',1,'Model::endFlows()'],['../classModelImpl.html#a5b3d5980ec326e27b7ec8731810243a5',1,'ModelImpl::endFlows()']]],
+  ['endsystems_1',['endSystems',['../classModel.html#a241dd719ebc31f3c66ecbc1e76185809',1,'Model::endSystems()'],['../classModelImpl.html#a09eff4d8fc51bb7c555cdf623091658d',1,'ModelImpl::endSystems()']]],
+  ['equation_2',['equation',['../classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2',1,'Flow::equation()'],['../classFlowImpl.html#ac04e369c647b47849edc8f606561ca04',1,'FlowImpl::equation()'],['../classComplexFlow.html#aff31027e0fda83c8e44d6b8d833749f6',1,'ComplexFlow::equation()'],['../classExponential.html#a311c46288d3c515132acc936e9625c39',1,'Exponential::equation()'],['../classLogistic.html#a2e209962a1bd0f0eb767c45e7146f83d',1,'Logistic::equation()'],['../classFlowTest.html#a4fc1c2443fa6cab3373918d23e86f6d0',1,'FlowTest::equation()'],['../classFlowTestM.html#aea98d3c9a74b7b899d414f41fbf385ef',1,'FlowTestM::equation()']]],
+  ['execute_3',['execute',['../classModel.html#a1c2eb43d23c379ebd4b4881a4fc2911b',1,'Model::execute()'],['../classModelImpl.html#aa8f32399b7bd363620070da1bd0df3de',1,'ModelImpl::execute()']]],
+  ['exponential_4',['Exponential',['../classExponential.html',1,'Exponential'],['../classExponential.html#abc75eaef5b5f89656c4aa406aceb3c27',1,'Exponential::Exponential()'],['../classExponential.html#a5639ebdea550b5c5d8aefb7a6457ca40',1,'Exponential::Exponential(const std::string &amp;name, System *source, System *target)'],['../classExponential.html#a2cd6b44fb7296084dd120f391eba9ff7',1,'Exponential::Exponential(const Exponential &amp;copy)']]],
+  ['exponential_2ecpp_5',['Exponential.cpp',['../Exponential_8cpp.html',1,'']]],
+  ['exponential_2ehpp_6',['Exponential.hpp',['../Exponential_8hpp.html',1,'']]],
+  ['exponentialfuncionaltest_7',['exponentialFuncionalTest',['../funcional__test_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27',1,'exponentialFuncionalTest():&#160;funcional_test.cpp'],['../funcional__test_8hpp.html#a2c448ffaffdff4b03c825a01dffa6f27',1,'exponentialFuncionalTest():&#160;funcional_test.cpp']]]
 ];

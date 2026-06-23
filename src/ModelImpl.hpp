@@ -1,7 +1,3 @@
-/**
- * @file ModelImpl.hpp
- * @brief Implementação concreta da interface Model.
- */
 #ifndef MODELIMPL_HPP
 #define MODELIMPL_HPP
 
@@ -10,117 +6,105 @@
 #include "Flow.hpp"
 
 #include <vector>
-
 #include <string>
-/**
- * @class ModelImpl
- * @brief Implementação concreta de um modelo de simulação.
- *
- * Gerencia conjuntos de sistemas e fluxos e executa
- * a evolução do modelo ao longo do tempo.
- *
- * Implementa todos os métodos definidos pela interface Model.
- */
+
 class ModelImpl : public Model
 {
 protected:
-    /**
-     * @brief Lista de fluxos pertencentes ao modelo.
+    /*
+     * Identificador do modelo
      */
-    std::vector<Flow *> flows;
-    /**
-     * @brief Lista de sistemas pertencentes ao modelo.
-     */
-    std::vector<System *> systems;
-    /**
-     * @brief Nome identificador do modelo.
-     */
-
     std::string name;
 
+    /*
+     * Estruturas internas
+     */
+    std::vector<System *> systems;
+
+    std::vector<Flow *> flows;
+    /*
+     * Registro global de modelos
+     */
+    static std::vector<Model *> models;
+
 public:
-    /**
-     * @brief Construtor padrão.
+    /*
+     * Construtores
      */
     ModelImpl();
-    /**
-     * @brief Construtor de cópia.
-     *
-     * @param copy Modelo que será copiado.
+
+    ModelImpl(const std::string &name);
+
+    ModelImpl(const ModelImpl &rhs);
+
+    /*
+     * Operador de atribuição
      */
-    ModelImpl(const ModelImpl &);
-    /**
-     * @brief Operador de atribuição.
-     *
-     * @param copy Modelo que será atribuído.
-     *
-     * @return Referência para o próprio objeto.
-     */
-    ModelImpl &operator=(const ModelImpl &);
-    /**
-     * @brief Destrutor.
+    ModelImpl &operator=(const ModelImpl &rhs);
+
+    /*
+     * Destrutor
      */
     virtual ~ModelImpl();
 
-    /**
-     * @brief Executa a simulação.
-     *
-     * @param start Tempo inicial.
-     * @param end Tempo final.
-     * @param increment Passo de tempo.
+    /*
+     * Factory de modelos
      */
-    void execute(double start,
-                 double end,
-                 double increment);
+    static Model *createModel(const std::string &name);
 
-    /**
-     * @brief Adiciona um sistema ao modelo.
-     *
-     * @param system Sistema adicionado.
+    /*
+     * Factory de sistemas
      */
-    void add(System *s);
-    /**
-     * @brief Adiciona um fluxo ao modelo.
-     *
-     * @param flow Fluxo adicionado.
-     */
-    void add(Flow *f);
-    /**
-     * @brief Remove um sistema.
-     *
-     * @param system Sistema removido.
-     *
-     * @return true se removido.
-     */
-    bool remove(System *s);
+    System *createSystem(std::string name,double value) override;
 
-    /**
-     * @brief Remove um fluxo.
-     *
-     * @param flow Fluxo removido.
-     *
-     * @return true se removido.
+    /*
+     * Execução
      */
-    bool remove(Flow *f);
-    /**
-     * @brief Obtém o nome do modelo.
-     *
-     * @return Nome do modelo.
+    void execute(double start,double end,double increment) override;
+
+    /*
+     * Remoções
      */
-    std::string getName() const;
-    /**
-     * @brief Define o nome do modelo.
-     *
-     * @param name Novo nome.
+    bool deleteSystem(System*);
+
+    bool deleteFlow(Flow*);
+
+    /*
+     * Nome
      */
-    void setName(const std::string &);
+    std::string getName() const override;
 
-    std::vector<System *>::iterator beginSystems();
-    std::vector<System *>::iterator endSystems();
+    void setName(const std::string &name) override;
 
-    std::vector<Flow *>::iterator beginFlows();
-    std::vector<Flow *>::iterator endFlows();
+    /*
+     * Iteradores de sistemas
+     */
+    std::vector<System *>::iterator
+    beginSystems() override;
 
+    std::vector<System *>::iterator
+    endSystems() override;
+
+    /*
+     * Iteradores de fluxos
+     */
+    std::vector<Flow *>::iterator
+    beginFlows() override;
+
+    std::vector<Flow *>::iterator
+    endFlows() override;
+
+protected:
+    /*
+     * Registro interno
+     */
+
+    void add(System *system);
+
+    void add(Flow *flow);
+
+public:
+    friend class Model;
     friend class Unit_Model;
 };
 

@@ -10,11 +10,20 @@ class FlowTest : public FlowImpl
 public:
     FlowTest() : FlowImpl() {}
 
-    FlowTest(std::string name, System* source, System* target)
+    FlowTest(std::string name, System *source, System *target)
         : FlowImpl(name, source, target) {}
 
-    FlowTest(const FlowTest& other)
+    FlowTest(const FlowTest &other)
         : FlowImpl(other) {}
+    FlowTest &operator=(const FlowTest &other)
+    {
+        if (this != &other)
+        {
+            FlowImpl::operator=(other);
+        }
+
+        return *this;
+    }
 
     double equation() override
     {
@@ -24,8 +33,8 @@ public:
 
 bool Unit_Flow::unit_Flow_constructor()
 {
-    System* s1 = new SystemImpl("s1", 100);
-    System* s2 = new SystemImpl("s2", 0);
+    System *s1 = new SystemImpl("s1", 100);
+    System *s2 = new SystemImpl("s2", 0);
 
     FlowTest f("f", s1, s2);
 
@@ -63,7 +72,7 @@ bool Unit_Flow::unit_Flow_setName()
 
 bool Unit_Flow::unit_Flow_getSource()
 {
-    System* s = new SystemImpl("s", 10);
+    System *s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setSource(s);
@@ -77,7 +86,7 @@ bool Unit_Flow::unit_Flow_getSource()
 
 bool Unit_Flow::unit_Flow_setSource()
 {
-    System* s = new SystemImpl("s", 10);
+    System *s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setSource(s);
@@ -91,7 +100,7 @@ bool Unit_Flow::unit_Flow_setSource()
 
 bool Unit_Flow::unit_Flow_getTarget()
 {
-    System* s = new SystemImpl("s", 10);
+    System *s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setTarget(s);
@@ -105,7 +114,7 @@ bool Unit_Flow::unit_Flow_getTarget()
 
 bool Unit_Flow::unit_Flow_setTarget()
 {
-    System* s = new SystemImpl("s", 10);
+    System *s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setTarget(s);
@@ -119,7 +128,7 @@ bool Unit_Flow::unit_Flow_setTarget()
 
 bool Unit_Flow::unit_Flow_removeSource()
 {
-    System* s = new SystemImpl("s", 10);
+    System *s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setSource(s);
@@ -135,7 +144,7 @@ bool Unit_Flow::unit_Flow_removeSource()
 
 bool Unit_Flow::unit_Flow_removeTarget()
 {
-    System* s = new SystemImpl("s", 10);
+    System *s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setTarget(s);
@@ -151,8 +160,8 @@ bool Unit_Flow::unit_Flow_removeTarget()
 
 bool Unit_Flow::unit_Flow_copyConstructor()
 {
-    System* s1 = new SystemImpl("s1", 100);
-    System* s2 = new SystemImpl("s2", 0);
+    System *s1 = new SystemImpl("s1", 100);
+    System *s2 = new SystemImpl("s2", 0);
 
     FlowTest f1("fluxo", s1, s2);
 
@@ -170,8 +179,8 @@ bool Unit_Flow::unit_Flow_copyConstructor()
 
 bool Unit_Flow::unit_Flow_assignmentOperator()
 {
-    System* s1 = new SystemImpl("s1", 100);
-    System* s2 = new SystemImpl("s2", 0);
+    System *s1 = new SystemImpl("s1", 100);
+    System *s2 = new SystemImpl("s2", 0);
 
     FlowTest f1("fluxo", s1, s2);
     FlowTest f2;

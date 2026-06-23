@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['logistic_0',['Logistic',['../classLogistic.html#ae137bd4c8e3d59f2860b89b4e8a5f43c',1,'Logistic::Logistic()'],['../classLogistic.html#a263e8aacb43b07818e5267ebcc5804b0',1,'Logistic::Logistic(string name, System *source, System *target)'],['../classLogistic.html#aacf68849fd0ffe5fda907c8e3d7d45db',1,'Logistic::Logistic(const Logistic &amp;copy)']]],
-  ['logisticalfuncionaltest_1',['logisticalFuncionalTest',['../funcional__test_8cpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_test.cpp'],['../funcional__test_8hpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_test.cpp']]]
+  ['getname_0',['getName',['../classFlow.html#a2d0340d844ab2d275222938234e44169',1,'Flow::getName()'],['../classFlowImpl.html#a634867e0e9acb4febd3753041824c83b',1,'FlowImpl::getName()'],['../classModel.html#a17e89ca8d15af46d074423a47d3c6802',1,'Model::getName()'],['../classModelImpl.html#a6d6ef8f72413650749d9ca9850226a6b',1,'ModelImpl::getName()'],['../classSystem.html#ab4f23c21832d6bbef462a5a20b296912',1,'System::getName()'],['../classSystemImpl.html#a4407f82b905d49335f76c4a18fbfef8d',1,'SystemImpl::getName()']]],
+  ['getsource_1',['getSource',['../classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8',1,'Flow::getSource()'],['../classFlowImpl.html#a54940323059d2c4158f4146080841f32',1,'FlowImpl::getSource()']]],
+  ['gettarget_2',['getTarget',['../classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787',1,'Flow::getTarget()'],['../classFlowImpl.html#ab07923bc230308cd949f627a92901bca',1,'FlowImpl::getTarget()']]],
+  ['getvalue_3',['getValue',['../classSystem.html#a41b673faa6c199eb8e4f204639fab4f2',1,'System::getValue()'],['../classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f',1,'SystemImpl::getValue()']]]
 ];

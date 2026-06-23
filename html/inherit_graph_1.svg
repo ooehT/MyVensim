@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classModel.html" target="_top" xlink:title="Interface que define um modelo de simulação.">
+<g id="a_Node000000"><a xlink:href="classModel.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="46,-20.75 0,-20.75 0,0 46,0 46,-20.75"/>
 <text xml:space="preserve" text-anchor="middle" x="23" y="-7.25" font-family="Helvetica,sans-Serif" font-size="10.00">Model</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:href="classModelImpl.html" target="_top" xlink:title="Implementação concreta de um modelo de simulação.">
+<g id="a_Node000001"><a xlink:href="classModelImpl.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="149.75,-20.75 82,-20.75 82,0 149.75,0 149.75,-20.75"/>
 <text xml:space="preserve" text-anchor="middle" x="115.88" y="-7.25" font-family="Helvetica,sans-Serif" font-size="10.00">ModelImpl</text>
 </a>

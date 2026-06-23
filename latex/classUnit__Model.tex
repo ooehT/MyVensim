@@ -23,9 +23,9 @@ static bool \mbox{\hyperlink{classUnit__Model_aafd02e63459773856cef94d2bfcedd28}
 \item 
 static bool \mbox{\hyperlink{classUnit__Model_a78f398edf44ee34d08156ed926149740}{unit\+\_\+\+Model\+\_\+add\+Flow}} ()
 \item 
-static bool \mbox{\hyperlink{classUnit__Model_a6f3ebabc49bea22b52f0951c5b4f7820}{unit\+\_\+\+Model\+\_\+remove\+System}} ()
+static bool \mbox{\hyperlink{classUnit__Model_a5f0408714ccb09195a3b52abc79eea2d}{unit\+\_\+\+Model\+\_\+delete\+System}} ()
 \item 
-static bool \mbox{\hyperlink{classUnit__Model_a0f50fff8b6cf9fca7812a4e2a53d285b}{unit\+\_\+\+Model\+\_\+remove\+Flow}} ()
+static bool \mbox{\hyperlink{classUnit__Model_a9aaefe266c115920f4b4c119c3fefa89}{unit\+\_\+\+Model\+\_\+delete\+Flow}} ()
 \item 
 static bool \mbox{\hyperlink{classUnit__Model_a28fc11ee1148d460fc21c472fb0e3dcd}{unit\+\_\+\+Model\+\_\+begin\+Systems}} ()
 \item 
@@ -36,6 +36,10 @@ static bool \mbox{\hyperlink{classUnit__Model_af381f7b6307e0b32ae23396174d01f41}
 static bool \mbox{\hyperlink{classUnit__Model_aca70cc40454ff04f0ffb38f47ff7c689}{unit\+\_\+\+Model\+\_\+end\+Flows}} ()
 \item 
 static bool \mbox{\hyperlink{classUnit__Model_abe1bad7aa7504690307fbc404ca209fb}{unit\+\_\+\+Model\+\_\+execute}} ()
+\item 
+static bool \mbox{\hyperlink{classUnit__Model_a91f7f1e870812f12d02c222cc22dc57c}{unit\+\_\+\+Model\+\_\+create\+Model}} ()
+\item 
+static bool \mbox{\hyperlink{classUnit__Model_a8a3f7886a30803795adca00714d85bd5}{unit\+\_\+\+Model\+\_\+create\+Delete\+Model}} ()
 \item 
 static bool \mbox{\hyperlink{classUnit__Model_aa6d1ba41c4821801fb6e5a19b53d8a6b}{run\+\_\+unit\+\_\+tests\+\_\+\+Model}} ()
 \end{DoxyCompactItemize}
@@ -92,6 +96,18 @@ bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+constructor (\begin{DoxyParamCa
 {\footnotesize\ttfamily \label{classUnit__Model_a6570310965131fc2604b5e6458d426b4} 
 bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+copy\+Constructor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\Hypertarget{classUnit__Model_a8a3f7886a30803795adca00714d85bd5}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_createDeleteModel@{unit\_Model\_createDeleteModel}}
+\index{unit\_Model\_createDeleteModel@{unit\_Model\_createDeleteModel}!Unit\_Model@{Unit\_Model}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_createDeleteModel()}{unit\_Model\_createDeleteModel()}}
+{\footnotesize\ttfamily \label{classUnit__Model_a8a3f7886a30803795adca00714d85bd5} 
+bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+create\+Delete\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classUnit__Model_a91f7f1e870812f12d02c222cc22dc57c}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_createModel@{unit\_Model\_createModel}}
+\index{unit\_Model\_createModel@{unit\_Model\_createModel}!Unit\_Model@{Unit\_Model}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_createModel()}{unit\_Model\_createModel()}}
+{\footnotesize\ttfamily \label{classUnit__Model_a91f7f1e870812f12d02c222cc22dc57c} 
+bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+create\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 \Hypertarget{classUnit__Model_abacceb444e2a0e12c8bea132b0d34148}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_defaultConstructor@{unit\_Model\_defaultConstructor}}
 \index{unit\_Model\_defaultConstructor@{unit\_Model\_defaultConstructor}!Unit\_Model@{Unit\_Model}}
 \doxysubsubsection{\texorpdfstring{unit\_Model\_defaultConstructor()}{unit\_Model\_defaultConstructor()}}
@@ -101,6 +117,18 @@ bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+default\+Constructor (\begin{Do
 
 
 Verifica se o construtor padrão inicializa o modelo vazio. 
+
+\Hypertarget{classUnit__Model_a9aaefe266c115920f4b4c119c3fefa89}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_deleteFlow@{unit\_Model\_deleteFlow}}
+\index{unit\_Model\_deleteFlow@{unit\_Model\_deleteFlow}!Unit\_Model@{Unit\_Model}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_deleteFlow()}{unit\_Model\_deleteFlow()}}
+{\footnotesize\ttfamily \label{classUnit__Model_a9aaefe266c115920f4b4c119c3fefa89} 
+bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+delete\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classUnit__Model_a5f0408714ccb09195a3b52abc79eea2d}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_deleteSystem@{unit\_Model\_deleteSystem}}
+\index{unit\_Model\_deleteSystem@{unit\_Model\_deleteSystem}!Unit\_Model@{Unit\_Model}}
+\doxysubsubsection{\texorpdfstring{unit\_Model\_deleteSystem()}{unit\_Model\_deleteSystem()}}
+{\footnotesize\ttfamily \label{classUnit__Model_a5f0408714ccb09195a3b52abc79eea2d} 
+bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+delete\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \Hypertarget{classUnit__Model_aca70cc40454ff04f0ffb38f47ff7c689}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_endFlows@{unit\_Model\_endFlows}}
 \index{unit\_Model\_endFlows@{unit\_Model\_endFlows}!Unit\_Model@{Unit\_Model}}
@@ -125,18 +153,6 @@ bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+execute (\begin{DoxyParamCaptio
 \doxysubsubsection{\texorpdfstring{unit\_Model\_getName()}{unit\_Model\_getName()}}
 {\footnotesize\ttfamily \label{classUnit__Model_a0258bd13e254853219346bb5d3c6ccd1} 
 bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\Hypertarget{classUnit__Model_a0f50fff8b6cf9fca7812a4e2a53d285b}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_removeFlow@{unit\_Model\_removeFlow}}
-\index{unit\_Model\_removeFlow@{unit\_Model\_removeFlow}!Unit\_Model@{Unit\_Model}}
-\doxysubsubsection{\texorpdfstring{unit\_Model\_removeFlow()}{unit\_Model\_removeFlow()}}
-{\footnotesize\ttfamily \label{classUnit__Model_a0f50fff8b6cf9fca7812a4e2a53d285b} 
-bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+remove\+Flow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\Hypertarget{classUnit__Model_a6f3ebabc49bea22b52f0951c5b4f7820}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_removeSystem@{unit\_Model\_removeSystem}}
-\index{unit\_Model\_removeSystem@{unit\_Model\_removeSystem}!Unit\_Model@{Unit\_Model}}
-\doxysubsubsection{\texorpdfstring{unit\_Model\_removeSystem()}{unit\_Model\_removeSystem()}}
-{\footnotesize\ttfamily \label{classUnit__Model_a6f3ebabc49bea22b52f0951c5b4f7820} 
-bool Unit\+\_\+\+Model\+::unit\+\_\+\+Model\+\_\+remove\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \Hypertarget{classUnit__Model_a1554df292bb530701094a1d1ca5a37b1}\index{Unit\_Model@{Unit\_Model}!unit\_Model\_setName@{unit\_Model\_setName}}
 \index{unit\_Model\_setName@{unit\_Model\_setName}!Unit\_Model@{Unit\_Model}}

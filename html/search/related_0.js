@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unit_5fmodel_0',['Unit_Model',['../classModelImpl.html#a686d152cfd45e63b5bc3db6f327fdaeb',1,'ModelImpl']]]
+  ['model_0',['Model',['../classModelImpl.html#a2bf2a0e9b454c55aa5dcb5aa4698697b',1,'ModelImpl']]],
+  ['modelimpl_1',['ModelImpl',['../classModel.html#afb81d2077780e342b8fd3654cabc4c19',1,'Model']]]
 ];

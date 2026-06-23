@@ -1,92 +1,98 @@
-/**
- * @file Model.hpp
- * @brief Interface abstrata responsável pelo gerenciamento da simulação.
- */
-
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
-#include <vector>
 #include <string>
+#include <vector>
+
 class System;
 class Flow;
-/**
- * @class Model
- * @brief Interface que define um modelo de simulação.
- *
- * A classe Model representa a estrutura responsável por armazenar
- * sistemas e fluxos, além de controlar a execução da simulação.
- *
- * É uma interface abstrata que deve ser implementada por classes concretas.
- */
 
 class Model
 {
 public:
-    /**
-     * @brief Destrutor virtual.
-     *
-     * Permite a destruição correta de objetos derivados.
-     */
     virtual ~Model() {}
-    /**
-     * @brief Executa a simulação do modelo.
-     *
-     * Percorre o intervalo de tempo informado aplicando
-     * os fluxos existentes entre os sistemas.
-     *
-     * @param start Tempo inicial da simulação.
-     * @param end Tempo final da simulação.
-     * @param increment Intervalo entre cada passo da simulação.
+
+    /*
+     * Factory de modelos
      */
-    virtual void execute(double start,
-                         double end,
-                         double increment) = 0;
-    /**
-     * @brief Adiciona um sistema ao modelo.
-     *
-     * @param system Sistema que será adicionado.
+    static Model *createModel(std::string name);
+    static bool deleteModel(std::string name);
+    /*
+     * Execução
      */
-    virtual void add(System *s) = 0;
-    /**
-     * @brief Adiciona um fluxo ao modelo.
-     *
-     * @param flow Fluxo que será adicionado.
+    virtual void execute(double start,double end, double increment) = 0;
+
+    /*
+     * Factory de fluxos
      */
-    virtual void add(Flow *f) = 0;
-    /**
-     * @brief Remove um sistema do modelo.
-     *
-     * @param system Sistema que será removido.
-     *
-     * @return true caso o sistema seja removido.
+    template <typename T_FLOW_IMPL>
+    Flow *createFlow(
+        std::string name,
+        System *source = nullptr,
+        System *target = nullptr)
+    {
+        Flow *flow = new T_FLOW_IMPL(
+            name,
+            source,
+            target);
+
+        add(flow);
+
+        return flow;
+    }
+
+    /*
+     * Factory de sistemas
      */
-    virtual bool remove(System *s) = 0;
-    /**
-     * @brief Remove um fluxo do modelo.
-     *
-     * @param flow Fluxo que será removido.
-     *
-     * @return true caso o fluxo seja removido.
+    virtual System *createSystem(
+        std::string name,
+        double value) = 0;
+
+    /*
+     * Remoções
      */
-    virtual bool remove(Flow *f) = 0;
-    /**
-     * @brief Obtém os sistemas pertencentes ao modelo.
-     *
-     * @return Vetor contendo os sistemas cadastrados.
+    virtual bool deleteFlow(
+        Flow *) = 0;
+
+    virtual bool deleteSystem(
+        System *) = 0;
+
+    /*
+     * Nome do modelo
      */
     virtual std::string getName() const = 0;
-    /**
-     * @brief Define o nome do modelo.
-     *
-     * @param name Novo nome do modelo.
-     */
-    virtual void setName(const std::string &) = 0;
-    virtual std::vector<System *>::iterator beginSystems() = 0;
-    virtual std::vector<System *>::iterator endSystems() = 0;
 
-    virtual std::vector<Flow *>::iterator beginFlows() = 0;
-    virtual std::vector<Flow *>::iterator endFlows() = 0;
+    virtual void setName(
+        const std::string &name) = 0;
+
+    /*
+     * Iteradores de sistemas
+     */
+    virtual std::vector<System *>::iterator
+    beginSystems() = 0;
+
+    virtual std::vector<System *>::iterator
+    endSystems() = 0;
+
+    /*
+     * Iteradores de fluxos
+     */
+    virtual std::vector<Flow *>::iterator
+    beginFlows() = 0;
+
+    virtual std::vector<Flow *>::iterator
+    endFlows() = 0;
+
+protected:
+    /*
+     * Registro interno
+     */
+    virtual void add(Flow *) = 0;
+
+    virtual void add(System*) = 0;
+
+    
+    friend class ModelImpl;
 };
 
 #endif

@@ -19,9 +19,9 @@ public:
 
     static bool unit_Model_addFlow();
 
-    static bool unit_Model_removeSystem();
+    static bool unit_Model_deleteSystem();
 
-    static bool unit_Model_removeFlow();
+    static bool unit_Model_deleteFlow();
 
     static bool unit_Model_beginSystems();
 
@@ -32,6 +32,10 @@ public:
     static bool unit_Model_endFlows();
 
     static bool unit_Model_execute();
+
+    static bool unit_Model_createModel();
+
+    static bool unit_Model_createDeleteModel();
 
     static bool run_unit_tests_Model();
 };

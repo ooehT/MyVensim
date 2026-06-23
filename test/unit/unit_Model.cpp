@@ -14,8 +14,8 @@ public:
         : FlowImpl() {}
 
     FlowTestM(std::string name,
-             System *source,
-             System *target)
+              System *source,
+              System *target)
         : FlowImpl(name, source, target) {}
 
     double equation() override
@@ -122,66 +122,69 @@ bool Unit_Model::unit_Model_assignmentOperator()
 }
 bool Unit_Model::unit_Model_addSystem()
 {
-
-    SystemImpl s("s", 100);
-
     ModelImpl model;
 
-    model.add(&s);
+    System* s =
+        model.createSystem(
+            "s",
+            100
+        );
 
     assert(model.systems.size() == 1);
-    assert(model.systems[0] == &s);
+
+    assert(model.systems[0] == s);
 
     return true;
 }
 bool Unit_Model::unit_Model_addFlow()
 {
-
-    SystemImpl s1("s1", 100);
-    SystemImpl s2("s2", 0);
-
-    FlowTestM f("f", &s1, &s2);
+    SystemImpl s1("s1",100);
+    SystemImpl s2("s2",0);
 
     ModelImpl model;
 
-    model.add(&f);
+    Flow* f =
+        model.createFlow<FlowTestM>(
+            "f",
+            &s1,
+            &s2
+        );
 
     assert(model.flows.size() == 1);
-    assert(model.flows[0] == &f);
+
+    assert(model.flows[0] == f);
 
     return true;
 }
 
-bool Unit_Model::unit_Model_removeSystem()
+bool Unit_Model::unit_Model_deleteSystem()
 {
-
-    SystemImpl s("s", 100);
-
     ModelImpl model;
 
-    model.add(&s);
+    System* s =model.createSystem("s",100);
 
-    assert(model.remove(&s));
-
+    assert(model.deleteSystem(s));
     assert(model.systems.empty());
 
     return true;
 }
-bool Unit_Model::unit_Model_removeFlow()
+bool Unit_Model::unit_Model_deleteFlow()
 {
-
-    SystemImpl s1("s1", 100);
-    SystemImpl s2("s2", 0);
-
-    FlowTestM f("f", &s1, &s2);
+    SystemImpl s1("s1",100);
+    SystemImpl s2("s2",0);
 
     ModelImpl model;
 
-    model.add(&f);
+    Flow* f =
+        model.createFlow<FlowTestM>("f",&s1,&s2);
 
-    assert(model.remove(&f));
+    assert(
+        model.deleteFlow(f)
+    );
 
-    assert(model.flows.empty());
+    assert(
+        model.flows.empty()
+    );
 
     return true;
 }
@@ -265,6 +268,29 @@ bool Unit_Model::unit_Model_execute()
 
     return true;
 }
+bool Unit_Model::unit_Model_createModel()
+{
+    Model* model = Model::createModel("Teste");
+
+    assert(model != nullptr);
+
+    assert(model->getName() == "Teste");
+
+    return true;
+}
+
+bool Unit_Model::unit_Model_createDeleteModel()
+{
+    Model* model = Model::createModel("Teste");
+
+    assert(model != nullptr);
+
+    assert(Model::deleteModel("Teste")
+    );
+
+    return true;
+}
+
 bool Unit_Model::run_unit_tests_Model()
 {
 
@@ -284,9 +310,9 @@ bool Unit_Model::run_unit_tests_Model()
 
     assert(unit_Model_addFlow());
 
-    assert(unit_Model_removeSystem());
+    assert(unit_Model_deleteSystem());
 
-    assert(unit_Model_removeFlow());
+    assert(unit_Model_deleteFlow());
 
     assert(unit_Model_beginSystems());
 
@@ -297,6 +323,10 @@ bool Unit_Model::run_unit_tests_Model()
     assert(unit_Model_endFlows());
 
     assert(unit_Model_execute());
+
+    assert(unit_Model_createModel());
+
+    assert(unit_Model_createDeleteModel());
 
     return true;
 }
