@@ -6,6 +6,7 @@
 #define FLOWIMPL_HPP
 
 #include "Flow.hpp"
+#include "System.hpp"
 /**
  * @class FlowImpl
  * @brief Implementação base de um fluxo da simulação.

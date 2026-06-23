@@ -17,7 +17,7 @@
  *
  * As classes concretas devem implementar o cálculo da equação.
  */
-#include "System.hpp"
+class System;
 class Flow
 {
 public:

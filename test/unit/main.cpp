@@ -1,8 +1,7 @@
 #include "unit_System.hpp"
 #include "unit_Flow.hpp"
 #include "unit_Model.hpp"
-#include "unit_Exponential.hpp"
-#include "unit_Logistic.hpp"
+
 
 #include <iostream>
 
@@ -10,11 +9,10 @@ int main()
 {
     
     printf("Iniciando testes unitários...\n\n");
-    run_unit_test_System();
-    run_unit_test_Flow();
-    run_unit_test_Model();
-    run_unit_test_Exponential();
-    run_unit_test_Logistic();
+    Unit_System::run_unit_tests_System();
+    Unit_Flow::run_unit_tests_Flow();
+    Unit_Model::run_unit_tests_Model();
+
     printf("\nTestes unitários concluídos.\n");
 
     

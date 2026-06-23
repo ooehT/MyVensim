@@ -6,10 +6,10 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
+#include <vector>
 #include <string>
-
-#include "System.hpp"
-#include "Flow.hpp"
+class System;
+class Flow;
 /**
  * @class Model
  * @brief Interface que define um modelo de simulação.
@@ -82,11 +82,11 @@ public:
      * @param name Novo nome do modelo.
      */
     virtual void setName(const std::string &) = 0;
-    virtual std::vector<System*>::iterator beginSystems() = 0;
-virtual std::vector<System*>::iterator endSystems() = 0;
+    virtual std::vector<System *>::iterator beginSystems() = 0;
+    virtual std::vector<System *>::iterator endSystems() = 0;
 
-virtual std::vector<Flow*>::iterator beginFlows() = 0;
-virtual std::vector<Flow*>::iterator endFlows() = 0;
+    virtual std::vector<Flow *>::iterator beginFlows() = 0;
+    virtual std::vector<Flow *>::iterator endFlows() = 0;
 };
 
 #endif

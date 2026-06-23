@@ -1,9 +1,15 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classFlow.html" title="Interface que define um fluxo da simulação." alt="" coords="5,32,58,60"/>
-<area shape="rect" id="Node000001" href="$classFlowImpl.html" title="Implementação base de um fluxo da simulação." alt="" coords="106,32,187,60"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="73,43,108,45,103,47,74,48"/>
-<area shape="rect" id="Node000002" href="$classExponential.html" title="Representa um fluxo com comportamento exponencial." alt="" coords="235,5,333,33"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="202,32,237,28,232,29,203,38"/>
-<area shape="rect" id="Node000003" href="$classLogistic.html" title="Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo." alt="" coords="248,57,320,85"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="203,53,251,65,245,65,202,59"/>
+<area shape="rect" id="Node000000" href="$classFlow.html" title="Interface que define um fluxo da simulação." alt="" coords="5,109,58,137"/>
+<area shape="rect" id="Node000001" href="$classFlowImpl.html" title="Implementação base de um fluxo da simulação." alt="" coords="106,109,187,137"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="73,121,107,122,103,125,75,126"/>
+<area shape="rect" id="Node000002" href="$classComplexFlow.html" title="Fluxo complexo utilizado nos testes funcionais." alt="" coords="235,5,345,33"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="170,96,199,70,234,44,258,32,254,35,236,48,203,74,174,100"/>
+<area shape="rect" id="Node000003" href="$classExponential.html" title="Representa um fluxo com comportamento exponencial." alt="" coords="241,57,339,85"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="200,101,252,84,247,87,202,106"/>
+<area shape="rect" id="Node000004" href="$classFlowTest.html" title=" " alt="" coords="251,109,329,137"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="202,121,253,122,248,124,203,126"/>
+<area shape="rect" id="Node000005" href="$classFlowTestM.html" title=" " alt="" coords="245,161,335,189"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="202,140,252,160,247,161,201,146"/>
+<area shape="rect" id="Node000006" href="$classLogistic.html" title="Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo." alt="" coords="254,213,326,241"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="173,145,203,172,236,198,259,213,254,212,234,203,199,177,171,150"/>
 </map>

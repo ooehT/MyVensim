@@ -6,6 +6,8 @@
 #define MODELIMPL_HPP
 
 #include "Model.hpp"
+#include "System.hpp"
+#include "Flow.hpp"
 
 #include <vector>
 
@@ -21,7 +23,7 @@
  */
 class ModelImpl : public Model
 {
-private:
+protected:
     /**
      * @brief Lista de fluxos pertencentes ao modelo.
      */
@@ -118,6 +120,8 @@ public:
 
     std::vector<Flow *>::iterator beginFlows();
     std::vector<Flow *>::iterator endFlows();
+
+    friend class Unit_Model;
 };
 
 #endif

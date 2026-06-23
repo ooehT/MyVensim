@@ -33,14 +33,18 @@ virtual bool \mbox{\hyperlink{classModel_aab07c39ea01c4296097674893858f12f}{remo
 \begin{DoxyCompactList}\small\item\em Remove um sistema do modelo. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classModel_a8568b21dec4f8781179a64b44826e029}{remove}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}f)=0
 \begin{DoxyCompactList}\small\item\em Remove um fluxo do modelo. \end{DoxyCompactList}\item 
-virtual std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModel_a58d90565fefee1893ccddd18aaba152e}{get\+Systems}} () const =0
-\begin{DoxyCompactList}\small\item\em Obtém os sistemas pertencentes ao modelo. \end{DoxyCompactList}\item 
-virtual std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModel_aeb0585f67fd77227609aaf0564560338}{get\+Flows}} () const =0
-\begin{DoxyCompactList}\small\item\em Obtém os fluxos pertencentes ao modelo. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classModel_a17e89ca8d15af46d074423a47d3c6802}{get\+Name}} () const =0
-\begin{DoxyCompactList}\small\item\em Retorna o nome do modelo. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtém os sistemas pertencentes ao modelo. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classModel_a17a6fba98202c82b3bce12bfb7540513}{set\+Name}} (const std\+::string \&)=0
-\begin{DoxyCompactList}\small\item\em Define o nome do modelo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Define o nome do modelo. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_ab9326f396cf9e3087bdedabb707e34fd}{begin\+Systems}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_a241dd719ebc31f3c66ecbc1e76185809}{end\+Systems}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_afc751c5fe8476eccf0e50fdb0db5d19f}{begin\+Flows}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_a60756bd2d10f18e66bd2828a6f131c16}{end\+Flows}} ()=0
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -106,6 +110,46 @@ Adiciona um sistema ao modelo.
 
 Implemented in \mbox{\hyperlink{classModelImpl_ad2501a3425d1a67cbfffc5bcf2092c06}{Model\+Impl}}.
 
+\Hypertarget{classModel_afc751c5fe8476eccf0e50fdb0db5d19f}\index{Model@{Model}!beginFlows@{beginFlows}}
+\index{beginFlows@{beginFlows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{beginFlows()}{beginFlows()}}
+{\footnotesize\ttfamily \label{classModel_afc751c5fe8476eccf0e50fdb0db5d19f} 
+virtual std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator Model\+::begin\+Flows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classModelImpl_a8d002dce270ce77304293e8e01fb61a0}{Model\+Impl}}.
+
+\Hypertarget{classModel_ab9326f396cf9e3087bdedabb707e34fd}\index{Model@{Model}!beginSystems@{beginSystems}}
+\index{beginSystems@{beginSystems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{beginSystems()}{beginSystems()}}
+{\footnotesize\ttfamily \label{classModel_ab9326f396cf9e3087bdedabb707e34fd} 
+virtual std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator Model\+::begin\+Systems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classModelImpl_a3cbdb38ca8734e34d81f1c97552cf779}{Model\+Impl}}.
+
+\Hypertarget{classModel_a60756bd2d10f18e66bd2828a6f131c16}\index{Model@{Model}!endFlows@{endFlows}}
+\index{endFlows@{endFlows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{endFlows()}{endFlows()}}
+{\footnotesize\ttfamily \label{classModel_a60756bd2d10f18e66bd2828a6f131c16} 
+virtual std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator Model\+::end\+Flows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classModelImpl_adc9bec5be5d15c03d324ea5a17a547c3}{Model\+Impl}}.
+
+\Hypertarget{classModel_a241dd719ebc31f3c66ecbc1e76185809}\index{Model@{Model}!endSystems@{endSystems}}
+\index{endSystems@{endSystems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{endSystems()}{endSystems()}}
+{\footnotesize\ttfamily \label{classModel_a241dd719ebc31f3c66ecbc1e76185809} 
+virtual std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator Model\+::end\+Systems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classModelImpl_a93e23df257d3b6d7b8bb22716c8a7190}{Model\+Impl}}.
+
 \Hypertarget{classModel_a1c2eb43d23c379ebd4b4881a4fc2911b}\index{Model@{Model}!execute@{execute}}
 \index{execute@{execute}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{execute()}{execute()}}
@@ -131,45 +175,11 @@ Percorre o intervalo de tempo informado aplicando os fluxos existentes entre os 
 
 Implemented in \mbox{\hyperlink{classModelImpl_a398e8fe67a92a151a1dacecc1ad23bf5}{Model\+Impl}}.
 
-\Hypertarget{classModel_aeb0585f67fd77227609aaf0564560338}\index{Model@{Model}!getFlows@{getFlows}}
-\index{getFlows@{getFlows}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{getFlows()}{getFlows()}}
-{\footnotesize\ttfamily \label{classModel_aeb0585f67fd77227609aaf0564560338} 
-virtual std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ Model\+::get\+Flows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Obtém os fluxos pertencentes ao modelo. 
-
-\begin{DoxyReturn}{Returns}
-Vetor contendo os fluxos cadastrados. 
-\end{DoxyReturn}
-
-
-Implemented in \mbox{\hyperlink{classModelImpl_a6e9c8bfcfa9987850cc08f2ba0608a3e}{Model\+Impl}}.
-
 \Hypertarget{classModel_a17e89ca8d15af46d074423a47d3c6802}\index{Model@{Model}!getName@{getName}}
 \index{getName@{getName}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
 {\footnotesize\ttfamily \label{classModel_a17e89ca8d15af46d074423a47d3c6802} 
 virtual std\+::string Model\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Retorna o nome do modelo. 
-
-\begin{DoxyReturn}{Returns}
-Nome identificador do modelo. 
-\end{DoxyReturn}
-
-
-Implemented in \mbox{\hyperlink{classModelImpl_a027d6617b69c45b92243c3caca352ba5}{Model\+Impl}}.
-
-\Hypertarget{classModel_a58d90565fefee1893ccddd18aaba152e}\index{Model@{Model}!getSystems@{getSystems}}
-\index{getSystems@{getSystems}!Model@{Model}}
-\doxysubsubsection{\texorpdfstring{getSystems()}{getSystems()}}
-{\footnotesize\ttfamily \label{classModel_a58d90565fefee1893ccddd18aaba152e} 
-virtual std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ Model\+::get\+Systems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -180,7 +190,7 @@ Vetor contendo os sistemas cadastrados.
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelImpl_a1374b7b3dbae27889aff15c365dee8a6}{Model\+Impl}}.
+Implemented in \mbox{\hyperlink{classModelImpl_a95f3dc9d8b142677009ff4212f45ccfa}{Model\+Impl}}.
 
 \Hypertarget{classModel_a8568b21dec4f8781179a64b44826e029}\index{Model@{Model}!remove@{remove}}
 \index{remove@{remove}!Model@{Model}}
@@ -241,6 +251,10 @@ Define o nome do modelo.
 {\em name} & Novo nome do modelo. \\
 \hline
 \end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classModelImpl_a5c0cab2db168fcd38a2dc5229e40d75b}{Model\+Impl}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

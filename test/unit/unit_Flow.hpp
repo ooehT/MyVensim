@@ -1,69 +1,32 @@
-/**
- * @file unit_Flow.hpp
- * @brief Testes unitários da classe Flow.
- */
-
 #ifndef UNIT_FLOW_HPP
 #define UNIT_FLOW_HPP
 
-/**
- * @brief Testa o construtor.
- */
-void unit_Flow_constructor();
+class Unit_Flow {
+public:
 
-/**
- * @brief Testa getName().
- */
-void unit_Flow_getName();
+    static bool unit_Flow_constructor();
 
-/**
- * @brief Testa setName().
- */
-void unit_Flow_setName();
+    static bool unit_Flow_getName();
 
-/**
- * @brief Testa getSource().
- */
-void unit_Flow_getSource();
+    static bool unit_Flow_setName();
 
-/**
- * @brief Testa setSource().
- */
-void unit_Flow_setSource();
+    static bool unit_Flow_getSource();
 
-/**
- * @brief Testa getTarget().
- */
-void unit_Flow_getTarget();
+    static bool unit_Flow_setSource();
 
-/**
- * @brief Testa setTarget().
- */
-void unit_Flow_setTarget();
+    static bool unit_Flow_getTarget();
 
-/**
- * @brief Testa removeSource().
- */
-void unit_Flow_removeSource();
+    static bool unit_Flow_setTarget();
 
-/**
- * @brief Testa removeTarget().
- */
-void unit_Flow_removeTarget();
+    static bool unit_Flow_removeSource();
 
-/**
- * @brief Testa o construtor de cópia.
- */
-void unit_Flow_copyConstructor();
+    static bool unit_Flow_removeTarget();
 
-/**
- * @brief Testa o operador de atribuição.
- */
-void unit_Flow_assignmentOperator();
+    static bool unit_Flow_copyConstructor();
 
-/**
- * @brief Executa todos os testes unitários de Flow.
- */
-void run_unit_test_Flow();
+    static bool unit_Flow_assignmentOperator();
+
+    static bool run_unit_tests_Flow();
+};
 
 #endif

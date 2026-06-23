@@ -1,64 +1,39 @@
-/**
- * @file unit_Model.hpp
- * @brief Testes unitários da classe Model.
- */
-
 #ifndef UNIT_MODEL_HPP
 #define UNIT_MODEL_HPP
 
-/**
- * @brief Testa o construtor padrão.
- */
-void unit_Model_constructor();
+class Unit_Model {
+public:
+    static bool unit_Model_defaultConstructor();
 
-/**
- * @brief Testa getName().
- */
-void unit_Model_getName();
+    static bool unit_Model_constructor();
 
-/**
- * @brief Testa setName().
- */
-void unit_Model_setName();
+    static bool unit_Model_copyConstructor();
 
-/**
- * @brief Testa o construtor de cópia.
- */
-void unit_Model_copyConstructor();
+    static bool unit_Model_getName();
 
-/**
- * @brief Testa o operador de atribuição.
- */
-void unit_Model_assignmentOperator();
+    static bool unit_Model_setName();
 
-/**
- * @brief Testa add(System*).
- */
-void unit_Model_addSystem();
+    static bool unit_Model_assignmentOperator();
 
-/**
- * @brief Testa remove(System*).
- */
-void unit_Model_removeSystem();
+    static bool unit_Model_addSystem();
 
-/**
- * @brief Testa add(Flow*).
- */
-void unit_Model_addFlow();
+    static bool unit_Model_addFlow();
 
-/**
- * @brief Testa remove(Flow*).
- */
-void unit_Model_removeFlow();
+    static bool unit_Model_removeSystem();
 
-/**
- * @brief Testa execute().
- */
-void unit_Model_execute();
+    static bool unit_Model_removeFlow();
 
-/**
- * @brief Executa todos os testes unitários de Model.
- */
-void run_unit_test_Model();
+    static bool unit_Model_beginSystems();
+
+    static bool unit_Model_endSystems();
+
+    static bool unit_Model_beginFlows();
+
+    static bool unit_Model_endFlows();
+
+    static bool unit_Model_execute();
+
+    static bool run_unit_tests_Model();
+};
 
 #endif

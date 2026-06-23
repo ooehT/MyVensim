@@ -21,7 +21,8 @@ public:
         return 0.0;
     }
 };
-void unit_Flow_constructor()
+
+bool Unit_Flow::unit_Flow_constructor()
 {
     System* s1 = new SystemImpl("s1", 100);
     System* s2 = new SystemImpl("s2", 0);
@@ -34,26 +35,35 @@ void unit_Flow_constructor()
 
     delete s1;
     delete s2;
+
+    return true;
 }
-void unit_Flow_getName()
+
+bool Unit_Flow::unit_Flow_getName()
 {
     FlowTest f;
 
     f.setName("fluxo");
 
     assert(f.getName() == "fluxo");
+
+    return true;
 }
-void unit_Flow_setName()
+
+bool Unit_Flow::unit_Flow_setName()
 {
     FlowTest f;
 
     f.setName("novo");
 
     assert(f.getName() == "novo");
+
+    return true;
 }
-void unit_Flow_getSource()
+
+bool Unit_Flow::unit_Flow_getSource()
 {
-    System* s = new SystemImpl("s",10);
+    System* s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setSource(s);
@@ -61,10 +71,13 @@ void unit_Flow_getSource()
     assert(f.getSource() == s);
 
     delete s;
+
+    return true;
 }
-void unit_Flow_setSource()
+
+bool Unit_Flow::unit_Flow_setSource()
 {
-    System* s = new SystemImpl("s",10);
+    System* s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setSource(s);
@@ -72,10 +85,13 @@ void unit_Flow_setSource()
     assert(f.getSource() == s);
 
     delete s;
+
+    return true;
 }
-void unit_Flow_getTarget()
+
+bool Unit_Flow::unit_Flow_getTarget()
 {
-    System* s = new SystemImpl("s",10);
+    System* s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setTarget(s);
@@ -83,10 +99,13 @@ void unit_Flow_getTarget()
     assert(f.getTarget() == s);
 
     delete s;
+
+    return true;
 }
-void unit_Flow_setTarget()
+
+bool Unit_Flow::unit_Flow_setTarget()
 {
-    System* s = new SystemImpl("s",10);
+    System* s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setTarget(s);
@@ -94,10 +113,13 @@ void unit_Flow_setTarget()
     assert(f.getTarget() == s);
 
     delete s;
+
+    return true;
 }
-void unit_Flow_removeSource()
+
+bool Unit_Flow::unit_Flow_removeSource()
 {
-    System* s = new SystemImpl("s",10);
+    System* s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setSource(s);
@@ -107,10 +129,13 @@ void unit_Flow_removeSource()
     assert(f.getSource() == nullptr);
 
     delete s;
+
+    return true;
 }
-void unit_Flow_removeTarget()
+
+bool Unit_Flow::unit_Flow_removeTarget()
 {
-    System* s = new SystemImpl("s",10);
+    System* s = new SystemImpl("s", 10);
 
     FlowTest f;
     f.setTarget(s);
@@ -120,11 +145,14 @@ void unit_Flow_removeTarget()
     assert(f.getTarget() == nullptr);
 
     delete s;
+
+    return true;
 }
-void unit_Flow_copyConstructor()
+
+bool Unit_Flow::unit_Flow_copyConstructor()
 {
-    System* s1 = new SystemImpl("s1",100);
-    System* s2 = new SystemImpl("s2",0);
+    System* s1 = new SystemImpl("s1", 100);
+    System* s2 = new SystemImpl("s2", 0);
 
     FlowTest f1("fluxo", s1, s2);
 
@@ -136,11 +164,14 @@ void unit_Flow_copyConstructor()
 
     delete s1;
     delete s2;
+
+    return true;
 }
-void unit_Flow_assignmentOperator()
+
+bool Unit_Flow::unit_Flow_assignmentOperator()
 {
-    System* s1 = new SystemImpl("s1",100);
-    System* s2 = new SystemImpl("s2",0);
+    System* s1 = new SystemImpl("s1", 100);
+    System* s2 = new SystemImpl("s2", 0);
 
     FlowTest f1("fluxo", s1, s2);
     FlowTest f2;
@@ -153,18 +184,33 @@ void unit_Flow_assignmentOperator()
 
     delete s1;
     delete s2;
+
+    return true;
 }
-void run_unit_test_Flow()
+
+bool Unit_Flow::run_unit_tests_Flow()
 {
-    unit_Flow_constructor();
-    unit_Flow_getName();
-    unit_Flow_setName();
-    unit_Flow_getSource();
-    unit_Flow_setSource();
-    unit_Flow_getTarget();
-    unit_Flow_setTarget();
-    unit_Flow_removeSource();
-    unit_Flow_removeTarget();
-    unit_Flow_copyConstructor();
-    unit_Flow_assignmentOperator();
+    assert(unit_Flow_constructor());
+
+    assert(unit_Flow_getName());
+
+    assert(unit_Flow_setName());
+
+    assert(unit_Flow_getSource());
+
+    assert(unit_Flow_setSource());
+
+    assert(unit_Flow_getTarget());
+
+    assert(unit_Flow_setTarget());
+
+    assert(unit_Flow_removeSource());
+
+    assert(unit_Flow_removeTarget());
+
+    assert(unit_Flow_copyConstructor());
+
+    assert(unit_Flow_assignmentOperator());
+
+    return true;
 }

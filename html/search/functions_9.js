@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['setname_0',['setName',['../classFlow.html#a8d0a7a0a8f0552418855930ffdebccd1',1,'Flow::setName()'],['../classFlowImpl.html#a44a470fb086e8bb89e9f334ea5b52942',1,'FlowImpl::setName()'],['../classModel.html#a17a6fba98202c82b3bce12bfb7540513',1,'Model::setName()'],['../classModelImpl.html#a2f7c12dfdc36c3e11fae0909eae06c45',1,'ModelImpl::setName()'],['../classSystem.html#ae4f2ee70d2cea415e95ecb6c51a037df',1,'System::setName()'],['../classSystemImpl.html#a03eafa413f5d17cd7f538b104519f8ec',1,'SystemImpl::setName()']]],
-  ['setsource_1',['setSource',['../classFlow.html#a1ca17cd54e042c1c1ccf73597e7f188e',1,'Flow::setSource()'],['../classFlowImpl.html#a840ad5c2fb1230cd58bae7ef892a6198',1,'FlowImpl::setSource()']]],
-  ['settarget_2',['setTarget',['../classFlow.html#a0a6d9503f9fd5afb978dd07346fa7e0d',1,'Flow::setTarget()'],['../classFlowImpl.html#a79818e87fcd74b9c7ba11ab1f670acb5',1,'FlowImpl::setTarget()']]],
-  ['setvalue_3',['setValue',['../classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03',1,'System::setValue()'],['../classSystemImpl.html#ac2a6145e6e12d46076b0d4b1a3b4e290',1,'SystemImpl::setValue(double)']]],
-  ['systemimpl_4',['SystemImpl',['../classSystemImpl.html#a6e8460199ac54949b08ecb315fce168b',1,'SystemImpl::SystemImpl()'],['../classSystemImpl.html#a4cc8c075b21f178e6974e93100791eef',1,'SystemImpl::SystemImpl(string name, double value)'],['../classSystemImpl.html#a48c96f30fad4789e683fa3e25e51fde1',1,'SystemImpl::SystemImpl(const SystemImpl &amp;)']]]
+  ['remove_0',['remove',['../classModel.html#aab07c39ea01c4296097674893858f12f',1,'Model::remove(System *s)=0'],['../classModel.html#a8568b21dec4f8781179a64b44826e029',1,'Model::remove(Flow *f)=0'],['../classModelImpl.html#a5145a5ed6c8cb204137fc161d94bb9e4',1,'ModelImpl::remove(System *s)'],['../classModelImpl.html#a91ecf96ee8a524711c34a5291e799470',1,'ModelImpl::remove(Flow *f)']]],
+  ['removesource_1',['removeSource',['../classFlow.html#af98729b889297c770230d89519fbe4d8',1,'Flow::removeSource()'],['../classFlowImpl.html#a28bab344a837ca749034923390bba603',1,'FlowImpl::removeSource()']]],
+  ['removetarget_2',['removeTarget',['../classFlow.html#ad40a4e0708ff79b1717fa6078e2ff022',1,'Flow::removeTarget()'],['../classFlowImpl.html#a05bfb38c22b0a4e8bc5497bee8fd0b8e',1,'FlowImpl::removeTarget()']]],
+  ['run_5funit_5ftests_5fflow_3',['run_unit_tests_Flow',['../classUnit__Flow.html#ad4e72c085768794fd38033b4429d4eff',1,'Unit_Flow']]],
+  ['run_5funit_5ftests_5fmodel_4',['run_unit_tests_Model',['../classUnit__Model.html#aa6d1ba41c4821801fb6e5a19b53d8a6b',1,'Unit_Model']]],
+  ['run_5funit_5ftests_5fsystem_5',['run_unit_tests_System',['../classUnit__System.html#aff3afe0d3f4c0f9095690a756336e7da',1,'Unit_System']]]
 ];

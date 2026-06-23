@@ -10,7 +10,7 @@
 #include "../../src/SystemImpl.hpp"
 #include "Exponential.hpp"
 #include "Logistic.hpp"
-
+#include "Complex.hpp"
 /**
  * @brief Executa o teste funcional para fluxos exponenciais simples.
  * 

@@ -4,6 +4,7 @@ var classFlowImpl =
     [ "FlowImpl", "classFlowImpl.html#a690c02067884f243657bdde0f946469d", null ],
     [ "FlowImpl", "classFlowImpl.html#a1b12d24d557462ca69c1ada700eee087", null ],
     [ "~FlowImpl", "classFlowImpl.html#a2d91539593b336aee4a19048f8a82e8c", null ],
+    [ "equation", "classFlowImpl.html#ac04e369c647b47849edc8f606561ca04", null ],
     [ "getName", "classFlowImpl.html#a634867e0e9acb4febd3753041824c83b", null ],
     [ "getSource", "classFlowImpl.html#a54940323059d2c4158f4146080841f32", null ],
     [ "getTarget", "classFlowImpl.html#ab07923bc230308cd949f627a92901bca", null ],
