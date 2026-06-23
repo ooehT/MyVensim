@@ -1,4 +1,42 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['value_0',['value',['../class_system.html#a879687b1125ef20757c2a61345fedd00',1,'System']]]
+=======
+  ['unit_5fexponential_2ecpp_0',['unit_Exponential.cpp',['../unit__Exponential_8cpp.html',1,'']]],
+  ['unit_5fexponential_2ehpp_1',['unit_Exponential.hpp',['../unit__Exponential_8hpp.html',1,'']]],
+  ['unit_5fexponential_5fequation_2',['unit_Exponential_equation',['../unit__Exponential_8cpp.html#a7e39b6644c12eec20ed63702ff7615ba',1,'unit_Exponential_equation():&#160;unit_Exponential.cpp'],['../unit__Exponential_8hpp.html#a7e39b6644c12eec20ed63702ff7615ba',1,'unit_Exponential_equation():&#160;unit_Exponential.cpp']]],
+  ['unit_5fflow_2ecpp_3',['unit_Flow.cpp',['../unit__Flow_8cpp.html',1,'']]],
+  ['unit_5fflow_2ehpp_4',['unit_Flow.hpp',['../unit__Flow_8hpp.html',1,'']]],
+  ['unit_5fflow_5fconstructor_5',['unit_Flow_constructor',['../unit__Flow_8cpp.html#abae010d669044ac8e9f87914b6cbeafe',1,'unit_Flow_constructor():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#abae010d669044ac8e9f87914b6cbeafe',1,'unit_Flow_constructor():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fgetname_6',['unit_Flow_getName',['../unit__Flow_8cpp.html#a7dcad29026912f67d033a190e6e35ca6',1,'unit_Flow_getName():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#a7dcad29026912f67d033a190e6e35ca6',1,'unit_Flow_getName():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fgetsource_7',['unit_Flow_getSource',['../unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367',1,'unit_Flow_getSource():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#a0dc76658e06597697628386d69327367',1,'unit_Flow_getSource():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fgettarget_8',['unit_Flow_getTarget',['../unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538',1,'unit_Flow_getTarget():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#a89661cef89f6beb434f6097691c03538',1,'unit_Flow_getTarget():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fremovesource_9',['unit_Flow_removeSource',['../unit__Flow_8cpp.html#a5b97d10a62b724c982b3e5c84bd60048',1,'unit_Flow_removeSource():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#a5b97d10a62b724c982b3e5c84bd60048',1,'unit_Flow_removeSource():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fremovetarget_10',['unit_Flow_removeTarget',['../unit__Flow_8cpp.html#a7f13d872b8fa5fe30623cae1a0c0edc5',1,'unit_Flow_removeTarget():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#a7f13d872b8fa5fe30623cae1a0c0edc5',1,'unit_Flow_removeTarget():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fsetname_11',['unit_Flow_setName',['../unit__Flow_8cpp.html#aadf402251a021acf6fda7327b7a52320',1,'unit_Flow_setName():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#aadf402251a021acf6fda7327b7a52320',1,'unit_Flow_setName():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fsetsource_12',['unit_Flow_setSource',['../unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4',1,'unit_Flow_setSource():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#a213cf3a2bd094e466707a33416124ce4',1,'unit_Flow_setSource():&#160;unit_Flow.cpp']]],
+  ['unit_5fflow_5fsettarget_13',['unit_Flow_setTarget',['../unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654',1,'unit_Flow_setTarget():&#160;unit_Flow.cpp'],['../unit__Flow_8hpp.html#a0b2a81b6dbbc3c5b1b25874640705654',1,'unit_Flow_setTarget():&#160;unit_Flow.cpp']]],
+  ['unit_5flogistic_2ecpp_14',['unit_Logistic.cpp',['../unit__Logistic_8cpp.html',1,'']]],
+  ['unit_5flogistic_2ehpp_15',['unit_Logistic.hpp',['../unit__Logistic_8hpp.html',1,'']]],
+  ['unit_5flogistic_5fequation_16',['unit_Logistic_equation',['../unit__Logistic_8cpp.html#a2d3cfc69721c0d8deba76bfe04e617cc',1,'unit_Logistic_equation():&#160;unit_Logistic.cpp'],['../unit__Logistic_8hpp.html#a2d3cfc69721c0d8deba76bfe04e617cc',1,'unit_Logistic_equation():&#160;unit_Logistic.cpp']]],
+  ['unit_5fmodel_2ecpp_17',['unit_Model.cpp',['../unit__Model_8cpp.html',1,'']]],
+  ['unit_5fmodel_2ehpp_18',['unit_Model.hpp',['../unit__Model_8hpp.html',1,'']]],
+  ['unit_5fmodel_5faddflow_19',['unit_Model_addFlow',['../unit__Model_8cpp.html#a742a3cf3113b9b5828bf0dfe22abc6a3',1,'unit_Model_addFlow():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#a742a3cf3113b9b5828bf0dfe22abc6a3',1,'unit_Model_addFlow():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5faddsystem_20',['unit_Model_addSystem',['../unit__Model_8cpp.html#a06390bb362065cf4ccf41ddfa0c33693',1,'unit_Model_addSystem():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#a06390bb362065cf4ccf41ddfa0c33693',1,'unit_Model_addSystem():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5fconstructor_21',['unit_Model_constructor',['../unit__Model_8cpp.html#a33c89b15c9a9fa91b3753cba55af695b',1,'unit_Model_constructor():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#a33c89b15c9a9fa91b3753cba55af695b',1,'unit_Model_constructor():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5fgetflows_22',['unit_Model_getFlows',['../unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3',1,'unit_Model_getFlows():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#a785d25c1ff90eb91fef77944d01e3db3',1,'unit_Model_getFlows():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5fgetname_23',['unit_Model_getName',['../unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0',1,'unit_Model_getName():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#ae4af6259f0c230666091589c7e5692a0',1,'unit_Model_getName():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5fgetsystems_24',['unit_Model_getSystems',['../unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1',1,'unit_Model_getSystems():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#ad8771238ee4566fc080eb131d72a16c1',1,'unit_Model_getSystems():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5fremoveflow_25',['unit_Model_removeFlow',['../unit__Model_8cpp.html#a9558a5ae2be456fcc8c7a3b1ecd5f3cb',1,'unit_Model_removeFlow():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#a9558a5ae2be456fcc8c7a3b1ecd5f3cb',1,'unit_Model_removeFlow():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5fremovesystem_26',['unit_Model_removeSystem',['../unit__Model_8cpp.html#ad30b83679de39115af7c05c286ed505b',1,'unit_Model_removeSystem():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#ad30b83679de39115af7c05c286ed505b',1,'unit_Model_removeSystem():&#160;unit_Model.cpp']]],
+  ['unit_5fmodel_5fsetname_27',['unit_Model_setName',['../unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20',1,'unit_Model_setName():&#160;unit_Model.cpp'],['../unit__Model_8hpp.html#a3e18033ba5152db576eeccd0eebafd20',1,'unit_Model_setName():&#160;unit_Model.cpp']]],
+  ['unit_5fsystem_2ecpp_28',['unit_System.cpp',['../unit__System_8cpp.html',1,'']]],
+  ['unit_5fsystem_2ehpp_29',['unit_System.hpp',['../unit__System_8hpp.html',1,'']]],
+  ['unit_5fsystem_5fconstructor_30',['unit_System_constructor',['../unit__System_8cpp.html#a6a39fd054412469cd77649218d3ecceb',1,'unit_System_constructor():&#160;unit_System.cpp'],['../unit__System_8hpp.html#a6a39fd054412469cd77649218d3ecceb',1,'unit_System_constructor():&#160;unit_System.cpp']]],
+  ['unit_5fsystem_5fgetname_31',['unit_System_getName',['../unit__System_8cpp.html#a672a51794472bbde676a33115e003b15',1,'unit_System_getName():&#160;unit_System.cpp'],['../unit__System_8hpp.html#a672a51794472bbde676a33115e003b15',1,'unit_System_getName():&#160;unit_System.cpp']]],
+  ['unit_5fsystem_5fgetvalue_32',['unit_System_getValue',['../unit__System_8cpp.html#ab320622db511f54344c510a9cfdbff94',1,'unit_System_getValue():&#160;unit_System.cpp'],['../unit__System_8hpp.html#ab320622db511f54344c510a9cfdbff94',1,'unit_System_getValue():&#160;unit_System.cpp']]],
+  ['unit_5fsystem_5fsetname_33',['unit_System_setName',['../unit__System_8cpp.html#a470f565c55f643e387d5cc7005cab1ea',1,'unit_System_setName():&#160;unit_System.cpp'],['../unit__System_8hpp.html#a470f565c55f643e387d5cc7005cab1ea',1,'unit_System_setName():&#160;unit_System.cpp']]],
+  ['unit_5fsystem_5fsetvalue_34',['unit_System_setValue',['../unit__System_8cpp.html#ac322ab5fd0cd1051b54ffab7177032e6',1,'unit_System_setValue():&#160;unit_System.cpp'],['../unit__System_8hpp.html#ac322ab5fd0cd1051b54ffab7177032e6',1,'unit_System_setValue():&#160;unit_System.cpp']]]
+>>>>>>> dc02b4f64e7811a1372d94719e5761d5de1464ea
 ];

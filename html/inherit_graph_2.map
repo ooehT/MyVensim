@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <area shape="rect" id="Node000000" href="$class_system.html" title="Representa um sistema contendo um valor associado." alt="" coords="5,5,72,32"/>
+=======
+<area shape="rect" id="Node000000" href="$classSystem.html" title="Representa um sistema contendo um valor associado." alt="" coords="5,5,76,33"/>
+<area shape="rect" id="Node000001" href="$classSystemImpl.html" title="Implementação concreta de um sistema da simulação." alt="" coords="124,5,223,33"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="91,17,126,19,121,20,91,22"/>
+>>>>>>> dc02b4f64e7811a1372d94719e5761d5de1464ea
 </map>

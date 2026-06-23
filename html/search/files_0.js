@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['funcional_5ftest_2ehpp_0',['funcional_test.hpp',['../funcional__test_8hpp.html',1,'']]]
+  ['exponential_2ecpp_0',['Exponential.cpp',['../Exponential_8cpp.html',1,'']]],
+  ['exponential_2ehpp_1',['Exponential.hpp',['../Exponential_8hpp.html',1,'']]]
 ];

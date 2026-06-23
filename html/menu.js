@@ -22,6 +22,7 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
  */
+<<<<<<< HEAD
 function initMenu(relPath,treeview) {
 
   const SHOW_DELAY = 250;  // 250ms delay before showing
@@ -87,6 +88,13 @@ function initMenu(relPath,treeview) {
       if (!topLevel) {
         result+='<ul>';
       }
+=======
+function initMenu(relPath,searchEnabled,serverSide,searchPage,search,treeview) {
+  function makeTree(data,relPath) {
+    let result='';
+    if ('children' in data) {
+      result+='<ul>';
+>>>>>>> dc02b4f64e7811a1372d94719e5761d5de1464ea
       for (let i in data.children) {
         let url;
         const link = data.children[i].url;
@@ -105,6 +113,7 @@ function initMenu(relPath,treeview) {
     }
     return result;
   }
+<<<<<<< HEAD
 
   const mainNav = document.getElementById('main-nav');
   if (mainNav && mainNav.children.length > 0) {
@@ -141,16 +150,90 @@ function initMenu(relPath,treeview) {
         slideUp(mainMenu, SLIDE_DELAY, () => {
           mainMenu.style.display = 'none';
         });
+=======
+  let searchBoxHtml;
+  if (searchEnabled) {
+    if (serverSide) {
+      searchBoxHtml='<div id="MSearchBox" class="MSearchBoxInactive">'+
+                 '<div class="left">'+
+                  '<form id="FSearchBox" action="'+relPath+searchPage+
+                    '" method="get"><span id="MSearchSelectExt" class="search-icon"></span>'+
+                  '<input type="text" id="MSearchField" name="query" value="" placeholder="'+search+
+                    '" size="20" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)"'+
+                    ' onblur="searchBox.OnSearchFieldFocus(false)"/>'+
+                  '</form>'+
+                 '</div>'+
+                 '<div class="right"></div>'+
+                '</div>';
+    } else {
+      searchBoxHtml='<div id="MSearchBox" class="MSearchBoxInactive">'+
+                 '<span class="left">'+
+                  '<span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()"'+
+                     ' onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>'+
+                  '<input type="text" id="MSearchField" value="" placeholder="'+search+
+                    '" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" '+
+                    'onblur="searchBox.OnSearchFieldFocus(false)" '+
+                    'onkeyup="searchBox.OnSearchFieldChange(event)"/>'+
+                 '</span>'+
+                 '<span class="right"><a id="MSearchClose" '+
+                  'href="javascript:searchBox.CloseResultsWindow()">'+
+                  '<div id="MSearchCloseImg" class="close-icon"></div></a>'+
+                 '</span>'+
+                '</div>';
+    }
+  }
+
+  $('#main-nav').before('<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>'+
+                        '<label class="main-menu-btn" for="main-menu-state">'+
+                        '<span class="main-menu-btn-icon"></span> '+
+                        'Toggle main menu visibility</label>'+
+                        '<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>'+
+                        '</div>');
+  $('#main-nav').append(makeTree(menudata,relPath));
+  $('#main-nav').children(':first').addClass('sm sm-dox').attr('id','main-menu');
+  $('#main-menu').append('<li id="searchBoxPos2" style="float:right"></li>');
+  const $mainMenuState = $('#main-menu-state');
+  let prevWidth = 0;
+  if ($mainMenuState.length) {
+    const initResizableIfExists = function() {
+      if (typeof initResizable==='function') initResizable(treeview);
+    }
+    // animate mobile menu
+    $mainMenuState.change(function() {
+      const $menu = $('#main-menu');
+      let options = { duration: 250, step: initResizableIfExists };
+      if (this.checked) {
+        options['complete'] = () => $menu.css('display', 'block');
+        $menu.hide().slideDown(options);
+      } else {
+        options['complete'] = () => $menu.css('display', 'none');
+        $menu.show().slideUp(options);
+>>>>>>> dc02b4f64e7811a1372d94719e5761d5de1464ea
       }
     });
 
     // set default menu visibility
     const resetState = function() {
+<<<<<<< HEAD
       const newWidth = window.innerWidth;
       if (newWidth !== prevWidth) {
         // Close all open dropdown menus when switching between mobile/desktop modes
         if (closeAllDropdowns) {
           closeAllDropdowns();
+=======
+      const $menu = $('#main-menu');
+      const newWidth = $(window).outerWidth();
+      if (newWidth!=prevWidth) {
+        if ($(window).outerWidth()<768) {
+          $mainMenuState.prop('checked',false); $menu.hide();
+          $('#searchBoxPos1').html(searchBoxHtml);
+          $('#searchBoxPos2').hide();
+        } else {
+          $menu.show();
+          $('#searchBoxPos1').empty();
+          $('#searchBoxPos2').html(searchBoxHtml);
+          $('#searchBoxPos2').show();
+>>>>>>> dc02b4f64e7811a1372d94719e5761d5de1464ea
         }
 
         if (newWidth < MOBILE_WIDTH) {

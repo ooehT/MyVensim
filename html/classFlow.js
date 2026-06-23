@@ -1,20 +1,13 @@
 var classFlow =
 [
-    [ "Flow", "classFlow.html#ac9975e144e606242748197798e87dd32", null ],
-    [ "Flow", "classFlow.html#ad3276465420fca89dfce1a3818465562", null ],
-    [ "Flow", "classFlow.html#af559e47422fbdeeff9b65a0756632cf9", null ],
-    [ "~Flow", "classFlow.html#a5991efa6e8cf88c4ef2125cc727db333", null ],
+    [ "~Flow", "classFlow.html#a325d284a50ca3274b126b21f5c39b9af", null ],
     [ "equation", "classFlow.html#aa1ad5f820c1f10f9e19c555af8bf69f2", null ],
-    [ "getName", "classFlow.html#a62bbc54ff95eeb0795511519edf32077", null ],
-    [ "getSource", "classFlow.html#a1f3858f90d141807377c2640fb5dd0fc", null ],
-    [ "getTarget", "classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5", null ],
-    [ "operator=", "classFlow.html#ac5fae2ad1c3bf3c518240fe85bc2d4b2", null ],
-    [ "removeSource", "classFlow.html#afa44322a8e8901bcd4e1d93a726e5ece", null ],
-    [ "removeTarget", "classFlow.html#a2fa57a27502f45801a35bfa5f3258d23", null ],
-    [ "setName", "classFlow.html#a60277f8a609ad446fafcc7b7cab828bb", null ],
-    [ "setSource", "classFlow.html#a250fc53158862fc0db77b323a33e48a3", null ],
-    [ "setTarget", "classFlow.html#ab69903880174e5bcdc0d815b5de7b3e0", null ],
-    [ "name", "classFlow.html#a8801d2ed91a9d96003d4bc8024451551", null ],
-    [ "source", "classFlow.html#a963ca162995d112f0f30322e2bb9de63", null ],
-    [ "target", "classFlow.html#a87be88d9bae4e927b29205faabeaf387", null ]
+    [ "getName", "classFlow.html#a2d0340d844ab2d275222938234e44169", null ],
+    [ "getSource", "classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8", null ],
+    [ "getTarget", "classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787", null ],
+    [ "removeSource", "classFlow.html#af98729b889297c770230d89519fbe4d8", null ],
+    [ "removeTarget", "classFlow.html#ad40a4e0708ff79b1717fa6078e2ff022", null ],
+    [ "setName", "classFlow.html#a8d0a7a0a8f0552418855930ffdebccd1", null ],
+    [ "setSource", "classFlow.html#a1ca17cd54e042c1c1ccf73597e7f188e", null ],
+    [ "setTarget", "classFlow.html#a0a6d9503f9fd5afb978dd07346fa7e0d", null ]
 ];

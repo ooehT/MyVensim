@@ -291,6 +291,10 @@ iframe#MSearchResults {
 
 div.SRPage {
     margin: 5px 2px;
+<<<<<<< HEAD
+=======
+    /*background-color: var(--search-results-background-color);*/
+>>>>>>> dc02b4f64e7811a1372d94719e5761d5de1464ea
 }
 
 .SRChildren {

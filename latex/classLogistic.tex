@@ -7,84 +7,85 @@ Classe que define um comportamento de fluxo logístico baseado na capacidade do 
 
 
 
-{\ttfamily \#include $<$logistic.\+hpp$>$}
+{\ttfamily \#include $<$Logistic.\+hpp$>$}
 
 
 
-Inheritance diagram for Logistic\+:
-\nopagebreak
+Inheritance diagram for Logistic\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=134pt]{classLogistic__inherit__graph}
+\includegraphics[width=141pt]{classLogistic__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Logistic\+:
-\nopagebreak
+Collaboration diagram for Logistic\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=143pt]{classLogistic__coll__graph}
+\includegraphics[width=192pt]{classLogistic__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classLogistic_ae137bd4c8e3d59f2860b89b4e8a5f43c}\label{classLogistic_ae137bd4c8e3d59f2860b89b4e8a5f43c} 
-{\bfseries Logistic} ()
+\mbox{\hyperlink{classLogistic_ae137bd4c8e3d59f2860b89b4e8a5f43c}{Logistic}} ()
 \begin{DoxyCompactList}\small\item\em Construtor padrão da classe \doxylink{classLogistic}{Logistic}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classLogistic_a263e8aacb43b07818e5267ebcc5804b0}{Logistic}} (string \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}})
+\mbox{\hyperlink{classLogistic_a263e8aacb43b07818e5267ebcc5804b0}{Logistic}} (string \mbox{\hyperlink{classFlowImpl_afcc3f687245c4a6fa3d26ac386c8221b}{name}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}})
 \begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
-\Hypertarget{classLogistic_a749e39ff99fbd5a042fcd98dc5d75601}\label{classLogistic_a749e39ff99fbd5a042fcd98dc5d75601} 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Logistic} ()
+virtual \mbox{\hyperlink{classLogistic_a749e39ff99fbd5a042fcd98dc5d75601}{\texorpdfstring{$\sim$}{\string~}\+Logistic}} ()
 \begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classLogistic_aacf68849fd0ffe5fda907c8e3d7d45db}{Logistic}} (const \mbox{\hyperlink{classLogistic}{Logistic}} \&copy)
 \begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classLogistic}{Logistic}} \& \mbox{\hyperlink{classLogistic_a0db84d8cceb003df0a448e1249dc9f2e}{operator=}} (const \mbox{\hyperlink{classLogistic}{Logistic}} \&copy)
-\begin{DoxyCompactList}\small\item\em Operador de atribuição sobrecarregado. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
 virtual double \mbox{\hyperlink{classLogistic_a2e209962a1bd0f0eb767c45e7146f83d}{equation}} ()
 \begin{DoxyCompactList}\small\item\em Calcula a taxa de variação usando a equação logística. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlowImpl_aa835ccb3c368c683aa95d660175a298b}{Flow\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowImpl_a690c02067884f243657bdde0f946469d}{Flow\+Impl}} (std\+::string, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowImpl_a1b12d24d557462ca69c1ada700eee087}{Flow\+Impl}} (const \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}} \&copy)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlowImpl}{Flow\+Impl}} \& \mbox{\hyperlink{classFlowImpl_ad6cb15ae94988003fd4cdb71a25922f0}{operator=}} (const \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}} \&)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFlowImpl_a2d91539593b336aee4a19048f8a82e8c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+Impl}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowImpl_a840ad5c2fb1230cd58bae7ef892a6198}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Define o sistema de origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_a54940323059d2c4158f4146080841f32}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o sistema de origem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowImpl_a79818e87fcd74b9c7ba11ab1f670acb5}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Define o sistema de destino. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_ab07923bc230308cd949f627a92901bca}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o sistema de destino. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classFlowImpl_a634867e0e9acb4febd3753041824c83b}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome do fluxo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowImpl_a44a470fb086e8bb89e9f334ea5b52942}{set\+Name}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Define o nome do fluxo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowImpl_a28bab344a837ca749034923390bba603}{remove\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Remove o sistema de origem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowImpl_a05bfb38c22b0a4e8bc5497bee8fd0b8e}{remove\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Remove o sistema de destino. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Flow} ()
-\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFlow_ad3276465420fca89dfce1a3818465562}{Flow}} (string \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}})
-\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
-{\bfseries Flow} (const \mbox{\hyperlink{classFlow}{Flow}} \&f)
-\begin{DoxyCompactList}\small\item\em Construtor de cópia. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFlow}{Flow}} \& {\bfseries operator=} (const \mbox{\hyperlink{classFlow}{Flow}} \&f)
-\begin{DoxyCompactList}\small\item\em Operador de atribuição. \end{DoxyCompactList}\item 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Flow} ()
-\begin{DoxyCompactList}\small\item\em Destrutor virtual da classe. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_a250fc53158862fc0db77b323a33e48a3}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}})
-\begin{DoxyCompactList}\small\item\em Define o sistema de origem. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
-\begin{DoxyCompactList}\small\item\em Retorna o sistema de origem. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_ab69903880174e5bcdc0d815b5de7b3e0}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}})
-\begin{DoxyCompactList}\small\item\em Define o sistema de destino. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
-\begin{DoxyCompactList}\small\item\em Retorna o sistema de destino. \end{DoxyCompactList}\item 
-string \mbox{\hyperlink{classFlow_a62bbc54ff95eeb0795511519edf32077}{get\+Name}} () const
-\begin{DoxyCompactList}\small\item\em Retorna o nome do fluxo. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_a60277f8a609ad446fafcc7b7cab828bb}{set\+Name}} (const string \&value)
-\begin{DoxyCompactList}\small\item\em Define o nome do fluxo. \end{DoxyCompactList}\item 
-void {\bfseries remove\+Source} ()
-\begin{DoxyCompactList}\small\item\em Remove o sistema de origem do fluxo. \end{DoxyCompactList}\item 
-void {\bfseries remove\+Target} ()
-\begin{DoxyCompactList}\small\item\em Remove o sistema de destino do fluxo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlowImpl}{Flow\+Impl}}}
 \begin{DoxyCompactItemize}
 \item 
-string \mbox{\hyperlink{classFlow_a8801d2ed91a9d96003d4bc8024451551}{name}}
-\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}
-\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}
-\end{DoxyCompactItemize}
+std\+::string \mbox{\hyperlink{classFlowImpl_afcc3f687245c4a6fa3d26ac386c8221b}{name}}
+\begin{DoxyCompactList}\small\item\em Nome identificador do fluxo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_a950987351656a518a1057b64c5f85af8}{source}}
+\begin{DoxyCompactList}\small\item\em Sistema de origem do fluxo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowImpl_af97039b649da65573e5582edbeb287b5}{target}}
+\begin{DoxyCompactList}\small\item\em Sistema de destino do fluxo. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -92,12 +93,24 @@ Classe que define um comportamento de fluxo logístico baseado na capacidade do 
 
 A classe \doxylink{classLogistic}{Logistic} herda de \doxylink{classFlow}{Flow} e implementa a equação matemática correspondente ao crescimento logístico em sistemas dinâmicos. 
 
+\label{doc-constructors}
+\Hypertarget{classLogistic_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classLogistic_a263e8aacb43b07818e5267ebcc5804b0}\label{classLogistic_a263e8aacb43b07818e5267ebcc5804b0} 
+\Hypertarget{classLogistic_ae137bd4c8e3d59f2860b89b4e8a5f43c}\index{Logistic@{Logistic}!Logistic@{Logistic}}
 \index{Logistic@{Logistic}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classLogistic_ae137bd4c8e3d59f2860b89b4e8a5f43c} 
+Logistic\+::\+Logistic (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construtor padrão da classe \doxylink{classLogistic}{Logistic}. 
+
+\Hypertarget{classLogistic_a263e8aacb43b07818e5267ebcc5804b0}\index{Logistic@{Logistic}!Logistic@{Logistic}}
 \index{Logistic@{Logistic}!Logistic@{Logistic}}
-\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Logistic\+::\+Logistic (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classLogistic_a263e8aacb43b07818e5267ebcc5804b0} 
+Logistic\+::\+Logistic (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source}{, }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})}
 
 
 
@@ -112,11 +125,21 @@ Construtor parametrizado.
 {\em target} & Ponteiro para o sistema de destino (output). \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classLogistic_aacf68849fd0ffe5fda907c8e3d7d45db}\label{classLogistic_aacf68849fd0ffe5fda907c8e3d7d45db} 
+\Hypertarget{classLogistic_a749e39ff99fbd5a042fcd98dc5d75601}\index{Logistic@{Logistic}!````~Logistic@{\texorpdfstring{$\sim$}{\string~}Logistic}}
+\index{````~Logistic@{\texorpdfstring{$\sim$}{\string~}Logistic}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Logistic()}{\string~Logistic()}}
+{\footnotesize\ttfamily \label{classLogistic_a749e39ff99fbd5a042fcd98dc5d75601} 
+Logistic\+::\texorpdfstring{$\sim$}{\string~}\+Logistic (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor virtual. 
+
+\Hypertarget{classLogistic_aacf68849fd0ffe5fda907c8e3d7d45db}\index{Logistic@{Logistic}!Logistic@{Logistic}}
 \index{Logistic@{Logistic}!Logistic@{Logistic}}
-\index{Logistic@{Logistic}!Logistic@{Logistic}}
-\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Logistic\+::\+Logistic (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLogistic}{Logistic}} \&}]{copy }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classLogistic_aacf68849fd0ffe5fda907c8e3d7d45db} 
+Logistic\+::\+Logistic (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLogistic}{Logistic}} \&}]{copy}{}\end{DoxyParamCaption})}
 
 
 
@@ -124,17 +147,19 @@ Construtor de cópia.
 
 
 \begin{DoxyParams}{Parameters}
-{\em copy} & Objeto do tipo \doxylink{classLogistic}{Logistic} que será copiado. \\
+{\em copy} & Fluxo logístico que será copiado. \\
 \hline
 \end{DoxyParams}
 
 
+\label{doc-func-members}
+\Hypertarget{classLogistic_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classLogistic_a2e209962a1bd0f0eb767c45e7146f83d}\label{classLogistic_a2e209962a1bd0f0eb767c45e7146f83d} 
-\index{Logistic@{Logistic}!equation@{equation}}
+\Hypertarget{classLogistic_a2e209962a1bd0f0eb767c45e7146f83d}\index{Logistic@{Logistic}!equation@{equation}}
 \index{equation@{equation}!Logistic@{Logistic}}
 \doxysubsubsection{\texorpdfstring{equation()}{equation()}}
-{\footnotesize\ttfamily double Logistic\+::equation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classLogistic_a2e209962a1bd0f0eb767c45e7146f83d} 
+double Logistic\+::equation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -147,27 +172,27 @@ Baseia-\/se no valor atual do sistema alvo e em uma constante limitante.
 
 Implements \mbox{\hyperlink{classFlow_aa1ad5f820c1f10f9e19c555af8bf69f2}{Flow}}.
 
-\Hypertarget{classLogistic_a0db84d8cceb003df0a448e1249dc9f2e}\label{classLogistic_a0db84d8cceb003df0a448e1249dc9f2e} 
-\index{Logistic@{Logistic}!operator=@{operator=}}
+\Hypertarget{classLogistic_a0db84d8cceb003df0a448e1249dc9f2e}\index{Logistic@{Logistic}!operator=@{operator=}}
 \index{operator=@{operator=}!Logistic@{Logistic}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classLogistic}{Logistic}} \& Logistic\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLogistic}{Logistic}} \&}]{copy }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classLogistic_a0db84d8cceb003df0a448e1249dc9f2e} 
+\mbox{\hyperlink{classLogistic}{Logistic}} \& Logistic\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classLogistic}{Logistic}} \&}]{copy}{}\end{DoxyParamCaption})}
 
 
 
-Operador de atribuição sobrecarregado. 
+Operador de atribuição. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em copy} & Objeto do tipo \doxylink{classLogistic}{Logistic} a ser atribuído. \\
+{\em copy} & Fluxo logístico que será atribuído. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Referência para o objeto atual atualizado. 
+RReferência para o próprio objeto. 
 \end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\mbox{\hyperlink{logistic_8hpp}{logistic.\+hpp}}\item 
-src/logistic.\+cpp\end{DoxyCompactItemize}
+src/\mbox{\hyperlink{Logistic_8hpp}{Logistic.\+hpp}}\item 
+src/\mbox{\hyperlink{Logistic_8cpp}{Logistic.\+cpp}}\end{DoxyCompactItemize}

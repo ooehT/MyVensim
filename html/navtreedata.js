@@ -32,8 +32,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Related Symbols", "functions_rela.html", null ]
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -48,9 +47,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
+<<<<<<< HEAD
 "_system_8hpp_source.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';
 const SYNCOFFMSG = 'click to enable panel synchronization';
 const LISTOFALLMEMBERS = 'List of all members';
+=======
+"Exponential_8cpp.html"
+];
+
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
+>>>>>>> dc02b4f64e7811a1372d94719e5761d5de1464ea

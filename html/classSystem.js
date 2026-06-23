@@ -1,15 +1,8 @@
 var classSystem =
 [
-    [ "System", "classSystem.html#a9dd6c24612a98e55eaf1ec971bc44f4a", null ],
-    [ "System", "classSystem.html#ae317936c9bcf1374d61745572e0f2f8a", null ],
-    [ "System", "classSystem.html#a4f45df63c90a82f1c915114ac1d6e8a1", null ],
-    [ "~System", "classSystem.html#a3be70bb338e3f062f821173fd15680d0", null ],
-    [ "getName", "classSystem.html#a47ece132a04247cd74aea11537830bd4", null ],
-    [ "getValue", "classSystem.html#aa7d17369d1034e7d8643a63f69d1901d", null ],
-    [ "operator=", "classSystem.html#ab96adee223ec4fd0da0edeff35ec3599", null ],
-    [ "setName", "classSystem.html#a9fd2ad63e7e4606fed64e73390aa107a", null ],
-    [ "setValue", "classSystem.html#a5343de0a45485edd88bc87f338fe9a19", null ],
-    [ "operator<<", "classSystem.html#ae18abe3a2be7157cd1f505eaf3e571f2", null ],
-    [ "name", "classSystem.html#a29fe2868c0d56fdebc67f1bef5d5cca3", null ],
-    [ "value", "classSystem.html#a879687b1125ef20757c2a61345fedd00", null ]
+    [ "~System", "classSystem.html#a2fc0f34023977cab9b628aa9f734d88c", null ],
+    [ "getName", "classSystem.html#ab4f23c21832d6bbef462a5a20b296912", null ],
+    [ "getValue", "classSystem.html#a41b673faa6c199eb8e4f204639fab4f2", null ],
+    [ "setName", "classSystem.html#ae4f2ee70d2cea415e95ecb6c51a037df", null ],
+    [ "setValue", "classSystem.html#a95e6d4c1ce05b47b5fa743fd2401dd03", null ]
 ];
