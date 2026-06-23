@@ -6,25 +6,43 @@
 
 using namespace std;
 
-class Exponential : public Flow {
-    public:
-        // 1. Construtor Padrão
-        Exponential();
+/**
+ * @class Exponential
+ * @brief Implementa um fluxo exponencial.
+ *
+ * A classe Exponential define um fluxo cuja equação
+ * é baseada em crescimento ou decaimento exponencial.
+ */
+class Exponential : public Flow
+{
+public:
+    /** @brief Construtor padrão. */
+    Exponential();
 
-        // Construtor com parâmetros (específico da sua regra de negócio)
-        Exponential(string name, System *source, System *target);
+    /**
+     * @brief Construtor parametrizado.
+     *
+     * @param name Nome do fluxo.
+     * @param source Sistema de origem.
+     * @param target Sistema de destino.
+     */
+    Exponential(string name, System *source, System *target);
 
-        // 2. Destrutor (virtual para garantir a correta destruição na herança)
-        virtual ~Exponential();
+    /** @brief Destrutor virtual da classe. */
+    virtual ~Exponential();
 
-        // 3. Construtor de Cópia
-        Exponential(const Exponential& copy);
+    /** @brief Construtor de cópia. */
+    Exponential(const Exponential &copy);
 
-        // 4. Operador de Atribuição
-        Exponential& operator=(const Exponential& copy);
+    /** @brief Operador de atribuição. */
+    Exponential &operator=(const Exponential &copy);
 
-        // Método que executa a equação (herdado da classe Flow)
-        virtual double equation();
+    /**
+     * @brief Executa a equação exponencial do fluxo.
+     *
+     * @return Valor calculado pela equação.
+     */
+    virtual double equation();
 };
 
 #endif // EXPONENTIAL_HPP

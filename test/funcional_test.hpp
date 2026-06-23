@@ -6,10 +6,17 @@
 #ifndef FUNCIONAL_TEST_HPP
 #define FUNCIONAL_TEST_HPP
 
+<<<<<<< HEAD
 #include "model.hpp"
 #include "System.hpp"
 #include "exponential.hpp"
 #include "logistic.hpp" 
+=======
+#include "../src/model.hpp"
+#include "../src/System.hpp"
+#include "../src/exponential.hpp"
+#include "../src/logistic.hpp" 
+>>>>>>> 790b4b62ccd1d7b2f7c9d98a163a6e1cdd990d10
 
 /**
  * @brief Executa o teste funcional para fluxos exponenciais simples.

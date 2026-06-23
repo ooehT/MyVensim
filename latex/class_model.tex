@@ -18,11 +18,8 @@ Classe container que gerencia múltiplos sistemas e fluxos, executando o cenári
 \Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0} 
 virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Model} ()
 \begin{DoxyCompactList}\small\item\em Destrutor virtual responsável por liberar a estrutura (se aplicável). \end{DoxyCompactList}\item 
-\Hypertarget{class_model_aad5eadb989dae838966ef6d27769aea1}\label{class_model_aad5eadb989dae838966ef6d27769aea1} 
-\doxymbox{\hyperlink{class_model}{Model}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{class_model}{Model}} \&)
-\item 
 \Hypertarget{class_model_acfedf88472925094c2cdd06c01236dd8}\label{class_model_acfedf88472925094c2cdd06c01236dd8} 
-{\bfseries Model} (const \doxymbox{\hyperlink{class_model}{Model}} \&copy)
+$<$$<$$<$$<$$<$$<$$<$ HEAD \doxymbox{\hyperlink{class_model}{Model}} \&operator=(const \doxymbox{\hyperlink{class_model}{Model}} \&);=======\doxymbox{\hyperlink{class_model}{Model}} \&operator=(const \doxymbox{\hyperlink{class_model}{Model}} \&);$>$ $>$ $>$ $>$ $>$ $>$ {\bfseries Model} (const \doxymbox{\hyperlink{class_model}{Model}} \&copy)
 \item 
 void \doxymbox{\hyperlink{class_model_ab1448dd54d29d147b2695eb7bc768fbd}{execute}} (double start, double end, double increment)
 \begin{DoxyCompactList}\small\item\em Executa a simulação do modelo em um intervalo de tempo determinado. \end{DoxyCompactList}\item 
@@ -49,9 +46,9 @@ void {\bfseries set\+Name} (const string \&value)
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-vector$<$ \doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}
+vector$<$ \doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_ab27ca50cce65df6055d219505ebf05c8}{flows}}
 \item 
-vector$<$ \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_a0ad9eca5f7874e06be69db9aa726857a}{sys}}
+vector$<$ \doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_model_ae6d0475ec26684a188c5f504befae604}{sys}}
 \item 
 string \doxymbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}}
 \end{DoxyCompactItemize}
@@ -143,11 +140,11 @@ true se removido com sucesso, false caso contrário.
 \label{class_model_doc-variable-members}
 \Hypertarget{class_model_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}\index{Model@{Model}!flows@{flows}}
+\Hypertarget{class_model_ab27ca50cce65df6055d219505ebf05c8}\index{Model@{Model}!flows@{flows}}
 \index{flows@{flows}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{flows}{flows}}
-{\footnotesize\ttfamily \label{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a} 
-vector$<$\doxymbox{\hyperlink{class_flow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model::\+flows\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{class_model_ab27ca50cce65df6055d219505ebf05c8} 
+vector$<$\doxymbox{\hyperlink{class_flow}{Flow}} \texorpdfstring{$\ast$}{*}$>$ Model::\+flows\hspace{0.3cm}{\ttfamily [protected]}}
 
 Vetor contendo os fluxos pertencentes ao modelo. \Hypertarget{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}\index{Model@{Model}!name@{name}}
 \index{name@{name}!Model@{Model}}
@@ -155,11 +152,11 @@ Vetor contendo os fluxos pertencentes ao modelo. \Hypertarget{class_model_a2d9ae
 {\footnotesize\ttfamily \label{class_model_a2d9aef6a80a205a03e4e99b5483af9a0} 
 string Model::\+name\hspace{0.3cm}{\ttfamily [protected]}}
 
-Nome identificador do modelo. \Hypertarget{class_model_a0ad9eca5f7874e06be69db9aa726857a}\index{Model@{Model}!sys@{sys}}
+Nome identificador do modelo. \Hypertarget{class_model_ae6d0475ec26684a188c5f504befae604}\index{Model@{Model}!sys@{sys}}
 \index{sys@{sys}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{sys}{sys}}
-{\footnotesize\ttfamily \label{class_model_a0ad9eca5f7874e06be69db9aa726857a} 
-vector$<$\doxymbox{\hyperlink{class_system}{System}}\texorpdfstring{$\ast$}{*}$>$ Model::\+sys\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{class_model_ae6d0475ec26684a188c5f504befae604} 
+vector$<$\doxymbox{\hyperlink{class_system}{System}} \texorpdfstring{$\ast$}{*}$>$ Model::\+sys\hspace{0.3cm}{\ttfamily [protected]}}
 
 Vetor contendo os sistemas pertencentes ao modelo. 
 

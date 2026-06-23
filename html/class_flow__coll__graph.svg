@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Classe abstrata que representa um fluxo entre sistemas.">
 <polygon fill="#999999" stroke="#666666" points="43.38,-20 6.38,-20 6.38,0 43.38,0 43.38,-20"/>
 <text xml:space="preserve" text-anchor="middle" x="24.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Flow</text>
 </a>
@@ -20,8 +20,8 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_system.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="49.75,-110 0,-110 0,-90 49.75,-90 49.75,-110"/>
+<g id="a_Node000002"><a xlink:href="class_system.html" target="_top" xlink:title="Representa um sistema contendo um valor associado.">
+<polygon fill="white" stroke="#666666" points="49.75,-110 0,-110 0,-90 49.75,-90 49.75,-110"/>
 <text xml:space="preserve" text-anchor="middle" x="24.88" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">System</text>
 </a>
 </g>

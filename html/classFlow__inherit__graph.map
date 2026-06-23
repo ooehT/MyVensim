@@ -1,0 +1,7 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="Node000001" title="Classe abstrata que representa um fluxo entre sistemas." alt="" coords="83,5,136,31"/>
+<area shape="rect" id="Node000002" href="$classExponential.html" title="Implementa um fluxo exponencial." alt="" coords="5,79,104,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,43,66,80,61,77,90,40"/>
+<area shape="rect" id="Node000003" href="$classLogistic.html" title="Classe que define um comportamento de fluxo logístico baseado na capacidade do sistema alvo." alt="" coords="128,79,200,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,40,157,77,153,80,125,43"/>
+</map>

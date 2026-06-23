@@ -8,30 +8,43 @@
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}System.hpp"{}}}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }Flow\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ source;}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ target;}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ Flow();}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ Flow(\textcolor{keywordtype}{string}\ name,\ \doxymbox{\hyperlink{class_system}{System}}*\ source,\ \doxymbox{\hyperlink{class_system}{System}}*\ target);}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ Flow(\textcolor{keyword}{const}\ Flow\ \&f);}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ Flow\ \&operator=(\textcolor{keyword}{const}\ Flow\ \&f);\ }
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Flow();}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ equation()\ =\ 0;}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setSource(\doxymbox{\hyperlink{class_system}{System}}*\ source);}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ getSource()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setTarget(\doxymbox{\hyperlink{class_system}{System}}*\ target);}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ getTarget()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ getName()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&value);}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeSource();}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeTarget();}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}};\ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}};\ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a87be88d9bae4e927b29205faabeaf387}{target}};\ \ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ \doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}},\ \doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a87be88d9bae4e927b29205faabeaf387}{target}});}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}\ \&f);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}\ \&\doxymbox{\hyperlink{class_flow_ac5fae2ad1c3bf3c518240fe85bc2d4b2}{operator=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}\ \&f);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{\string~Flow}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_flow_aa1ad5f820c1f10f9e19c555af8bf69f2}{equation}}()\ =\ 0;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_flow_a250fc53158862fc0db77b323a33e48a3}{setSource}}(\doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}});}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a1f3858f90d141807377c2640fb5dd0fc}{getSource}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_flow_ab69903880174e5bcdc0d815b5de7b3e0}{setTarget}}(\doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_a87be88d9bae4e927b29205faabeaf387}{target}});}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_system}{System}}*\ \doxymbox{\hyperlink{class_flow_aff8a0f8ca8dc50d37c92ab7556e172b5}{getTarget}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_flow_a60277f8a609ad446fafcc7b7cab828bb}{setName}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&value);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_flow_afa44322a8e8901bcd4e1d93a726e5ece}{removeSource}}();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_flow_a2fa57a27502f45801a35bfa5f3258d23}{removeTarget}}();}
+\DoxyCodeLine{00101\ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

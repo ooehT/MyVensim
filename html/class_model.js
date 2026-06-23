@@ -11,7 +11,7 @@ var class_model =
     [ "remove", "class_model.html#afc1a1073edd5c05c52f6375e95d1c71a", null ],
     [ "remove", "class_model.html#a1ef4eeb098d8e3ac58eac97295468674", null ],
     [ "setName", "class_model.html#add74cdef0434cac9d53d46950f1084bf", null ],
-    [ "flows", "class_model.html#aa76c9411f1cf6da6f4c696b2feadcb1a", null ],
+    [ "flows", "class_model.html#ab27ca50cce65df6055d219505ebf05c8", null ],
     [ "name", "class_model.html#a2d9aef6a80a205a03e4e99b5483af9a0", null ],
-    [ "sys", "class_model.html#a0ad9eca5f7874e06be69db9aa726857a", null ]
+    [ "sys", "class_model.html#ae6d0475ec26684a188c5f504befae604", null ]
 ];

@@ -20,8 +20,8 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_flow.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="43.38,-76 6.38,-76 6.38,-56 43.38,-56 43.38,-76"/>
+<g id="a_Node000002"><a xlink:href="class_flow.html" target="_top" xlink:title="Classe abstrata que representa um fluxo entre sistemas.">
+<polygon fill="white" stroke="#666666" points="43.38,-76 6.38,-76 6.38,-56 43.38,-56 43.38,-76"/>
 <text xml:space="preserve" text-anchor="middle" x="24.88" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">Flow</text>
 </a>
 </g>

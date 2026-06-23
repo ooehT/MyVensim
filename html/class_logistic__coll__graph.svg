@@ -20,8 +20,8 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="class_flow.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="43.38,-77 6.38,-77 6.38,-57 43.38,-57 43.38,-77"/>
+<g id="a_Node000002"><a xlink:href="class_flow.html" target="_top" xlink:title="Classe abstrata que representa um fluxo entre sistemas.">
+<polygon fill="white" stroke="#666666" points="43.38,-77 6.38,-77 6.38,-57 43.38,-57 43.38,-77"/>
 <text xml:space="preserve" text-anchor="middle" x="24.88" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Flow</text>
 </a>
 </g>
@@ -38,8 +38,8 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="class_system.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="49.75,-167 0,-167 0,-147 49.75,-147 49.75,-167"/>
+<g id="a_Node000003"><a xlink:href="class_system.html" target="_top" xlink:title="Representa um sistema contendo um valor associado.">
+<polygon fill="white" stroke="#666666" points="49.75,-167 0,-167 0,-147 49.75,-147 49.75,-167"/>
 <text xml:space="preserve" text-anchor="middle" x="24.88" y="-153.5" font-family="Helvetica,sans-Serif" font-size="10.00">System</text>
 </a>
 </g>

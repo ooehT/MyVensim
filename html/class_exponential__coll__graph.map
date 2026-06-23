@@ -1,7 +1,7 @@
 <map id="Exponential" name="Exponential">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,201,95,228"/>
-<area shape="rect" id="Node000002" href="$class_flow.html" title=" " alt="" coords="25,125,75,152"/>
+<area shape="rect" id="Node000001" title="Implementa um fluxo exponencial." alt="" coords="5,201,95,228"/>
+<area shape="rect" id="Node000002" href="$class_flow.html" title="Classe abstrata que representa um fluxo entre sistemas." alt="" coords="25,125,75,152"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,165,53,202,47,200,48,169"/>
-<area shape="rect" id="Node000003" href="$class_system.html" title=" " alt="" coords="17,5,83,32"/>
+<area shape="rect" id="Node000003" href="$class_system.html" title="Representa um sistema contendo um valor associado." alt="" coords="17,5,83,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="51,46,53,125,47,125,49,50"/>
 </map>
